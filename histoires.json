@@ -1,0 +1,1154 @@
+[
+ {
+  "titre": "Le nouveau jeu",
+  "icone": "🎮",
+  "niveau": "A1",
+  "phrases": [
+   [
+    "Tom is sixteen.",
+    "Tom a seize ans."
+   ],
+   [
+    "He loves video games.",
+    "Il adore les jeux vidéo."
+   ],
+   [
+    "Today, he has a new game.",
+    "Aujourd'hui, il a un nouveau jeu."
+   ],
+   [
+    "It is a game about dragons.",
+    "C'est un jeu sur des dragons."
+   ],
+   [
+    "His sister Emma wants to play too.",
+    "Sa sœur Emma veut jouer aussi."
+   ],
+   [
+    "They play together all afternoon.",
+    "Ils jouent ensemble tout l'après-midi."
+   ],
+   [
+    "Emma is very good!",
+    "Emma est très forte !"
+   ]
+  ],
+  "questions": [
+   [
+    "Quel âge a Tom ?",
+    "16 ans",
+    [
+     "6 ans",
+     "60 ans",
+     "13 ans"
+    ]
+   ],
+   [
+    "De quoi parle le jeu ?",
+    "De dragons",
+    [
+     "De voitures",
+     "De football",
+     "De zombies"
+    ]
+   ],
+   [
+    "Qui joue avec Tom ?",
+    "Sa sœur Emma",
+    [
+     "Son père",
+     "Son ami Lucas",
+     "Personne"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Au café",
+  "icone": "☕",
+  "niveau": "A1",
+  "phrases": [
+   [
+    "Sarah goes to a café every morning.",
+    "Sarah va dans un café tous les matins."
+   ],
+   [
+    "She always orders a big coffee.",
+    "Elle commande toujours un grand café."
+   ],
+   [
+    "Today, the café is very busy.",
+    "Aujourd'hui, le café est plein de monde."
+   ],
+   [
+    "There are no free tables.",
+    "Il n'y a pas de table libre."
+   ],
+   [
+    "A young man smiles and says: \"You can sit here.\"",
+    "Un jeune homme sourit et dit : « Tu peux t'asseoir ici. »"
+   ],
+   [
+    "His name is Leo.",
+    "Il s'appelle Leo."
+   ],
+   [
+    "Now they have coffee together every morning.",
+    "Maintenant, ils prennent un café ensemble tous les matins."
+   ]
+  ],
+  "questions": [
+   [
+    "Que commande Sarah ?",
+    "Un grand café",
+    [
+     "Un thé",
+     "Un petit café",
+     "Un chocolat chaud"
+    ]
+   ],
+   [
+    "Quel est le problème ce matin ?",
+    "Il n'y a pas de table libre",
+    [
+     "Le café est fermé",
+     "Sarah est en retard",
+     "Il n'y a plus de café"
+    ]
+   ],
+   [
+    "Que se passe-t-il à la fin ?",
+    "Sarah et Leo prennent un café ensemble chaque matin",
+    [
+     "Sarah ne revient plus",
+     "Leo part en voyage",
+     "Sarah change de café"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Une soirée série",
+  "icone": "📺",
+  "niveau": "A1",
+  "phrases": [
+   [
+    "It's Friday evening.",
+    "C'est vendredi soir."
+   ],
+   [
+    "Lucas is at home with his friends.",
+    "Lucas est à la maison avec ses amis."
+   ],
+   [
+    "They want to watch a new series.",
+    "Ils veulent regarder une nouvelle série."
+   ],
+   [
+    "It's a scary story about a haunted house.",
+    "C'est une histoire qui fait peur, sur une maison hantée."
+   ],
+   [
+    "Lucas turns off the lights.",
+    "Lucas éteint les lumières."
+   ],
+   [
+    "Suddenly, the phone rings!",
+    "Soudain, le téléphone sonne !"
+   ],
+   [
+    "Everybody screams, then everybody laughs.",
+    "Tout le monde crie, puis tout le monde rit."
+   ]
+  ],
+  "questions": [
+   [
+    "Quel jour est-on ?",
+    "Vendredi",
+    [
+     "Samedi",
+     "Lundi",
+     "Dimanche"
+    ]
+   ],
+   [
+    "De quoi parle la série ?",
+    "D'une maison hantée",
+    [
+     "D'un hôpital",
+     "D'une école",
+     "D'un voyage"
+    ]
+   ],
+   [
+    "Pourquoi tout le monde crie ?",
+    "Le téléphone sonne",
+    [
+     "Un fantôme arrive",
+     "La télé s'éteint",
+     "Le chien aboie"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Le chien perdu",
+  "icone": "🐶",
+  "niveau": "A2",
+  "phrases": [
+   [
+    "Yesterday, I found a little dog in the street.",
+    "Hier, j'ai trouvé un petit chien dans la rue."
+   ],
+   [
+    "He was alone and he looked hungry.",
+    "Il était seul et il avait l'air d'avoir faim."
+   ],
+   [
+    "I gave him some water and some bread.",
+    "Je lui ai donné de l'eau et du pain."
+   ],
+   [
+    "He had a name on his collar: Max.",
+    "Il avait un nom sur son collier : Max."
+   ],
+   [
+    "There was also a phone number.",
+    "Il y avait aussi un numéro de téléphone."
+   ],
+   [
+    "I called the number and a woman answered.",
+    "J'ai appelé le numéro et une femme a répondu."
+   ],
+   [
+    "She came an hour later and she cried with joy.",
+    "Elle est venue une heure plus tard et elle a pleuré de joie."
+   ]
+  ],
+  "questions": [
+   [
+    "Où était le chien ?",
+    "Dans la rue",
+    [
+     "Dans un parc",
+     "Dans la maison",
+     "Au magasin"
+    ]
+   ],
+   [
+    "Qu'est-ce que le narrateur lui a donné ?",
+    "De l'eau et du pain",
+    [
+     "De la viande",
+     "Un jouet",
+     "Du lait"
+    ]
+   ],
+   [
+    "Comment a-t-il retrouvé la propriétaire ?",
+    "Avec le numéro sur le collier",
+    [
+     "Sur Internet",
+     "Grâce à la police",
+     "Elle passait par là"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Le tournoi",
+  "icone": "🏆",
+  "niveau": "A2",
+  "phrases": [
+   [
+    "Last Saturday, my team played in an online tournament.",
+    "Samedi dernier, mon équipe a joué dans un tournoi en ligne."
+   ],
+   [
+    "There were sixty-four teams.",
+    "Il y avait soixante-quatre équipes."
+   ],
+   [
+    "We won the first three matches easily.",
+    "On a gagné les trois premiers matchs facilement."
+   ],
+   [
+    "In the semi-final, our best player lost his connection.",
+    "En demi-finale, notre meilleur joueur a perdu sa connexion."
+   ],
+   [
+    "We played four against five for ten minutes.",
+    "On a joué à quatre contre cinq pendant dix minutes."
+   ],
+   [
+    "It was really hard, but we didn't give up.",
+    "C'était vraiment dur, mais on n'a pas abandonné."
+   ],
+   [
+    "Finally, we finished second. Not bad!",
+    "Finalement, on a fini deuxièmes. Pas mal !"
+   ]
+  ],
+  "questions": [
+   [
+    "Combien d'équipes participaient ?",
+    "64",
+    [
+     "16",
+     "46",
+     "6"
+    ]
+   ],
+   [
+    "Quel problème ont-ils eu en demi-finale ?",
+    "Leur meilleur joueur a perdu sa connexion",
+    [
+     "Ils ont triché",
+     "L'ordinateur a pris feu",
+     "Ils sont arrivés en retard"
+    ]
+   ],
+   [
+    "Quel est le résultat final ?",
+    "Ils ont fini deuxièmes",
+    [
+     "Ils ont gagné le tournoi",
+     "Ils ont perdu dès le début",
+     "Ils ont abandonné"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Premier jour de travail",
+  "icone": "💼",
+  "niveau": "A2",
+  "phrases": [
+   [
+    "Today is Nina's first day at her new job.",
+    "Aujourd'hui, c'est le premier jour de Nina dans son nouveau travail."
+   ],
+   [
+    "She works in a big shop in the city centre.",
+    "Elle travaille dans un grand magasin du centre-ville."
+   ],
+   [
+    "She got up at six because she didn't want to be late.",
+    "Elle s'est levée à six heures parce qu'elle ne voulait pas être en retard."
+   ],
+   [
+    "Her boss is friendly and her colleagues help her a lot.",
+    "Sa patronne est sympa et ses collègues l'aident beaucoup."
+   ],
+   [
+    "At lunchtime, she eats with a colleague called Paul.",
+    "À midi, elle mange avec un collègue qui s'appelle Paul."
+   ],
+   [
+    "In the afternoon, she makes a mistake with a customer, but nobody gets angry.",
+    "L'après-midi, elle fait une erreur avec un client, mais personne ne se fâche."
+   ],
+   [
+    "In the evening, she is tired but happy.",
+    "Le soir, elle est fatiguée mais contente."
+   ]
+  ],
+  "questions": [
+   [
+    "Où travaille Nina ?",
+    "Dans un grand magasin",
+    [
+     "Dans un bureau",
+     "Dans un restaurant",
+     "Dans une école"
+    ]
+   ],
+   [
+    "Pourquoi s'est-elle levée à 6 h ?",
+    "Pour ne pas être en retard",
+    [
+     "Pour faire du sport",
+     "Parce que son chien l'a réveillée",
+     "Pour déjeuner avec Paul"
+    ]
+   ],
+   [
+    "Comment se sent-elle le soir ?",
+    "Fatiguée mais contente",
+    [
+     "Triste",
+     "En colère",
+     "Pas du tout fatiguée"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Le voyage à Londres",
+  "icone": "🇬🇧",
+  "niveau": "A2",
+  "phrases": [
+   [
+    "Last summer, Hugo went to London with his cousin.",
+    "L'été dernier, Hugo est allé à Londres avec son cousin."
+   ],
+   [
+    "They took the train from Paris.",
+    "Ils ont pris le train depuis Paris."
+   ],
+   [
+    "The journey took only two and a half hours.",
+    "Le voyage n'a duré que deux heures et demie."
+   ],
+   [
+    "In London, they visited museums and walked in the parks.",
+    "À Londres, ils ont visité des musées et se sont promenés dans les parcs."
+   ],
+   [
+    "Hugo was scared to speak English at first.",
+    "Au début, Hugo avait peur de parler anglais."
+   ],
+   [
+    "But people were very nice and patient.",
+    "Mais les gens étaient très gentils et patients."
+   ],
+   [
+    "On the last day, he ordered fish and chips in English, without any help!",
+    "Le dernier jour, il a commandé un fish and chips en anglais, sans aucune aide !"
+   ]
+  ],
+  "questions": [
+   [
+    "Comment sont-ils allés à Londres ?",
+    "En train",
+    [
+     "En avion",
+     "En voiture",
+     "En bateau"
+    ]
+   ],
+   [
+    "Pourquoi Hugo avait-il peur au début ?",
+    "Il avait peur de parler anglais",
+    [
+     "Il avait peur du train",
+     "Il était perdu",
+     "Il n'avait pas d'argent"
+    ]
+   ],
+   [
+    "Qu'a-t-il réussi à faire le dernier jour ?",
+    "Commander à manger en anglais tout seul",
+    [
+     "Visiter un château",
+     "Prendre le métro seul",
+     "Rencontrer un acteur"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Le streamer",
+  "icone": "🎥",
+  "niveau": "A2",
+  "phrases": [
+   [
+    "Jake is a streamer.",
+    "Jake est streamer."
+   ],
+   [
+    "Every evening, he plays games live on the internet.",
+    "Tous les soirs, il joue à des jeux en direct sur Internet."
+   ],
+   [
+    "About two hundred people watch him and write messages.",
+    "Environ deux cents personnes le regardent et écrivent des messages."
+   ],
+   [
+    "Last night, he tried a very difficult game.",
+    "Hier soir, il a essayé un jeu très difficile."
+   ],
+   [
+    "He died more than fifty times!",
+    "Il est mort plus de cinquante fois !"
+   ],
+   [
+    "His viewers laughed a lot, but they also gave him advice.",
+    "Ses spectateurs ont beaucoup ri, mais ils lui ont aussi donné des conseils."
+   ],
+   [
+    "At two in the morning, he finally beat the final boss.",
+    "À deux heures du matin, il a enfin battu le boss final."
+   ]
+  ],
+  "questions": [
+   [
+    "Combien de personnes regardent Jake, environ ?",
+    "200",
+    [
+     "20",
+     "2 000",
+     "50"
+    ]
+   ],
+   [
+    "Combien de fois est-il mort ?",
+    "Plus de cinquante fois",
+    [
+     "Cinq fois",
+     "Jamais",
+     "Deux fois"
+    ]
+   ],
+   [
+    "Quand a-t-il battu le boss final ?",
+    "À deux heures du matin",
+    [
+     "À minuit",
+     "Le lendemain midi",
+     "Il ne l'a pas battu"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Le gâteau d'anniversaire",
+  "icone": "🎂",
+  "niveau": "A2",
+  "phrases": [
+   [
+    "It was my mum's birthday last week.",
+    "C'était l'anniversaire de ma mère la semaine dernière."
+   ],
+   [
+    "My brother and I wanted to make her a chocolate cake.",
+    "Mon frère et moi voulions lui faire un gâteau au chocolat."
+   ],
+   [
+    "We found a recipe on the internet.",
+    "On a trouvé une recette sur Internet."
+   ],
+   [
+    "But we forgot to buy eggs, so I ran to the shop.",
+    "Mais on avait oublié d'acheter des œufs, alors j'ai couru au magasin."
+   ],
+   [
+    "While I was away, my brother left the cake in the oven for too long.",
+    "Pendant que j'étais parti, mon frère a laissé le gâteau trop longtemps dans le four."
+   ],
+   [
+    "The cake was a bit black, but we covered it with cream.",
+    "Le gâteau était un peu noir, mais on l'a recouvert de crème."
+   ],
+   [
+    "Mum said it was the best cake in the world.",
+    "Maman a dit que c'était le meilleur gâteau du monde."
+   ]
+  ],
+  "questions": [
+   [
+    "Quel gâteau voulaient-ils faire ?",
+    "Un gâteau au chocolat",
+    [
+     "Une tarte aux pommes",
+     "Un gâteau aux fraises",
+     "Des cookies"
+    ]
+   ],
+   [
+    "Qu'avaient-ils oublié d'acheter ?",
+    "Des œufs",
+    [
+     "Du sucre",
+     "Du chocolat",
+     "De la crème"
+    ]
+   ],
+   [
+    "Qu'est-il arrivé au gâteau ?",
+    "Il a un peu brûlé",
+    [
+     "Il est tombé par terre",
+     "Le chien l'a mangé",
+     "Il était parfait"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "La panne",
+  "icone": "🕯️",
+  "niveau": "A2",
+  "phrases": [
+   [
+    "On Sunday evening, there was a power cut in my town.",
+    "Dimanche soir, il y a eu une coupure de courant dans ma ville."
+   ],
+   [
+    "No lights, no internet, no TV!",
+    "Pas de lumière, pas d'Internet, pas de télé !"
+   ],
+   [
+    "My phone had only ten percent battery.",
+    "Mon téléphone n'avait que dix pour cent de batterie."
+   ],
+   [
+    "At first, my family didn't know what to do.",
+    "Au début, ma famille ne savait pas quoi faire."
+   ],
+   [
+    "Then my dad found some candles and an old board game.",
+    "Puis mon père a trouvé des bougies et un vieux jeu de société."
+   ],
+   [
+    "We played and talked for three hours.",
+    "On a joué et discuté pendant trois heures."
+   ],
+   [
+    "When the power came back, nobody wanted to stop!",
+    "Quand le courant est revenu, personne ne voulait arrêter !"
+   ]
+  ],
+  "questions": [
+   [
+    "Que s'est-il passé dimanche soir ?",
+    "Une coupure de courant",
+    [
+     "Une tempête de neige",
+     "Un incendie",
+     "Une fête"
+    ]
+   ],
+   [
+    "Qu'a trouvé le père ?",
+    "Des bougies et un jeu de société",
+    [
+     "Une lampe et un livre",
+     "Un chargeur",
+     "Une radio"
+    ]
+   ],
+   [
+    "Que s'est-il passé quand le courant est revenu ?",
+    "Personne ne voulait arrêter de jouer",
+    [
+     "Tout le monde est allé regarder la télé",
+     "Ils sont allés se coucher",
+     "Le téléphone a explosé"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Le message mystère",
+  "icone": "✉️",
+  "niveau": "A2",
+  "phrases": [
+   [
+    "One morning, Chloe received a strange message.",
+    "Un matin, Chloé a reçu un message étrange."
+   ],
+   [
+    "It said: \"Meet me at the park at 5 p.m. Come alone.\"",
+    "Il disait : « Retrouve-moi au parc à 17 h. Viens seule. »"
+   ],
+   [
+    "There was no name and she didn't know the number.",
+    "Il n'y avait pas de nom et elle ne connaissait pas le numéro."
+   ],
+   [
+    "She was worried, so she asked her best friend to come with her.",
+    "Elle était inquiète, alors elle a demandé à sa meilleure amie de venir avec elle."
+   ],
+   [
+    "At five o'clock, they arrived at the park.",
+    "À cinq heures, elles sont arrivées au parc."
+   ],
+   [
+    "All her friends were there with balloons and a big sign: \"Happy birthday, Chloe!\"",
+    "Tous ses amis étaient là, avec des ballons et une grande pancarte : « Joyeux anniversaire, Chloé ! »"
+   ],
+   [
+    "She had completely forgotten her own birthday!",
+    "Elle avait complètement oublié son propre anniversaire !"
+   ]
+  ],
+  "questions": [
+   [
+    "À quelle heure était le rendez-vous ?",
+    "À 17 h",
+    [
+     "À 7 h",
+     "À 15 h",
+     "À midi"
+    ]
+   ],
+   [
+    "Pourquoi Chloé est-elle venue avec son amie ?",
+    "Parce qu'elle était inquiète",
+    [
+     "Parce que son amie voulait voir le parc",
+     "Parce qu'il pleuvait",
+     "Parce que le message le demandait"
+    ]
+   ],
+   [
+    "Qu'est-ce qui l'attendait au parc ?",
+    "Une fête d'anniversaire surprise",
+    [
+     "Un inconnu",
+     "Un chien perdu",
+     "Rien du tout"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Rêves d'avenir",
+  "icone": "🌟",
+  "niveau": "A2+",
+  "phrases": [
+   [
+    "Malik is eighteen and he has just finished school.",
+    "Malik a dix-huit ans et il vient de finir le lycée."
+   ],
+   [
+    "He has always loved video games, so he wants to create them one day.",
+    "Il a toujours aimé les jeux vidéo, donc il veut en créer un jour."
+   ],
+   [
+    "He has started to learn programming online.",
+    "Il a commencé à apprendre la programmation en ligne."
+   ],
+   [
+    "Most tutorials are in English, so he practises English every day.",
+    "La plupart des tutoriels sont en anglais, alors il pratique l'anglais tous les jours."
+   ],
+   [
+    "At first, he understood almost nothing.",
+    "Au début, il ne comprenait presque rien."
+   ],
+   [
+    "Now, after six months, he can follow the videos without subtitles.",
+    "Maintenant, après six mois, il peut suivre les vidéos sans sous-titres."
+   ],
+   [
+    "If he keeps working like this, he will reach his dream.",
+    "S'il continue à travailler comme ça, il réalisera son rêve."
+   ]
+  ],
+  "questions": [
+   [
+    "Quel est le rêve de Malik ?",
+    "Créer des jeux vidéo",
+    [
+     "Devenir joueur professionnel",
+     "Être professeur d'anglais",
+     "Vivre en Angleterre"
+    ]
+   ],
+   [
+    "Pourquoi pratique-t-il l'anglais ?",
+    "Les tutoriels sont en anglais",
+    [
+     "Pour son travail au magasin",
+     "Pour parler à sa famille",
+     "Pour un examen"
+    ]
+   ],
+   [
+    "Qu'arrive-t-il à faire après six mois ?",
+    "Suivre les vidéos sans sous-titres",
+    [
+     "Parler parfaitement anglais",
+     "Vendre son premier jeu",
+     "Rien du tout"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Le colocataire",
+  "icone": "🏠",
+  "niveau": "B1",
+  "phrases": [
+   [
+    "When I moved to Manchester for my studies, I had to share a flat with a guy called Oliver.",
+    "Quand j'ai déménagé à Manchester pour mes études, j'ai dû partager un appartement avec un garçon qui s'appelait Oliver."
+   ],
+   [
+    "At first, we didn't get on very well, because he used to play the guitar until two in the morning.",
+    "Au début, on ne s'entendait pas très bien, parce qu'il jouait de la guitare jusqu'à deux heures du matin."
+   ],
+   [
+    "I had been trying to sleep for weeks when I finally decided to talk to him about it.",
+    "Ça faisait des semaines que j'essayais de dormir quand j'ai enfin décidé de lui en parler."
+   ],
+   [
+    "To my surprise, he apologised immediately and suggested that we make a timetable.",
+    "À ma grande surprise, il s'est excusé tout de suite et a proposé qu'on fasse un planning."
+   ],
+   [
+    "Since then, he has only played in the afternoon, and he has even taught me a few songs.",
+    "Depuis, il ne joue plus que l'après-midi, et il m'a même appris quelques chansons."
+   ],
+   [
+    "Now we are best friends, and we are planning to start a band together.",
+    "Maintenant, on est meilleurs amis, et on prévoit de monter un groupe ensemble."
+   ],
+   [
+    "Sometimes, a difficult conversation is the beginning of a great friendship.",
+    "Parfois, une conversation difficile est le début d'une belle amitié."
+   ]
+  ],
+  "questions": [
+   [
+    "Quel était le problème avec Oliver ?",
+    "Il jouait de la guitare tard la nuit",
+    [
+     "Il ne faisait jamais le ménage",
+     "Il ne payait pas le loyer",
+     "Il invitait trop d'amis"
+    ]
+   ],
+   [
+    "Comment Oliver a-t-il réagi ?",
+    "Il s'est excusé et a proposé un planning",
+    [
+     "Il s'est fâché",
+     "Il a déménagé",
+     "Il a arrêté la guitare pour toujours"
+    ]
+   ],
+   [
+    "Quel est leur projet aujourd'hui ?",
+    "Monter un groupe ensemble",
+    [
+     "Changer d'appartement",
+     "Partir en voyage",
+     "Arrêter leurs études"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "La panne en montagne",
+  "icone": "⛰️",
+  "niveau": "B1",
+  "phrases": [
+   [
+    "Last winter, my sister and I were driving through the mountains when our car suddenly broke down.",
+    "L'hiver dernier, ma sœur et moi traversions les montagnes en voiture quand notre voiture est soudain tombée en panne."
+   ],
+   [
+    "It was getting dark, it was snowing heavily, and there was no phone signal.",
+    "La nuit tombait, il neigeait fort, et il n'y avait pas de réseau."
+   ],
+   [
+    "We decided to stay in the car, because walking in the snow would have been too dangerous.",
+    "On a décidé de rester dans la voiture, parce que marcher dans la neige aurait été trop dangereux."
+   ],
+   [
+    "After about an hour, we saw the lights of a tractor coming towards us.",
+    "Au bout d'une heure environ, on a vu les phares d'un tracteur qui venait vers nous."
+   ],
+   [
+    "The farmer, who lived nearby, towed our car to his house and offered us hot soup.",
+    "Le fermier, qui habitait tout près, a remorqué notre voiture jusqu'à chez lui et nous a offert une soupe chaude."
+   ],
+   [
+    "We spent the night by the fire, listening to his stories about the old days.",
+    "On a passé la nuit près du feu, à écouter ses histoires d'autrefois."
+   ],
+   [
+    "It's funny: the worst day of our trip turned out to be our favourite memory.",
+    "C'est drôle : le pire jour de notre voyage s'est avéré être notre meilleur souvenir."
+   ]
+  ],
+  "questions": [
+   [
+    "Pourquoi sont-elles restées dans la voiture ?",
+    "Marcher dans la neige aurait été trop dangereux",
+    [
+     "Elles attendaient un ami",
+     "La voiture était chauffée",
+     "Elles avaient peur des animaux"
+    ]
+   ],
+   [
+    "Qui les a aidées ?",
+    "Un fermier en tracteur",
+    [
+     "La police",
+     "Un dépanneur appelé par téléphone",
+     "Un autre touriste"
+    ]
+   ],
+   [
+    "Que pensent-elles de ce jour maintenant ?",
+    "C'est leur meilleur souvenir du voyage",
+    [
+     "C'était une catastrophe",
+     "Elles ne veulent plus voyager",
+     "Elles l'ont oublié"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "L'entretien d'embauche",
+  "icone": "💼",
+  "niveau": "B2",
+  "phrases": [
+   [
+    "Maya had been preparing for the interview for days, so she felt reasonably confident when she arrived.",
+    "Maya préparait l'entretien depuis des jours, alors elle se sentait plutôt confiante en arrivant."
+   ],
+   [
+    "However, the first question completely threw her: \"Tell us about a time you failed.\"",
+    "Pourtant, la première question l'a complètement déstabilisée : « Parlez-nous d'une fois où vous avez échoué. »"
+   ],
+   [
+    "She hesitated, then decided to be honest rather than give a polished answer.",
+    "Elle a hésité, puis a décidé d'être honnête plutôt que de donner une réponse toute faite."
+   ],
+   [
+    "She explained that she had once missed an important deadline because she had refused to ask for help.",
+    "Elle a expliqué qu'elle avait un jour raté une échéance importante parce qu'elle avait refusé de demander de l'aide."
+   ],
+   [
+    "Since then, she said, she has learned that admitting you're struggling is a strength, not a weakness.",
+    "Depuis, a-t-elle dit, elle a appris qu'admettre qu'on a du mal est une force, pas une faiblesse."
+   ],
+   [
+    "The managers exchanged a look, and one of them smiled for the first time.",
+    "Les responsables ont échangé un regard, et l'un d'eux a souri pour la première fois."
+   ],
+   [
+    "A week later, she was offered the job, and her new boss told her that her honesty had made the difference.",
+    "Une semaine plus tard, on lui a proposé le poste, et son nouveau patron lui a dit que son honnêteté avait fait la différence."
+   ]
+  ],
+  "questions": [
+   [
+    "Quelle question a surpris Maya ?",
+    "Raconter un échec",
+    [
+     "Parler de son salaire",
+     "Expliquer pourquoi elle quitte son emploi",
+     "Décrire ses qualités"
+    ]
+   ],
+   [
+    "Pourquoi avait-elle raté une échéance ?",
+    "Elle avait refusé de demander de l'aide",
+    [
+     "Elle était malade",
+     "Son ordinateur était en panne",
+     "Elle avait oublié la date"
+    ]
+   ],
+   [
+    "Qu'est-ce qui a fait la différence selon son patron ?",
+    "Son honnêteté",
+    [
+     "Ses diplômes",
+     "Son expérience à l'étranger",
+     "Son humour"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Le lanceur d'alerte",
+  "icone": "📰",
+  "niveau": "B2",
+  "phrases": [
+   [
+    "For years, nobody had noticed that the factory was secretly dumping chemicals into the river.",
+    "Pendant des années, personne n'avait remarqué que l'usine déversait secrètement des produits chimiques dans la rivière."
+   ],
+   [
+    "It was a young engineer, Tom Hayes, who first realised something was wrong when he analysed the water samples.",
+    "C'est un jeune ingénieur, Tom Hayes, qui s'est rendu compte le premier que quelque chose n'allait pas en analysant les échantillons d'eau."
+   ],
+   [
+    "When he reported it to his manager, he was told to keep quiet if he wanted to keep his job.",
+    "Quand il l'a signalé à son responsable, on lui a dit de se taire s'il voulait garder son emploi."
+   ],
+   [
+    "Despite the pressure, he contacted a journalist and handed over the evidence.",
+    "Malgré la pression, il a contacté une journaliste et lui a remis les preuves."
+   ],
+   [
+    "The article caused a huge scandal, and the company was fined several million pounds.",
+    "L'article a provoqué un énorme scandale, et l'entreprise a reçu une amende de plusieurs millions de livres."
+   ],
+   [
+    "Tom lost his job, but the river has since been cleaned up and the fish have come back.",
+    "Tom a perdu son emploi, mais la rivière a depuis été nettoyée et les poissons sont revenus."
+   ],
+   [
+    "Asked if he regretted it, he simply answered: \"Some things matter more than a salary.\"",
+    "Quand on lui a demandé s'il le regrettait, il a simplement répondu : « Certaines choses comptent plus qu'un salaire. »"
+   ]
+  ],
+  "questions": [
+   [
+    "Que faisait l'usine ?",
+    "Elle déversait des produits chimiques dans la rivière",
+    [
+     "Elle volait de l'eau",
+     "Elle licenciait ses employés en secret",
+     "Elle trichait sur ses impôts"
+    ]
+   ],
+   [
+    "Qu'a fait Tom malgré la pression ?",
+    "Il a donné les preuves à une journaliste",
+    [
+     "Il a démissionné sans rien dire",
+     "Il a détruit les preuves",
+     "Il a porté plainte contre son responsable"
+    ]
+   ],
+   [
+    "Regrette-t-il son choix ?",
+    "Non, certaines choses comptent plus qu'un salaire",
+    [
+     "Oui, il a tout perdu",
+     "Il ne sait pas",
+     "Oui, car la rivière est toujours polluée"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "L'illusion de la perfection",
+  "icone": "🪞",
+  "niveau": "C1",
+  "phrases": [
+   [
+    "Scrolling through social media, one could easily be forgiven for thinking that everyone else leads a flawless life.",
+    "En faisant défiler les réseaux sociaux, on pourrait facilement croire que tout le monde mène une vie parfaite."
+   ],
+   [
+    "Holidays are invariably sunny, meals are beautifully presented, and nobody ever seems to have a bad day.",
+    "Les vacances sont invariablement ensoleillées, les repas joliment présentés, et personne ne semble jamais passer une mauvaise journée."
+   ],
+   [
+    "Yet psychologists warn that this carefully curated reality can be detrimental to our wellbeing.",
+    "Pourtant, les psychologues préviennent que cette réalité soigneusement mise en scène peut nuire à notre bien-être."
+   ],
+   [
+    "Constantly comparing ourselves to an idealised version of others tends to fuel anxiety and erode self-esteem.",
+    "Se comparer sans cesse à une version idéalisée des autres a tendance à alimenter l'anxiété et à éroder l'estime de soi."
+   ],
+   [
+    "Not only do we see only the highlights of other people's lives, but we compare them to our own unfiltered reality.",
+    "Non seulement on ne voit que les meilleurs moments de la vie des autres, mais on les compare à notre propre réalité, sans filtre."
+   ],
+   [
+    "Some experts suggest limiting screen time, while others argue that awareness alone can make a substantial difference.",
+    "Certains experts suggèrent de limiter le temps d'écran, tandis que d'autres soutiennent que la prise de conscience suffit à faire une réelle différence."
+   ],
+   [
+    "Ultimately, the healthiest attitude may simply be to remember that a picture rarely tells the whole story.",
+    "En fin de compte, l'attitude la plus saine consiste peut-être simplement à se rappeler qu'une photo raconte rarement toute l'histoire."
+   ]
+  ],
+  "questions": [
+   [
+    "Quel est le danger principal décrit dans le texte ?",
+    "Se comparer à une image idéalisée des autres nuit au bien-être",
+    [
+     "Les réseaux sociaux coûtent trop cher",
+     "Les photos de vacances sont fausses",
+     "On passe trop peu de temps en ligne"
+    ]
+   ],
+   [
+    "Pourquoi la comparaison est-elle injuste ?",
+    "On compare les meilleurs moments des autres à notre réalité sans filtre",
+    [
+     "Les autres mentent toujours",
+     "Les psychologues l'ont interdite",
+     "On ne connaît pas les gens qu'on suit"
+    ]
+   ],
+   [
+    "Quelle est la conclusion du texte ?",
+    "Une photo raconte rarement toute l'histoire",
+    [
+     "Il faut supprimer ses comptes",
+     "Il faut publier plus souvent",
+     "Les experts sont tous d'accord"
+    ]
+   ]
+  ]
+ },
+ {
+  "titre": "Le dernier phare",
+  "icone": "🗼",
+  "niveau": "C2",
+  "phrases": [
+   [
+    "For forty years, Elias had kept the lighthouse on the island, long after automation had rendered his profession all but obsolete.",
+    "Pendant quarante ans, Elias avait gardé le phare de l'île, bien après que l'automatisation eut rendu son métier quasiment obsolète."
+   ],
+   [
+    "The authorities had repeatedly urged him to relinquish his post, yet he steadfastly refused, insisting that a machine could never truly watch over the sea.",
+    "Les autorités l'avaient maintes fois exhorté à renoncer à son poste, mais il refusait obstinément, affirmant qu'une machine ne pourrait jamais vraiment veiller sur la mer."
+   ],
+   [
+    "Little did they know that his stubbornness would one day prove invaluable.",
+    "Ils étaient loin de se douter que son entêtement s'avérerait un jour inestimable."
+   ],
+   [
+    "One stormy night, the automatic system failed, plunging the treacherous coast into darkness.",
+    "Une nuit de tempête, le système automatique tomba en panne, plongeant la côte traîtresse dans l'obscurité."
+   ],
+   [
+    "Had Elias not been there to light the old lamp by hand, a fishing boat would almost certainly have been wrecked on the rocks.",
+    "Si Elias n'avait pas été là pour allumer la vieille lampe à la main, un bateau de pêche se serait presque certainement fracassé sur les rochers."
+   ],
+   [
+    "The following morning, the crew climbed the winding stairs to thank him, their gratitude palpable.",
+    "Le lendemain matin, l'équipage gravit l'escalier en colimaçon pour le remercier, avec une gratitude palpable."
+   ],
+   [
+    "Elias merely shrugged, remarking wryly that some things are best left to those who still care.",
+    "Elias se contenta de hausser les épaules, en faisant remarquer avec ironie que certaines choses sont mieux confiées à ceux qui s'en soucient encore."
+   ]
+  ],
+  "questions": [
+   [
+    "Pourquoi les autorités voulaient-elles qu'Elias parte ?",
+    "Son métier était devenu presque inutile à cause de l'automatisation",
+    [
+     "Il était trop vieux pour travailler",
+     "Le phare allait être détruit",
+     "Il avait commis une faute grave"
+    ]
+   ],
+   [
+    "Que s'est-il passé pendant la tempête ?",
+    "Le système automatique est tombé en panne",
+    [
+     "Elias s'est perdu en mer",
+     "Le phare s'est effondré",
+     "Un bateau a coulé"
+    ]
+   ],
+   [
+    "Comment Elias a-t-il réagi aux remerciements ?",
+    "Avec modestie et une pointe d'ironie",
+    [
+     "Il a exigé une récompense",
+     "Il a pleuré de joie",
+     "Il les a ignorés et est parti"
+    ]
+   ]
+  ]
+ }
+]

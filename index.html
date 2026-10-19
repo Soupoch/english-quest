@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1222">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="English Quest">
+<title>English Quest</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icone-192.png">
+<link rel="apple-touch-icon" href="icone-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app"><div class="chargement"><div class="logo-big">EQ</div><p>Chargement…</p></div></div>
+<canvas id="confetti"></canvas>
+<div id="toasts"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script>
+  // version en ligne : fonctionne hors connexion et s'installe sur l'écran d'accueil
+  if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js");
+</script>
+</body>
+</html>

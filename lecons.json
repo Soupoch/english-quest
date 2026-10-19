@@ -1,0 +1,5330 @@
+[
+ {
+  "monde": "Monde 1 — Les bases",
+  "niveaux": [
+   {
+    "titre": "Être : I am, you are",
+    "phrases": [
+     [
+      "fr-en",
+      "Je suis fatigué.",
+      "I am tired.",
+      [
+       "I is tired.",
+       "I have tired.",
+       "I am tire."
+      ],
+      "« Être fatigué » = to be tired. Avec I, toujours « am »."
+     ],
+     [
+      "en-fr",
+      "She is my sister.",
+      "Elle est ma sœur.",
+      [
+       "Elle a ma sœur.",
+       "Il est ma sœur.",
+       "Elle est mon frère."
+      ],
+      "she = elle, he = il. is = est."
+     ],
+     [
+      "fr-en",
+      "Nous sommes amis.",
+      "We are friends.",
+      [
+       "We is friends.",
+       "We are friend.",
+       "Us are friends."
+      ],
+      "we / you / they → are."
+     ],
+     [
+      "fr-en",
+      "Tu es en retard.",
+      "You are late.",
+      [
+       "You is late.",
+       "You have late.",
+       "You are lately."
+      ],
+      "late = en retard. lately = récemment (piège !)."
+     ],
+     [
+      "en-fr",
+      "They are at home.",
+      "Ils sont à la maison.",
+      [
+       "Ils ont une maison.",
+       "Il est à la maison.",
+       "Ils vont à la maison."
+      ],
+      "they are = ils sont. at home = à la maison."
+     ],
+     [
+      "fr-en",
+      "Il n'est pas content.",
+      "He isn't happy.",
+      [
+       "He not is happy.",
+       "He doesn't happy.",
+       "He aren't happy."
+      ],
+      "Négation de « être » : is not = isn't, are not = aren't, I am not = I'm not."
+     ],
+     [
+      "fr-en",
+      "Est-ce que tu es prêt ?",
+      "Are you ready?",
+      [
+       "Do you ready?",
+       "Is you ready?",
+       "You are ready do?"
+      ],
+      "Question avec « être » : on inverse simplement → Are you…? (pas de « do »)."
+     ],
+     [
+      "fr-en",
+      "J'ai 20 ans.",
+      "I am 20 years old.",
+      [
+       "I have 20 years.",
+       "I have 20 years old.",
+       "I am 20 years."
+      ],
+      "Piège classique : l'âge se dit avec « être » → I am 20 (years old)."
+     ],
+     [
+      "en-fr",
+      "It is cold today.",
+      "Il fait froid aujourd'hui.",
+      [
+       "C'est froid demain.",
+       "J'ai froid aujourd'hui.",
+       "Il fait chaud aujourd'hui."
+      ],
+      "La météo : It is cold / hot / sunny = il fait froid / chaud / beau."
+     ],
+     [
+      "fr-en",
+      "Où es-tu ?",
+      "Where are you?",
+      [
+       "Where is you?",
+       "Where you are?",
+       "Who are you?"
+      ],
+      "where = où, who = qui."
+     ]
+    ],
+    "regle": {
+     "texte": "« Être » se dit **to be**. Il change selon la personne : **I am** · **you / we / they are** · **he / she / it is**.\nNégation : **I'm not**, **isn't**, **aren't**. Question : on inverse simplement → **Are you** ready?\n⚠ L'âge, la faim, la peur se disent avec *to be* : I'm 20, I'm hungry.",
+     "exemples": [
+      [
+       "I am tired.",
+       "Je suis fatigué."
+      ],
+      [
+       "She is my sister.",
+       "Elle est ma sœur."
+      ],
+      [
+       "Are you ready?",
+       "Tu es prêt ?"
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "Avoir : I have, she has",
+    "phrases": [
+     [
+      "fr-en",
+      "J'ai un chat.",
+      "I have a cat.",
+      [
+       "I has a cat.",
+       "I am a cat.",
+       "I have an cat."
+      ],
+      "I / you / we / they → have. « an » seulement devant un son voyelle (an apple)."
+     ],
+     [
+      "fr-en",
+      "Elle a une voiture rouge.",
+      "She has a red car.",
+      [
+       "She have a red car.",
+       "She has a car red.",
+       "She is a red car."
+      ],
+      "he / she / it → has. L'adjectif se place AVANT le nom : a red car."
+     ],
+     [
+      "en-fr",
+      "We have a problem.",
+      "Nous avons un problème.",
+      [
+       "Nous sommes un problème.",
+       "Vous avez un problème.",
+       "Nous avions un problème."
+      ],
+      "we = nous, you = tu / vous."
+     ],
+     [
+      "fr-en",
+      "Il a les yeux bleus.",
+      "He has blue eyes.",
+      [
+       "He has the blue eyes.",
+       "He have blue eyes.",
+       "He has eyes blue."
+      ],
+      "Pour décrire le corps, pas de « the » : He has blue eyes / long hair."
+     ],
+     [
+      "fr-en",
+      "Je n'ai pas le temps.",
+      "I don't have time.",
+      [
+       "I am not time.",
+       "I not have time.",
+       "I doesn't have time."
+      ],
+      "Négation de « have » : don't have (doesn't have avec he/she/it)."
+     ],
+     [
+      "fr-en",
+      "As-tu un frère ?",
+      "Do you have a brother?",
+      [
+       "Are you have a brother?",
+       "Does you have a brother?",
+       "You have a brother do?"
+      ],
+      "Question avec « have » : Do you have…? / Does she have…?"
+     ],
+     [
+      "en-fr",
+      "They have two children.",
+      "Ils ont deux enfants.",
+      [
+       "Ils sont deux enfants.",
+       "Il a deux enfants.",
+       "Ils veulent deux enfants."
+      ],
+      "children = enfants (pluriel irrégulier de child)."
+     ],
+     [
+      "fr-en",
+      "J'ai faim.",
+      "I am hungry.",
+      [
+       "I have hungry.",
+       "I have hunger.",
+       "I am hunger."
+      ],
+      "Faim, soif, chaud, froid se disent avec « être » : I'm hungry, thirsty, hot, cold."
+     ],
+     [
+      "fr-en",
+      "Il a peur du noir.",
+      "He is afraid of the dark.",
+      [
+       "He has afraid of the dark.",
+       "He has fear of the black.",
+       "He is afraid of the black."
+      ],
+      "Avoir peur = to be afraid / scared. Le noir (l'obscurité) = the dark."
+     ],
+     [
+      "en-fr",
+      "Does she have a job?",
+      "Est-ce qu'elle a un travail ?",
+      [
+       "Elle a un travail.",
+       "Est-ce qu'elle aime son travail ?",
+       "Est-ce qu'il a un travail ?"
+      ],
+      "Does … ? = « Est-ce que … ? » (avec he / she / it)."
+     ]
+    ],
+    "regle": {
+     "texte": "« Avoir » se dit **to have** : I / you / we / they **have** · he / she / it **has**.\nNégation et question avec *do* : **I don't have** · **Do you have…?**\nL'adjectif se place AVANT le nom : a **red car**.",
+     "exemples": [
+      [
+       "I have a cat.",
+       "J'ai un chat."
+      ],
+      [
+       "She has a red car.",
+       "Elle a une voiture rouge."
+      ],
+      [
+       "Do you have a brother?",
+       "As-tu un frère ?"
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "Le présent : I play, he plays",
+    "phrases": [
+     [
+      "fr-en",
+      "Je joue aux jeux vidéo.",
+      "I play video games.",
+      [
+       "I plays video games.",
+       "I playing video games.",
+       "I am play video games."
+      ],
+      "Au présent simple : I / you / we / they + verbe tout simple."
+     ],
+     [
+      "fr-en",
+      "Il joue au foot le samedi.",
+      "He plays football on Saturdays.",
+      [
+       "He play football on Saturdays.",
+       "He plays football in Saturday.",
+       "He is play football on Saturdays."
+      ],
+      "LA règle : he / she / it → on ajoute un -s au verbe. Les jours → on Saturday(s)."
+     ],
+     [
+      "fr-en",
+      "Elle regarde des séries tous les soirs.",
+      "She watches series every evening.",
+      [
+       "She watch series every evening.",
+       "She watchs series every evening.",
+       "She looks series every evening."
+      ],
+      "Après -ch, -sh, -o, -x on ajoute -es : watches, goes, fixes."
+     ],
+     [
+      "en-fr",
+      "My brother works in a shop.",
+      "Mon frère travaille dans un magasin.",
+      [
+       "Mon frère marche dans un magasin.",
+       "Mon frère a travaillé dans un magasin.",
+       "Mon frère cherche un magasin."
+      ],
+      "work = travailler, walk = marcher. Attention à ne pas les confondre !"
+     ],
+     [
+      "fr-en",
+      "Nous habitons à Paris.",
+      "We live in Paris.",
+      [
+       "We lives in Paris.",
+       "We live at Paris.",
+       "We are live in Paris."
+      ],
+      "Villes et pays → in : in Paris, in France."
+     ],
+     [
+      "fr-en",
+      "Il aime la pizza.",
+      "He likes pizza.",
+      [
+       "He like pizza.",
+       "He is like pizza.",
+       "He likes the pizza."
+      ],
+      "Pour parler de quelque chose en général, pas de « the » : I like pizza, I love music."
+     ],
+     [
+      "en-fr",
+      "She speaks English very well.",
+      "Elle parle très bien anglais.",
+      [
+       "Elle parle un peu anglais.",
+       "Elle apprend très bien l'anglais.",
+       "Il parle très bien anglais."
+      ],
+      "speak = parler, learn = apprendre."
+     ],
+     [
+      "fr-en",
+      "Le jeu commence à 8 heures.",
+      "The game starts at 8 o'clock.",
+      [
+       "The game start at 8 o'clock.",
+       "The game starts in 8 o'clock.",
+       "The game is start at 8 o'clock."
+      ],
+      "« the game » = it → starts avec un -s. Les heures → at."
+     ],
+     [
+      "fr-en",
+      "Mes amis jouent en ligne.",
+      "My friends play online.",
+      [
+       "My friends plays online.",
+       "My friend plays online.",
+       "My friends are play online."
+      ],
+      "Pluriel (they) → pas de -s au verbe."
+     ],
+     [
+      "en-fr",
+      "He goes to school by bus.",
+      "Il va à l'école en bus.",
+      [
+       "Il est allé à l'école en bus.",
+       "Il va à l'école à pied.",
+       "Il quitte l'école en bus."
+      ],
+      "by bus / by car = en bus / en voiture. on foot = à pied."
+     ]
+    ],
+    "regle": {
+     "texte": "Pour les habitudes et les vérités générales : le verbe tout simple.\n**Règle d'or : he / she / it → on ajoute -s** (he play**s**).\nAprès ch, sh, o, x → **-es** : watch**es**, go**es**.",
+     "exemples": [
+      [
+       "I play video games.",
+       "Je joue aux jeux vidéo."
+      ],
+      [
+       "He plays football.",
+       "Il joue au foot."
+      ],
+      [
+       "She watches series.",
+       "Elle regarde des séries."
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "Do / Does : questions et négations",
+    "phrases": [
+     [
+      "fr-en",
+      "Tu aimes le café ?",
+      "Do you like coffee?",
+      [
+       "Are you like coffee?",
+       "Does you like coffee?",
+       "You like coffee do?"
+      ],
+      "Question avec un verbe d'action → Do you…? « Are » sert seulement avec « être »."
+     ],
+     [
+      "fr-en",
+      "Est-ce qu'elle joue à Minecraft ?",
+      "Does she play Minecraft?",
+      [
+       "Does she plays Minecraft?",
+       "Do she play Minecraft?",
+       "Is she play Minecraft?"
+      ],
+      "Does + verbe SANS -s : le -s est déjà dans « does »."
+     ],
+     [
+      "fr-en",
+      "Je ne comprends pas.",
+      "I don't understand.",
+      [
+       "I not understand.",
+       "I doesn't understand.",
+       "I am not understand."
+      ],
+      "Négation : don't + verbe (doesn't avec he / she / it)."
+     ],
+     [
+      "fr-en",
+      "Il ne parle pas français.",
+      "He doesn't speak French.",
+      [
+       "He don't speak French.",
+       "He doesn't speaks French.",
+       "He isn't speak French."
+      ],
+      "He doesn't + verbe sans -s."
+     ],
+     [
+      "en-fr",
+      "What do you want?",
+      "Qu'est-ce que tu veux ?",
+      [
+       "Qu'est-ce que tu fais ?",
+       "Où veux-tu aller ?",
+       "Qu'est-ce qu'il veut ?"
+      ],
+      "want = vouloir."
+     ],
+     [
+      "fr-en",
+      "Que fais-tu le week-end ?",
+      "What do you do at the weekend?",
+      [
+       "What are you do at the weekend?",
+       "What does you do at the weekend?",
+       "What you do at the weekend?"
+      ],
+      "Le premier « do » sert à poser la question, le deuxième veut dire « faire »."
+     ],
+     [
+      "fr-en",
+      "Nous ne regardons pas la télé.",
+      "We don't watch TV.",
+      [
+       "We doesn't watch TV.",
+       "We aren't watch TV.",
+       "We not watch TV."
+      ],
+      "we → don't."
+     ],
+     [
+      "en-fr",
+      "Does your dad work on Sundays?",
+      "Est-ce que ton père travaille le dimanche ?",
+      [
+       "Est-ce que ton père a travaillé dimanche ?",
+       "Ton père ne travaille pas le dimanche.",
+       "Est-ce que ta mère travaille le dimanche ?"
+      ],
+      "on Sundays = le dimanche (tous les dimanches)."
+     ],
+     [
+      "fr-en",
+      "Est-ce que tu es fatigué ?",
+      "Are you tired?",
+      [
+       "Do you tired?",
+       "Do you are tired?",
+       "Does you tired?"
+      ],
+      "Ici c'est le verbe « être » → Are you…? Compare avec « Do you like…? »."
+     ],
+     [
+      "fr-en",
+      "Combien ça coûte ?",
+      "How much does it cost?",
+      [
+       "How much it costs?",
+       "How much do it cost?",
+       "How many does it cost?"
+      ],
+      "how much = combien (argent, quantité non comptable). how many = combien (objets qu'on compte)."
+     ]
+    ],
+    "regle": {
+     "texte": "Avec un verbe d'action, les questions et les négations utilisent **do** (ou **does** pour he / she / it).\nLe verbe reste alors SANS -s : **Does she play?** · **He doesn't speak.**\n⚠ Avec « être », jamais de *do* : **Are you tired?**",
+     "exemples": [
+      [
+       "Do you like coffee?",
+       "Tu aimes le café ?"
+      ],
+      [
+       "Does she play Minecraft?",
+       "Elle joue à Minecraft ?"
+      ],
+      [
+       "I don't understand.",
+       "Je ne comprends pas."
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "Jours, heures et nombres",
+    "phrases": [
+     [
+      "en-fr",
+      "See you on Wednesday!",
+      "À mercredi !",
+      [
+       "À jeudi !",
+       "À mardi !",
+       "À demain !"
+      ],
+      "Monday lundi · Tuesday mardi · Wednesday mercredi · Thursday jeudi · Friday vendredi · Saturday samedi · Sunday dimanche."
+     ],
+     [
+      "fr-en",
+      "Je travaille le jeudi.",
+      "I work on Thursdays.",
+      [
+       "I work on Tuesdays.",
+       "I work in Thursday.",
+       "I work on Wednesdays."
+      ],
+      "Thursday = jeudi, Tuesday = mardi. Les jours prennent une majuscule en anglais."
+     ],
+     [
+      "fr-en",
+      "Ce week-end",
+      "This weekend",
+      [
+       "Last weekend",
+       "Next week",
+       "This week"
+      ],
+      "this = ce / cette, last = dernier, next = prochain."
+     ],
+     [
+      "fr-en",
+      "Il est quinze heures.",
+      "It's three p.m.",
+      [
+       "It's five p.m.",
+       "It's fifteen o'clock.",
+       "It's three a.m."
+      ],
+      "Les anglophones comptent sur 12 h : a.m. = matin, p.m. = après-midi / soir."
+     ],
+     [
+      "en-fr",
+      "I have thirteen lives left.",
+      "Il me reste treize vies.",
+      [
+       "Il me reste trente vies.",
+       "Il me reste trois vies.",
+       "J'ai perdu treize vies."
+      ],
+      "thirteen = 13, thirty = 30. Le -teen (13 à 19) est accentué : thir-TEEN."
+     ],
+     [
+      "fr-en",
+      "Mon anniversaire est en août.",
+      "My birthday is in August.",
+      [
+       "My birthday is on August.",
+       "My birthday is in April.",
+       "My birthday are in August."
+      ],
+      "Les mois → in : in August. Une date précise → on : on the 5th of August."
+     ],
+     [
+      "fr-en",
+      "La voiture blanche",
+      "The white car",
+      [
+       "The car white",
+       "The black car",
+       "The wheat car"
+      ],
+      "white = blanc, black = noir. L'adjectif avant le nom !"
+     ],
+     [
+      "en-fr",
+      "Yesterday, today, tomorrow",
+      "Hier, aujourd'hui, demain",
+      [
+       "Demain, aujourd'hui, hier",
+       "Avant-hier, aujourd'hui, demain",
+       "Hier, ce soir, demain"
+      ],
+      "yesterday = hier, tomorrow = demain, tonight = ce soir."
+     ],
+     [
+      "fr-en",
+      "Le premier niveau",
+      "The first level",
+      [
+       "The one level",
+       "The third level",
+       "The fast level"
+      ],
+      "first = 1er, second = 2e, third = 3e. fast = rapide."
+     ],
+     [
+      "en-fr",
+      "I get up at seven every morning.",
+      "Je me lève à sept heures tous les matins.",
+      [
+       "Je me couche à sept heures tous les soirs.",
+       "Je me lève à onze heures tous les matins.",
+       "Je me suis levé à sept heures ce matin."
+      ],
+      "get up = se lever, go to bed = se coucher."
+     ]
+    ],
+    "regle": {
+     "texte": "Les jours prennent une majuscule et **on** : on Monday. Les mois → **in** : in August. Les heures → **at** : at 3 p.m.\n**a.m.** = matin, **p.m.** = après-midi / soir.\n13 à 19 finissent en **-teen** (thirteen), 30, 40… en **-ty** (thirty).",
+     "exemples": [
+      [
+       "Monday · Tuesday · Wednesday · Thursday",
+       "lundi · mardi · mercredi · jeudi"
+      ],
+      [
+       "Friday · Saturday · Sunday",
+       "vendredi · samedi · dimanche"
+      ],
+      [
+       "See you at 6 p.m.",
+       "Rendez-vous à 18 h."
+      ]
+     ]
+    }
+   }
+  ],
+  "niveau": "A1"
+ },
+ {
+  "monde": "Monde 2 — Je me débrouille",
+  "niveaux": [
+   {
+    "titre": "En ce moment : I am playing",
+    "phrases": [
+     [
+      "fr-en",
+      "Je suis en train de jouer.",
+      "I'm playing.",
+      [
+       "I play now.",
+       "I'm play.",
+       "I playing."
+      ],
+      "Action en cours = am / is / are + verbe-ING."
+     ],
+     [
+      "fr-en",
+      "Qu'est-ce que tu fais ? (là, maintenant)",
+      "What are you doing?",
+      [
+       "What do you doing?",
+       "What are you do?",
+       "What you are doing?"
+      ],
+      "Question au présent en -ING : Are you … -ing ?"
+     ],
+     [
+      "en-fr",
+      "She's watching a film right now.",
+      "Elle regarde un film en ce moment.",
+      [
+       "Elle a regardé un film.",
+       "Elle regarde des films tous les jours.",
+       "Elle va regarder un film."
+      ],
+      "right now = en ce moment, maintenant."
+     ],
+     [
+      "fr-en",
+      "Il ne m'écoute pas !",
+      "He isn't listening to me!",
+      [
+       "He doesn't listening to me!",
+       "He isn't listen to me!",
+       "He not listening me!"
+      ],
+      "listen TO someone : on écoute « à » quelqu'un en anglais."
+     ],
+     [
+      "fr-en",
+      "Ils arrivent ! (maintenant)",
+      "They're coming!",
+      [
+       "They're come!",
+       "There coming!",
+       "They coming!"
+      ],
+      "they're = they are. there = là, their = leur."
+     ],
+     [
+      "fr-en",
+      "Il pleut.",
+      "It's raining.",
+      [
+       "It's rain.",
+       "It raining.",
+       "He's raining."
+      ],
+      "La météo utilise toujours « it » : it's raining, it's snowing."
+     ],
+     [
+      "en-fr",
+      "We're waiting for you.",
+      "On t'attend.",
+      [
+       "On t'a attendu.",
+       "On t'appelle.",
+       "On te cherche."
+      ],
+      "wait for someone = attendre quelqu'un."
+     ],
+     [
+      "fr-en",
+      "Tu joues en ce moment ?",
+      "Are you playing at the moment?",
+      [
+       "Do you playing at the moment?",
+       "Are you play at the moment?",
+       "Is you playing at the moment?"
+      ],
+      "at the moment = en ce moment."
+     ],
+     [
+      "fr-en",
+      "Je cherche mes clés.",
+      "I'm looking for my keys.",
+      [
+       "I'm looking my keys.",
+       "I'm watching for my keys.",
+       "I look for my keys now."
+      ],
+      "look for = chercher. look at = regarder."
+     ],
+     [
+      "en-fr",
+      "Hurry up, the game is starting!",
+      "Dépêche-toi, la partie commence !",
+      [
+       "Doucement, la partie est finie !",
+       "Dépêche-toi, le jeu est cassé !",
+       "Dépêche-toi, la partie a commencé hier !"
+      ],
+      "hurry up = dépêche-toi."
+     ]
+    ],
+    "regle": {
+     "texte": "Pour une action **en train de se passer** maintenant : **am / is / are + verbe-ING**.\nQuestion : on inverse → **Are you playing?** Négation : **I'm not playing.**",
+     "exemples": [
+      [
+       "I'm playing.",
+       "Je suis en train de jouer."
+      ],
+      [
+       "What are you doing?",
+       "Qu'est-ce que tu fais ?"
+      ],
+      [
+       "It's raining.",
+       "Il pleut."
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "Il y a / Pouvoir : there is, can",
+    "phrases": [
+     [
+      "fr-en",
+      "Il y a un problème.",
+      "There is a problem.",
+      [
+       "It has a problem.",
+       "There are a problem.",
+       "Have a problem."
+      ],
+      "Il y a (un seul) = there is."
+     ],
+     [
+      "fr-en",
+      "Il y a beaucoup de joueurs en ligne.",
+      "There are a lot of players online.",
+      [
+       "There is a lot of players online.",
+       "It has a lot of players online.",
+       "They are a lot of players online."
+      ],
+      "Il y a (plusieurs) = there are."
+     ],
+     [
+      "en-fr",
+      "Is there a shop near here?",
+      "Y a-t-il un magasin près d'ici ?",
+      [
+       "Est-ce un magasin près d'ici ?",
+       "Il y a un magasin loin d'ici.",
+       "Où est le magasin ?"
+      ],
+      "Question : Is there…? / Are there…? near = près."
+     ],
+     [
+      "fr-en",
+      "Je sais nager.",
+      "I can swim.",
+      [
+       "I know swim.",
+       "I can to swim.",
+       "I can swimming."
+      ],
+      "can + verbe tout simple (jamais « to », jamais -ing)."
+     ],
+     [
+      "fr-en",
+      "Peux-tu m'aider ?",
+      "Can you help me?",
+      [
+       "Do you can help me?",
+       "Can you to help me?",
+       "You can help me do?"
+      ],
+      "Question : Can you…? (pas de « do » avec can)."
+     ],
+     [
+      "fr-en",
+      "Elle ne peut pas venir.",
+      "She can't come.",
+      [
+       "She doesn't can come.",
+       "She can't to come.",
+       "She cans not come."
+      ],
+      "can ne prend jamais de -s : she can, she can't."
+     ],
+     [
+      "en-fr",
+      "There isn't any milk in the fridge.",
+      "Il n'y a pas de lait dans le frigo.",
+      [
+       "Il y a du lait dans le frigo.",
+       "Il n'y a plus de place dans le frigo.",
+       "Le lait n'est pas froid."
+      ],
+      "There isn't any… = il n'y a pas de…"
+     ],
+     [
+      "fr-en",
+      "Je peux jouer avec vous ?",
+      "Can I play with you?",
+      [
+       "Can I playing with you?",
+       "I can play with you do?",
+       "Do I can play with you?"
+      ],
+      "Pour demander la permission : Can I…?"
+     ],
+     [
+      "en-fr",
+      "I can't hear you.",
+      "Je ne t'entends pas.",
+      [
+       "Je ne te vois pas.",
+       "Je ne peux pas t'aider.",
+       "Je ne t'écoute pas."
+      ],
+      "hear = entendre, listen = écouter, see = voir."
+     ],
+     [
+      "fr-en",
+      "Il n'y a pas de sauvegarde.",
+      "There is no save.",
+      [
+       "There aren't save.",
+       "It hasn't save.",
+       "There no is save."
+      ],
+      "there is no… = il n'y a pas de…"
+     ]
+    ],
+    "regle": {
+     "texte": "**Il y a** = **there is** (un seul) / **there are** (plusieurs).\n**can** = pouvoir / savoir. Il est suivi du verbe tout simple, ne prend jamais de -s et n'utilise jamais *do* : she **can** swim · **Can** you help me?",
+     "exemples": [
+      [
+       "There is a problem.",
+       "Il y a un problème."
+      ],
+      [
+       "There are many players.",
+       "Il y a beaucoup de joueurs."
+      ],
+      [
+       "Can you help me?",
+       "Peux-tu m'aider ?"
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "À qui ? my, your, his, her",
+    "phrases": [
+     [
+      "fr-en",
+      "C'est mon jeu préféré.",
+      "It's my favourite game.",
+      [
+       "It's me favourite game.",
+       "It's mine favourite game.",
+       "It's my game favourite."
+      ],
+      "my = mon / ma / mes. favourite = préféré."
+     ],
+     [
+      "fr-en",
+      "Son frère (à elle) est gentil.",
+      "Her brother is nice.",
+      [
+       "His brother is nice.",
+       "She brother is nice.",
+       "Hers brother is nice."
+      ],
+      "Le possessif dépend du propriétaire : à elle → her, à lui → his."
+     ],
+     [
+      "fr-en",
+      "Son ordinateur (à lui) est cassé.",
+      "His computer is broken.",
+      [
+       "Her computer is broken.",
+       "He computer is broken.",
+       "His computer is broke."
+      ],
+      "à lui → his. broken = cassé."
+     ],
+     [
+      "en-fr",
+      "Is this your phone?",
+      "C'est ton téléphone ?",
+      [
+       "C'est mon téléphone ?",
+       "Tu as un téléphone ?",
+       "Où est ton téléphone ?"
+      ],
+      "your = ton / ta / tes / votre."
+     ],
+     [
+      "fr-en",
+      "Leur maison est grande.",
+      "Their house is big.",
+      [
+       "There house is big.",
+       "They house is big.",
+       "Their house are big."
+      ],
+      "their = leur. there = là. Ils se prononcent pareil !"
+     ],
+     [
+      "fr-en",
+      "Le chien de Paul",
+      "Paul's dog",
+      [
+       "The dog of Paul's",
+       "Paul dog",
+       "Pauls' dog"
+      ],
+      "« de quelqu'un » → nom + 's : Paul's dog, my mum's car."
+     ],
+     [
+      "en-fr",
+      "Our team is winning.",
+      "Notre équipe gagne.",
+      [
+       "Votre équipe gagne.",
+       "Notre équipe a perdu.",
+       "Leur équipe gagne."
+      ],
+      "our = notre / nos. win = gagner, lose = perdre."
+     ],
+     [
+      "fr-en",
+      "C'est à moi !",
+      "It's mine!",
+      [
+       "It's my!",
+       "It's me!",
+       "It's to me!"
+      ],
+      "à moi = mine, à toi = yours, à lui = his, à elle = hers."
+     ],
+     [
+      "fr-en",
+      "Comment tu t'appelles ?",
+      "What's your name?",
+      [
+       "How do you call?",
+       "What's you name?",
+       "How are you called you?"
+      ],
+      "Pour le nom, on demande « quel est ton nom » : What's your name?"
+     ],
+     [
+      "en-fr",
+      "My sister's friends are funny.",
+      "Les amis de ma sœur sont drôles.",
+      [
+       "L'ami de ma sœur est drôle.",
+       "Mes sœurs et mes amis sont drôles.",
+       "Les amis de mon frère sont drôles."
+      ],
+      "sister's friends = les amis de ma sœur. funny = drôle."
+     ]
+    ],
+    "regle": {
+     "texte": "my (mon) · your (ton) · **his (à lui)** · **her (à elle)** · our (notre) · their (leur).\nLe possessif dépend du **propriétaire**, pas de l'objet.\n« Le chien de Paul » = **Paul's dog**. « C'est à moi » = **It's mine**.",
+     "exemples": [
+      [
+       "Her brother is nice.",
+       "Son frère (à elle) est gentil."
+      ],
+      [
+       "His computer is broken.",
+       "Son ordinateur (à lui) est cassé."
+      ],
+      [
+       "It's mine!",
+       "C'est à moi !"
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "Où ? in, on, at, under",
+    "phrases": [
+     [
+      "fr-en",
+      "Le chat est sous la table.",
+      "The cat is under the table.",
+      [
+       "The cat is on the table.",
+       "The cat is in the table.",
+       "The cat is above the table."
+      ],
+      "under = sous, on = sur, in = dans."
+     ],
+     [
+      "fr-en",
+      "Je suis à la maison.",
+      "I'm at home.",
+      [
+       "I'm in the home.",
+       "I'm at the home.",
+       "I'm to home."
+      ],
+      "at home : sans « the »."
+     ],
+     [
+      "fr-en",
+      "Les clés sont sur le bureau.",
+      "The keys are on the desk.",
+      [
+       "The keys are at the desk.",
+       "The keys is on the desk.",
+       "The keys are under the desk."
+      ],
+      "on = posé sur. Pluriel → are."
+     ],
+     [
+      "en-fr",
+      "I was born in March.",
+      "Je suis né en mars.",
+      [
+       "Je suis né le 3.",
+       "Je suis né à Marseille.",
+       "Je suis né en mai."
+      ],
+      "March = mars, May = mai. I was born = je suis né."
+     ],
+     [
+      "fr-en",
+      "Rendez-vous à 18 h.",
+      "See you at 6 p.m.",
+      [
+       "See you in 6 p.m.",
+       "See you on 6 p.m.",
+       "See you at 6 a.m."
+      ],
+      "Une heure précise → at."
+     ],
+     [
+      "fr-en",
+      "Je vais au cinéma.",
+      "I'm going to the cinema.",
+      [
+       "I'm going at the cinema.",
+       "I'm going in cinema.",
+       "I go to cinema now."
+      ],
+      "Aller vers un lieu → to."
+     ],
+     [
+      "en-fr",
+      "The bank is next to the station.",
+      "La banque est à côté de la gare.",
+      [
+       "La banque est en face de la gare.",
+       "La banque est loin de la gare.",
+       "La banque est dans la gare."
+      ],
+      "next to = à côté de, opposite = en face de."
+     ],
+     [
+      "fr-en",
+      "Je joue sur mon téléphone.",
+      "I play on my phone.",
+      [
+       "I play in my phone.",
+       "I play at my phone.",
+       "I play with my phone on."
+      ],
+      "Les écrans → on : on my phone, on TV, on the internet."
+     ],
+     [
+      "fr-en",
+      "Il habite en Angleterre.",
+      "He lives in England.",
+      [
+       "He lives at England.",
+       "He lives on England.",
+       "He lives to England."
+      ],
+      "Pays et villes → in."
+     ],
+     [
+      "en-fr",
+      "Turn left at the end of the street.",
+      "Tourne à gauche au bout de la rue.",
+      [
+       "Tourne à droite au bout de la rue.",
+       "Tourne à gauche au début de la rue.",
+       "Continue tout droit jusqu'au bout de la rue."
+      ],
+      "left = gauche, right = droite, straight on = tout droit."
+     ]
+    ],
+    "regle": {
+     "texte": "**in** = dans · pays · villes · mois\n**on** = sur · jours · écrans (on my phone)\n**at** = un point précis · heures · at home\n**under** = sous · **next to** = à côté de · **to** = vers (go to).",
+     "exemples": [
+      [
+       "The cat is under the table.",
+       "Le chat est sous la table."
+      ],
+      [
+       "I'm at home.",
+       "Je suis à la maison."
+      ],
+      [
+       "He lives in England.",
+       "Il habite en Angleterre."
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "L'anglais du gaming",
+    "phrases": [
+     [
+      "en-fr",
+      "Game over! Try again?",
+      "Partie terminée ! Réessayer ?",
+      [
+       "Partie gagnée ! Continuer ?",
+       "Fin du jeu ! Quitter ?",
+       "Pause ! Reprendre ?"
+      ],
+      "try again = réessayer."
+     ],
+     [
+      "en-fr",
+      "You need more health.",
+      "Tu as besoin de plus de vie.",
+      [
+       "Tu as besoin de plus d'argent.",
+       "Tu as besoin de plus de temps.",
+       "Tu as besoin d'aide."
+      ],
+      "health = la santé / la vie (dans les jeux). need = avoir besoin de."
+     ],
+     [
+      "fr-en",
+      "Mon équipe a besoin d'aide.",
+      "My team needs help.",
+      [
+       "My team need help.",
+       "My team needs helps.",
+       "My team is need help."
+      ],
+      "my team = it → needs avec -s."
+     ],
+     [
+      "en-fr",
+      "Level up! You unlocked a new weapon.",
+      "Niveau supérieur ! Tu as débloqué une nouvelle arme.",
+      [
+       "Niveau terminé ! Tu as perdu ton arme.",
+       "Niveau supérieur ! Tu as acheté une nouvelle armure.",
+       "Recommence le niveau pour trouver une arme."
+      ],
+      "unlock = débloquer, weapon = arme, armor = armure."
+     ],
+     [
+      "fr-en",
+      "Attends-moi !",
+      "Wait for me!",
+      [
+       "Wait me!",
+       "Attend me!",
+       "Wait to me!"
+      ],
+      "wait FOR someone. « attend » en anglais veut dire « assister à » (faux ami)."
+     ],
+     [
+      "en-fr",
+      "Don't forget to save your progress.",
+      "N'oublie pas de sauvegarder ta progression.",
+      [
+       "N'oublie pas de sauver tes amis.",
+       "Pense à vérifier ta progression.",
+       "Ne perds pas ta progression."
+      ],
+      "forget = oublier, save = sauvegarder."
+     ],
+     [
+      "fr-en",
+      "Bien joué !",
+      "Well played!",
+      [
+       "Nice played!",
+       "Well game!",
+       "Good joke!"
+      ],
+      "well = bien (adverbe), good = bon (adjectif)."
+     ],
+     [
+      "en-fr",
+      "The enemy is behind you!",
+      "L'ennemi est derrière toi !",
+      [
+       "L'ennemi est devant toi !",
+       "Ton ami est derrière toi !",
+       "L'ennemi est à côté de toi !"
+      ],
+      "behind = derrière, in front of = devant."
+     ],
+     [
+      "fr-en",
+      "Je suis mort, ressuscite-moi !",
+      "I'm dead, revive me!",
+      [
+       "I'm died, revive me!",
+       "I'm death, revive me!",
+       "I dead, revive me!"
+      ],
+      "dead = mort (adjectif), death = la mort, died = est mort (verbe au passé)."
+     ],
+     [
+      "en-fr",
+      "Join the server to play with us.",
+      "Rejoins le serveur pour jouer avec nous.",
+      [
+       "Quitte le serveur pour jouer avec nous.",
+       "Crée un serveur pour jouer seul.",
+       "Rejoins l'équipe pour regarder."
+      ],
+      "join = rejoindre, leave = quitter."
+     ]
+    ],
+    "regle": {
+     "texte": "Beaucoup de mots de jeux viennent de l'anglais ! Retiens surtout les verbes : **join** (rejoindre), **wait for** (attendre), **save** (sauvegarder), **unlock** (débloquer).\n⚠ Faux ami : **attend** = assister à, pas « attendre ».",
+     "exemples": [
+      [
+       "Wait for me!",
+       "Attends-moi !"
+      ],
+      [
+       "Well played!",
+       "Bien joué !"
+      ],
+      [
+       "Game over!",
+       "Partie terminée !"
+      ]
+     ]
+    }
+   }
+  ],
+  "niveau": "A1"
+ },
+ {
+  "monde": "Monde 3 — Raconter",
+  "niveaux": [
+   {
+    "titre": "Le passé : played, watched",
+    "phrases": [
+     [
+      "fr-en",
+      "J'ai joué hier soir.",
+      "I played last night.",
+      [
+       "I play last night.",
+       "I have play last night.",
+       "I playd last night."
+      ],
+      "Action finie à un moment passé → verbe + -ed. last night = hier soir."
+     ],
+     [
+      "fr-en",
+      "Nous avons regardé un film.",
+      "We watched a film.",
+      [
+       "We have watch a film.",
+       "We watched an film.",
+       "We did watched a film."
+      ],
+      "Le passé en -ed est le même pour toutes les personnes."
+     ],
+     [
+      "en-fr",
+      "She called me yesterday.",
+      "Elle m'a appelé hier.",
+      [
+       "Elle m'appelle demain.",
+       "Elle m'appelle tous les jours.",
+       "Je l'ai appelée hier."
+      ],
+      "-ed = passé. yesterday = hier."
+     ],
+     [
+      "fr-en",
+      "Il a travaillé toute la journée.",
+      "He worked all day.",
+      [
+       "He work all day.",
+       "He workd all day.",
+       "He working all day."
+      ],
+      "all day = toute la journée."
+     ],
+     [
+      "fr-en",
+      "Ils ont habité à Londres.",
+      "They lived in London.",
+      [
+       "They live in London before.",
+       "They lived at London.",
+       "They living in London."
+      ],
+      "Verbe finissant par -e → on ajoute seulement -d : live → lived."
+     ],
+     [
+      "en-fr",
+      "I finished the game in two days.",
+      "J'ai fini le jeu en deux jours.",
+      [
+       "Je finirai le jeu dans deux jours.",
+       "J'ai commencé le jeu il y a deux jours.",
+       "Je finis le jeu tous les deux jours."
+      ],
+      "finish = finir, start = commencer."
+     ],
+     [
+      "fr-en",
+      "La partie a commencé à 9 h.",
+      "The game started at 9.",
+      [
+       "The game start at 9.",
+       "The game is started at 9.",
+       "The game starts yesterday at 9."
+      ],
+      "start → started."
+     ],
+     [
+      "fr-en",
+      "J'ai essayé trois fois.",
+      "I tried three times.",
+      [
+       "I tryed three times.",
+       "I try three times yesterday.",
+       "I tried three time."
+      ],
+      "Consonne + y → ied : try → tried, study → studied."
+     ],
+     [
+      "en-fr",
+      "We waited for an hour.",
+      "Nous avons attendu une heure.",
+      [
+       "Nous attendons depuis une heure.",
+       "Nous attendrons une heure.",
+       "Nous avons marché une heure."
+      ],
+      "waited = passé de wait."
+     ],
+     [
+      "fr-en",
+      "Il a arrêté de fumer.",
+      "He stopped smoking.",
+      [
+       "He stoped smoking.",
+       "He stop smoking.",
+       "He stopped to smoke."
+      ],
+      "Voyelle courte + consonne → on double : stop → stopped. (« stopped to smoke » = il s'est arrêté POUR fumer !)"
+     ]
+    ],
+    "regle": {
+     "texte": "Pour une action **terminée** dans le passé (hier, la semaine dernière…) : **verbe + -ed**, pareil pour toutes les personnes.\nlive → live**d** · try → tr**ied** · stop → sto**pped**.",
+     "exemples": [
+      [
+       "I played last night.",
+       "J'ai joué hier soir."
+      ],
+      [
+       "She called me.",
+       "Elle m'a appelé."
+      ],
+      [
+       "I tried three times.",
+       "J'ai essayé trois fois."
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "Le passé : went, saw, ate…",
+    "phrases": [
+     [
+      "fr-en",
+      "Hier, je suis allé au cinéma.",
+      "Yesterday, I went to the cinema.",
+      [
+       "Yesterday, I go to the cinema.",
+       "Yesterday, I goed to the cinema.",
+       "Yesterday, I was go to the cinema."
+      ],
+      "go est irrégulier : go → went. À apprendre par cœur !"
+     ],
+     [
+      "fr-en",
+      "J'ai vu un super film.",
+      "I saw a great film.",
+      [
+       "I sawed a great film.",
+       "I seen a great film.",
+       "I have see a great film."
+      ],
+      "see → saw."
+     ],
+     [
+      "fr-en",
+      "Elle a mangé une pizza.",
+      "She ate a pizza.",
+      [
+       "She eated a pizza.",
+       "She eat a pizza.",
+       "She eaten a pizza."
+      ],
+      "eat → ate."
+     ],
+     [
+      "en-fr",
+      "I bought a new game.",
+      "J'ai acheté un nouveau jeu.",
+      [
+       "J'ai apporté un nouveau jeu.",
+       "J'achète un nouveau jeu.",
+       "J'ai vendu un nouveau jeu."
+      ],
+      "buy → bought (acheter). bring → brought (apporter)."
+     ],
+     [
+      "fr-en",
+      "Il m'a dit bonjour.",
+      "He said hello to me.",
+      [
+       "He said me hello.",
+       "He sayed hello to me.",
+       "He told hello to me."
+      ],
+      "say → said. On dit « say something TO someone »."
+     ],
+     [
+      "fr-en",
+      "Nous avons eu de la chance.",
+      "We were lucky.",
+      [
+       "We was lucky.",
+       "We are lucky yesterday.",
+       "We have lucky."
+      ],
+      "Passé de « be » : I / he / she was — we / you / they were. lucky = chanceux."
+     ],
+     [
+      "en-fr",
+      "They came home late.",
+      "Ils sont rentrés tard.",
+      [
+       "Ils viennent tard.",
+       "Ils sont rentrés tôt.",
+       "Ils viendront tard."
+      ],
+      "come → came. late = tard, early = tôt."
+     ],
+     [
+      "fr-en",
+      "J'ai perdu mes clés.",
+      "I lost my keys.",
+      [
+       "I losed my keys.",
+       "I lose my keys yesterday.",
+       "I lost my key's."
+      ],
+      "lose → lost."
+     ],
+     [
+      "fr-en",
+      "Il a fait ses devoirs.",
+      "He did his homework.",
+      [
+       "He made his homework.",
+       "He doed his homework.",
+       "He did her homework."
+      ],
+      "do → did. On « do » ses devoirs (pas make)."
+     ],
+     [
+      "en-fr",
+      "I got a message from my friend.",
+      "J'ai reçu un message de mon ami.",
+      [
+       "J'ai envoyé un message à mon ami.",
+       "J'ai écrit un message à mon ami.",
+       "Je reçois un message de mon ami."
+      ],
+      "get → got (recevoir, obtenir)."
+     ]
+    ],
+    "regle": {
+     "texte": "Les verbes les plus courants sont **irréguliers** : il faut les apprendre par cœur.\ngo → **went** · see → **saw** · eat → **ate** · buy → **bought** · say → **said** · do → **did** · get → **got** · come → **came** · lose → **lost** · be → **was / were**.",
+     "exemples": [
+      [
+       "I went to the cinema.",
+       "Je suis allé au cinéma."
+      ],
+      [
+       "I saw a great film.",
+       "J'ai vu un super film."
+      ],
+      [
+       "We were lucky.",
+       "On a eu de la chance."
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "Le passé : did you…? I didn't…",
+    "phrases": [
+     [
+      "fr-en",
+      "Tu as aimé le film ?",
+      "Did you like the film?",
+      [
+       "Did you liked the film?",
+       "Do you liked the film?",
+       "Were you like the film?"
+      ],
+      "Question au passé : Did + verbe tout simple (le passé est déjà dans « did »)."
+     ],
+     [
+      "fr-en",
+      "Je ne suis pas allé à l'école.",
+      "I didn't go to school.",
+      [
+       "I didn't went to school.",
+       "I don't went to school.",
+       "I wasn't go to school."
+      ],
+      "Négation au passé : didn't + verbe tout simple."
+     ],
+     [
+      "en-fr",
+      "Where did you go last summer?",
+      "Où es-tu allé l'été dernier ?",
+      [
+       "Où vas-tu l'été prochain ?",
+       "Quand es-tu allé en vacances ?",
+       "Avec qui es-tu parti l'été dernier ?"
+      ],
+      "last summer = l'été dernier."
+     ],
+     [
+      "fr-en",
+      "Elle n'a pas compris.",
+      "She didn't understand.",
+      [
+       "She didn't understood.",
+       "She doesn't understood.",
+       "She not understood."
+      ],
+      "didn't + verbe tout simple, même pour she."
+     ],
+     [
+      "fr-en",
+      "Qu'est-ce que tu as fait ce week-end ?",
+      "What did you do this weekend?",
+      [
+       "What did you did this weekend?",
+       "What you did this weekend?",
+       "What do you did this weekend?"
+      ],
+      "What did you do…? = Qu'est-ce que tu as fait… ?"
+     ],
+     [
+      "fr-en",
+      "Tu étais où ?",
+      "Where were you?",
+      [
+       "Where did you be?",
+       "Where was you?",
+       "Where you were?"
+      ],
+      "Avec « be », pas de « did » : Where were you? / Was he…?"
+     ],
+     [
+      "en-fr",
+      "We didn't win the match.",
+      "Nous n'avons pas gagné le match.",
+      [
+       "Nous avons gagné le match.",
+       "Nous ne gagnerons pas le match.",
+       "Nous n'avons pas joué le match."
+      ],
+      "didn't = did not → négation au passé."
+     ],
+     [
+      "fr-en",
+      "Il n'était pas content.",
+      "He wasn't happy.",
+      [
+       "He didn't happy.",
+       "He weren't happy.",
+       "He didn't was happy."
+      ],
+      "was not = wasn't."
+     ],
+     [
+      "fr-en",
+      "Est-ce qu'ils ont gagné ?",
+      "Did they win?",
+      [
+       "Did they won?",
+       "Do they won?",
+       "Have they win?"
+      ],
+      "Did + verbe simple : win (pas won)."
+     ],
+     [
+      "en-fr",
+      "Why didn't you call me?",
+      "Pourquoi tu ne m'as pas appelé ?",
+      [
+       "Pourquoi tu m'as appelé ?",
+       "Pourquoi tu ne m'appelles pas ?",
+       "Quand vas-tu m'appeler ?"
+      ],
+      "why = pourquoi."
+     ]
+    ],
+    "regle": {
+     "texte": "Questions et négations au passé : **did / didn't + verbe tout simple** (le passé est déjà dans *did*).\n**Did you like** it? · I **didn't go**.\n⚠ Avec « être » : **Were you…?** · **He wasn't…**",
+     "exemples": [
+      [
+       "Did you like the film?",
+       "Tu as aimé le film ?"
+      ],
+      [
+       "I didn't go to school.",
+       "Je ne suis pas allé à l'école."
+      ],
+      [
+       "Where were you?",
+       "Tu étais où ?"
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "Le futur : going to, will",
+    "phrases": [
+     [
+      "fr-en",
+      "Je vais jouer ce soir.",
+      "I'm going to play tonight.",
+      [
+       "I'm going play tonight.",
+       "I go to play tonight.",
+       "I'm going to playing tonight."
+      ],
+      "Projet prévu : am / is / are going to + verbe."
+     ],
+     [
+      "fr-en",
+      "Nous n'allons pas venir.",
+      "We aren't going to come.",
+      [
+       "We don't going to come.",
+       "We aren't going come.",
+       "We won't to come."
+      ],
+      "Négation : aren't going to + verbe."
+     ],
+     [
+      "en-fr",
+      "It will be sunny tomorrow.",
+      "Il fera beau demain.",
+      [
+       "Il faisait beau hier.",
+       "Il fait beau aujourd'hui.",
+       "Il pleuvra demain."
+      ],
+      "will + verbe = futur. sunny = ensoleillé."
+     ],
+     [
+      "fr-en",
+      "Je t'aiderai.",
+      "I'll help you.",
+      [
+       "I'll helping you.",
+       "I will to help you.",
+       "I'm help you."
+      ],
+      "I'll = I will. will + verbe tout simple."
+     ],
+     [
+      "fr-en",
+      "Tu vas regarder le match ?",
+      "Are you going to watch the match?",
+      [
+       "Do you going to watch the match?",
+       "Are you go to watch the match?",
+       "Will you going to watch the match?"
+      ],
+      "Question : Are you going to…?"
+     ],
+     [
+      "en-fr",
+      "I won't tell anyone.",
+      "Je ne le dirai à personne.",
+      [
+       "Je veux le dire à tout le monde.",
+       "Je ne l'ai dit à personne.",
+       "Je ne sais pas qui le dira."
+      ],
+      "won't = will not. anyone (après une négation) = personne."
+     ],
+     [
+      "fr-en",
+      "Il va pleuvoir.",
+      "It's going to rain.",
+      [
+       "It's going to raining.",
+       "It goes to rain.",
+       "He's going to rain."
+      ],
+      "going to + verbe tout simple."
+     ],
+     [
+      "fr-en",
+      "Qu'est-ce que tu vas faire demain ?",
+      "What are you going to do tomorrow?",
+      [
+       "What do you going to do tomorrow?",
+       "What are you going to doing tomorrow?",
+       "What will you to do tomorrow?"
+      ],
+      "What are you going to do…? = Qu'est-ce que tu vas faire… ?"
+     ],
+     [
+      "en-fr",
+      "Will you be at the party?",
+      "Tu seras à la fête ?",
+      [
+       "Tu étais à la fête ?",
+       "Tu veux aller à la fête ?",
+       "Tu organises la fête ?"
+      ],
+      "Will you…? = question au futur."
+     ],
+     [
+      "fr-en",
+      "Le jeu sortira en mars.",
+      "The game will come out in March.",
+      [
+       "The game will comes out in March.",
+       "The game will come out on March.",
+       "The game come out in March next."
+      ],
+      "come out = sortir (film, jeu). Après will, jamais de -s."
+     ]
+    ],
+    "regle": {
+     "texte": "**be going to + verbe** = un projet, une intention : I'm going to play.\n**will + verbe** = une prédiction, une décision, une promesse : It will rain · I'll help you.\n**won't** = will not.",
+     "exemples": [
+      [
+       "I'm going to play tonight.",
+       "Je vais jouer ce soir."
+      ],
+      [
+       "I'll help you.",
+       "Je t'aiderai."
+      ],
+      [
+       "I won't tell anyone.",
+       "Je ne le dirai à personne."
+      ]
+     ]
+    }
+   },
+   {
+    "titre": "Comparer : bigger, the best",
+    "phrases": [
+     [
+      "fr-en",
+      "Ce jeu est plus facile que l'autre.",
+      "This game is easier than the other one.",
+      [
+       "This game is more easy than the other one.",
+       "This game is easier that the other one.",
+       "This game is easyer than the other one."
+      ],
+      "Adjectif court → -er + than. easy → easier."
+     ],
+     [
+      "fr-en",
+      "C'est le meilleur film de l'année.",
+      "It's the best film of the year.",
+      [
+       "It's the better film of the year.",
+       "It's the most good film of the year.",
+       "It's the goodest film of the year."
+      ],
+      "good → better (meilleur que) → the best (le meilleur)."
+     ],
+     [
+      "en-fr",
+      "This series is more interesting than the book.",
+      "Cette série est plus intéressante que le livre.",
+      [
+       "Cette série est moins intéressante que le livre.",
+       "Ce livre est plus intéressant que la série.",
+       "Cette série est aussi intéressante que le livre."
+      ],
+      "Adjectif long → more … than."
+     ],
+     [
+      "fr-en",
+      "Mon frère est plus grand que moi.",
+      "My brother is taller than me.",
+      [
+       "My brother is more tall than me.",
+       "My brother is taller that me.",
+       "My brother is the tallest than me."
+      ],
+      "tall → taller than. « que » = than (pas that)."
+     ],
+     [
+      "fr-en",
+      "C'est pire qu'avant.",
+      "It's worse than before.",
+      [
+       "It's badder than before.",
+       "It's more bad than before.",
+       "It's worst than before."
+      ],
+      "bad → worse (pire) → the worst (le pire)."
+     ],
+     [
+      "en-fr",
+      "She is the funniest character in the show.",
+      "C'est le personnage le plus drôle de la série.",
+      [
+       "C'est le personnage le plus triste de la série.",
+       "Elle est plus drôle que les autres acteurs.",
+       "C'est la série la plus drôle."
+      ],
+      "the + -est = le plus… : funny → the funniest."
+     ],
+     [
+      "fr-en",
+      "Ce niveau est aussi dur que le dernier.",
+      "This level is as hard as the last one.",
+      [
+       "This level is as hard than the last one.",
+       "This level is so hard as the last one.",
+       "This level is hard as the last one."
+      ],
+      "aussi … que = as … as."
+     ],
+     [
+      "fr-en",
+      "Le boss final est le plus fort.",
+      "The final boss is the strongest.",
+      [
+       "The final boss is the most strong.",
+       "The final boss is the stronger.",
+       "The final boss is the strongest of."
+      ],
+      "strong → stronger → the strongest."
+     ],
+     [
+      "en-fr",
+      "The first season was better than the second.",
+      "La première saison était meilleure que la deuxième.",
+      [
+       "La deuxième saison était meilleure que la première.",
+       "La première saison était pire que la deuxième.",
+       "La première saison sera meilleure que la deuxième."
+      ],
+      "better = meilleur(e)."
+     ],
+     [
+      "fr-en",
+      "Parle plus lentement, s'il te plaît.",
+      "Speak more slowly, please.",
+      [
+       "Speak more slow, please.",
+       "Speak slowlier, please.",
+       "Speak more slowly, pleasing."
+      ],
+      "slowly = lentement (adverbe en -ly). more slowly = plus lentement."
+     ]
+    ],
+    "regle": {
+     "texte": "Adjectif court : **-er than** / **the -est** (tall → taller → the tallest).\nAdjectif long : **more … than** / **the most …**\nIrréguliers : good → **better** → **the best** · bad → **worse** → **the worst**. Aussi … que = **as … as**.",
+     "exemples": [
+      [
+       "This game is easier.",
+       "Ce jeu est plus facile."
+      ],
+      [
+       "It's the best film.",
+       "C'est le meilleur film."
+      ],
+      [
+       "as hard as",
+       "aussi dur que"
+      ]
+     ]
+    }
+   }
+  ],
+  "niveau": "A2"
+ },
+ {
+  "monde": "Monde 4 — Aller plus loin",
+  "niveaux": [
+   {
+    "titre": "Present perfect : I have played",
+    "regle": {
+     "texte": "Le **present perfect** = **have / has + participe passé**.\nOn l'utilise pour une expérience ou un résultat qui compte maintenant, **sans moment précis** : I've finished! · Have you ever been to London? · I've never seen it.\n⚠ Avec un moment précis passé (yesterday, last week), on garde le prétérit : I **saw** it yesterday.",
+     "exemples": [
+      [
+       "I've finished!",
+       "J'ai fini !"
+      ],
+      [
+       "Have you ever played Zelda?",
+       "As-tu déjà joué à Zelda ?"
+      ],
+      [
+       "She has never seen the sea.",
+       "Elle n'a jamais vu la mer."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "J'ai fini mes devoirs.",
+      "I've finished my homework.",
+      [
+       "I've finish my homework.",
+       "I have finishing my homework.",
+       "I'm finished my homework."
+      ],
+      "have + participe passé : finish → finished."
+     ],
+     [
+      "fr-en",
+      "As-tu déjà joué à ce jeu ?",
+      "Have you ever played this game?",
+      [
+       "Did you ever played this game?",
+       "Have you ever play this game?",
+       "Do you ever played this game?"
+      ],
+      "Have you ever + participe ? = As-tu déjà… ? (une expérience)"
+     ],
+     [
+      "en-fr",
+      "I've never been to America.",
+      "Je ne suis jamais allé en Amérique.",
+      [
+       "Je n'irai jamais en Amérique.",
+       "Je ne suis pas allé en Amérique hier.",
+       "Je n'ai jamais aimé l'Amérique."
+      ],
+      "never = jamais. been = participe de be (« été / allé »)."
+     ],
+     [
+      "fr-en",
+      "Elle a perdu son téléphone. (elle ne l'a plus)",
+      "She has lost her phone.",
+      [
+       "She have lost her phone.",
+       "She has lose her phone.",
+       "She has losted her phone."
+      ],
+      "he / she / it → has. lose → lost → lost."
+     ],
+     [
+      "fr-en",
+      "Nous avons déjà mangé.",
+      "We have already eaten.",
+      [
+       "We have already ate.",
+       "We already have eat.",
+       "We has already eaten."
+      ],
+      "already = déjà. Après have : le participe (eaten), pas le prétérit (ate)."
+     ],
+     [
+      "en-fr",
+      "Has he finished yet?",
+      "Est-ce qu'il a déjà fini ?",
+      [
+       "Est-ce qu'il finit maintenant ?",
+       "Il n'a pas encore fini.",
+       "Est-ce qu'il finira bientôt ?"
+      ],
+      "yet à la fin d'une question = « déjà ? ». Dans une négation = « pas encore »."
+     ],
+     [
+      "fr-en",
+      "Je ne l'ai pas encore vu.",
+      "I haven't seen it yet.",
+      [
+       "I didn't see it yet.",
+       "I haven't saw it yet.",
+       "I don't have seen it yet."
+      ],
+      "pas encore = haven't … yet. see → saw → seen."
+     ],
+     [
+      "fr-en",
+      "Je l'ai vu hier.",
+      "I saw it yesterday.",
+      [
+       "I have seen it yesterday.",
+       "I've saw it yesterday.",
+       "I see it yesterday."
+      ],
+      "Moment précis dans le passé (yesterday) → prétérit, PAS de present perfect !"
+     ],
+     [
+      "en-fr",
+      "They have won three matches.",
+      "Ils ont gagné trois matchs.",
+      [
+       "Ils gagneront trois matchs.",
+       "Ils ont perdu trois matchs.",
+       "Ils gagnent trois matchs."
+      ],
+      "win → won → won."
+     ],
+     [
+      "fr-en",
+      "Combien de fois l'as-tu regardé ?",
+      "How many times have you watched it?",
+      [
+       "How many times did you watched it?",
+       "How much times have you watched it?",
+       "How many times you have watched it?"
+      ],
+      "how many times = combien de fois. Question : have you + participe ?"
+     ]
+    ]
+   },
+   {
+    "titre": "Devoir : must, have to, should",
+    "regle": {
+     "texte": "**should** = devrais (un conseil) : You should sleep.\n**must** = dois (obligation forte) : I must go.\n**have to** = dois (obligation qui vient de l'extérieur) : I have to work tomorrow.\n⚠ **mustn't** = c'est interdit · **don't have to** = pas obligé. Après should / must : verbe tout simple, sans « to ».",
+     "exemples": [
+      [
+       "You should sleep more.",
+       "Tu devrais dormir plus."
+      ],
+      [
+       "I have to work tomorrow.",
+       "Je dois travailler demain."
+      ],
+      [
+       "You mustn't touch that!",
+       "Tu ne dois pas toucher ça !"
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "Tu devrais te reposer.",
+      "You should rest.",
+      [
+       "You should to rest.",
+       "You should resting.",
+       "You shoulds rest."
+      ],
+      "should + verbe tout simple (jamais « to »)."
+     ],
+     [
+      "fr-en",
+      "Je dois partir maintenant.",
+      "I must leave now.",
+      [
+       "I must to leave now.",
+       "I must leaving now.",
+       "I musts leave now."
+      ],
+      "must + verbe tout simple."
+     ],
+     [
+      "fr-en",
+      "Elle doit travailler samedi.",
+      "She has to work on Saturday.",
+      [
+       "She have to work on Saturday.",
+       "She has to works on Saturday.",
+       "She must to work on Saturday."
+      ],
+      "have to se conjugue : she HAS to + verbe simple."
+     ],
+     [
+      "en-fr",
+      "You don't have to come.",
+      "Tu n'es pas obligé de venir.",
+      [
+       "Tu ne dois pas venir (c'est interdit).",
+       "Tu ne veux pas venir.",
+       "Tu ne peux pas venir."
+      ],
+      "don't have to = pas obligé. mustn't = interdit. Grosse différence !"
+     ],
+     [
+      "en-fr",
+      "You mustn't cheat.",
+      "Tu ne dois pas tricher.",
+      [
+       "Tu n'es pas obligé de tricher.",
+       "Tu devrais tricher.",
+       "Tu ne peux pas tricher, c'est trop dur."
+      ],
+      "mustn't = interdiction."
+     ],
+     [
+      "fr-en",
+      "Est-ce que je dois payer ?",
+      "Do I have to pay?",
+      [
+       "Must I to pay?",
+       "Have I to pay?",
+       "Do I must pay?"
+      ],
+      "Question avec have to : Do I have to… ?"
+     ],
+     [
+      "fr-en",
+      "Tu ne devrais pas jouer si tard.",
+      "You shouldn't play so late.",
+      [
+       "You don't should play so late.",
+       "You shouldn't to play so late.",
+       "You not should play so late."
+      ],
+      "should not = shouldn't, sans « do »."
+     ],
+     [
+      "en-fr",
+      "We had to wait for two hours.",
+      "On a dû attendre deux heures.",
+      [
+       "On doit attendre deux heures.",
+       "On devrait attendre deux heures.",
+       "On a voulu attendre deux heures."
+      ],
+      "Au passé, must devient had to."
+     ],
+     [
+      "fr-en",
+      "Qu'est-ce que je devrais faire ?",
+      "What should I do?",
+      [
+       "What I should do?",
+       "What should I to do?",
+       "What do I should do?"
+      ],
+      "Question : What should I… ? (on inverse)."
+     ],
+     [
+      "fr-en",
+      "Il faut que tu essaies ce jeu !",
+      "You have to try this game!",
+      [
+       "It must that you try this game!",
+       "You have try this game!",
+       "You have to trying this game!"
+      ],
+      "« Il faut que tu… » = You have to / You must…"
+     ]
+    ]
+   },
+   {
+    "titre": "Quantités : some, any, much, many",
+    "regle": {
+     "texte": "**some** = du, des, quelques (phrases affirmatives) : I have some money.\n**any** = du, des, aucun (négations et questions) : Do you have any money? · I don't have any.\n**many** + ce qu'on compte (many players) · **much** + ce qu'on ne compte pas (much time) · **a lot of** marche pour les deux.",
+     "exemples": [
+      [
+       "I need some help.",
+       "J'ai besoin d'aide."
+      ],
+      [
+       "Is there any milk?",
+       "Il y a du lait ?"
+      ],
+      [
+       "How many lives do I have?",
+       "Combien de vies j'ai ?"
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "J'ai acheté des pommes.",
+      "I bought some apples.",
+      [
+       "I bought any apples.",
+       "I bought much apples.",
+       "I bought a apples."
+      ],
+      "Phrase affirmative → some."
+     ],
+     [
+      "fr-en",
+      "Il n'y a pas de pain.",
+      "There isn't any bread.",
+      [
+       "There isn't some bread.",
+       "There isn't many bread.",
+       "There aren't any bread."
+      ],
+      "Négation → any. bread ne se compte pas → isn't."
+     ],
+     [
+      "fr-en",
+      "Tu as des frères et sœurs ?",
+      "Do you have any brothers or sisters?",
+      [
+       "Do you have some brothers or sisters?",
+       "Have you any brother or sister?",
+       "Do you have much brothers or sisters?"
+      ],
+      "Question → any."
+     ],
+     [
+      "fr-en",
+      "Je n'ai pas beaucoup de temps.",
+      "I don't have much time.",
+      [
+       "I don't have many time.",
+       "I don't have much times.",
+       "I haven't many time."
+      ],
+      "time (le temps) ne se compte pas → much."
+     ],
+     [
+      "fr-en",
+      "Il y a beaucoup de joueurs.",
+      "There are a lot of players.",
+      [
+       "There are much players.",
+       "There is a lot of players.",
+       "There are a lot players."
+      ],
+      "a lot OF + nom. players (pluriel) → are."
+     ],
+     [
+      "en-fr",
+      "How much is it?",
+      "C'est combien ?",
+      [
+       "Il y en a combien ?",
+       "C'est quand ?",
+       "Tu en veux combien ?"
+      ],
+      "How much is it? = Combien ça coûte ?"
+     ],
+     [
+      "fr-en",
+      "Combien d'amis as-tu invités ?",
+      "How many friends did you invite?",
+      [
+       "How much friends did you invite?",
+       "How many friends you invited?",
+       "How many friend did you invite?"
+      ],
+      "friends se compte → how many."
+     ],
+     [
+      "en-fr",
+      "Can I have some water, please?",
+      "Je peux avoir de l'eau, s'il te plaît ?",
+      [
+       "Je peux avoir toute l'eau ?",
+       "Tu as de l'eau ?",
+       "Je peux boire ton eau ?"
+      ],
+      "Pour demander poliment, on garde some même dans une question."
+     ],
+     [
+      "fr-en",
+      "Il reste quelques pièces.",
+      "There are a few coins left.",
+      [
+       "There are a little coins left.",
+       "There is a few coins left.",
+       "There are few coin left."
+      ],
+      "a few + pluriel = quelques. a little + ce qui ne se compte pas = un peu de."
+     ],
+     [
+      "fr-en",
+      "Je n'ai aucune idée.",
+      "I have no idea.",
+      [
+       "I have any idea.",
+       "I don't have no idea.",
+       "I have not idea."
+      ],
+      "no + nom = aucun. Jamais de double négation en anglais (don't … no)."
+     ]
+    ]
+   },
+   {
+    "titre": "Si… : if, would like",
+    "regle": {
+     "texte": "**If + présent, will + verbe** = une condition réelle : If it rains, I'll stay home.\n⚠ Jamais de will juste après if : If it **rains** (pas « if it will rain »).\n**would like** = voudrais (poli) : I'd like a coffee · Would you like to play?\n**If + prétérit, would + verbe** = situation imaginaire : If I had money, I would buy it.",
+     "exemples": [
+      [
+       "If you win, you'll get a reward.",
+       "Si tu gagnes, tu auras une récompense."
+      ],
+      [
+       "I'd like a pizza, please.",
+       "Je voudrais une pizza, s'il te plaît."
+      ],
+      [
+       "If I were rich, I would travel.",
+       "Si j'étais riche, je voyagerais."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "S'il pleut, je resterai à la maison.",
+      "If it rains, I'll stay at home.",
+      [
+       "If it will rain, I'll stay at home.",
+       "If it rains, I stay at home tomorrow.",
+       "If it rain, I'll stay at home."
+      ],
+      "Après if : présent (rains), jamais will."
+     ],
+     [
+      "fr-en",
+      "Je voudrais un café.",
+      "I'd like a coffee.",
+      [
+       "I would a coffee.",
+       "I'd liked a coffee.",
+       "I want like a coffee."
+      ],
+      "I'd like = I would like = je voudrais (poli)."
+     ],
+     [
+      "en-fr",
+      "Would you like to play with us?",
+      "Tu veux jouer avec nous ?",
+      [
+       "Tu aimes jouer avec nous ?",
+       "Tu as joué avec nous ?",
+       "Tu pourrais jouer pour nous ?"
+      ],
+      "Would you like… ? = une proposition polie."
+     ],
+     [
+      "fr-en",
+      "Si tu gagnes, tu auras une récompense.",
+      "If you win, you'll get a reward.",
+      [
+       "If you will win, you'll get a reward.",
+       "If you win, you get a reward will.",
+       "If you won, you'll get a reward."
+      ],
+      "If + présent, will + verbe."
+     ],
+     [
+      "fr-en",
+      "Si j'avais de l'argent, j'achèterais ce jeu.",
+      "If I had money, I would buy this game.",
+      [
+       "If I have money, I would buy this game.",
+       "If I had money, I will buy this game.",
+       "If I would have money, I would buy this game."
+      ],
+      "Situation imaginaire : if + prétérit, would + verbe."
+     ],
+     [
+      "en-fr",
+      "If you don't hurry, you'll be late.",
+      "Si tu ne te dépêches pas, tu seras en retard.",
+      [
+       "Si tu te dépêches, tu seras à l'heure.",
+       "Tu étais en retard parce que tu ne t'es pas dépêché.",
+       "Dépêche-toi, tu es en retard."
+      ],
+      "hurry = se dépêcher."
+     ],
+     [
+      "fr-en",
+      "Qu'est-ce que tu voudrais manger ?",
+      "What would you like to eat?",
+      [
+       "What you would like to eat?",
+       "What would you like eat?",
+       "What do you would like to eat?"
+      ],
+      "would like TO + verbe."
+     ],
+     [
+      "fr-en",
+      "Si j'étais toi, je dormirais.",
+      "If I were you, I would sleep.",
+      [
+       "If I am you, I would sleep.",
+       "If I was you, I will sleep.",
+       "If I were you, I sleep."
+      ],
+      "« Si j'étais toi » = If I were you (expression toute faite)."
+     ],
+     [
+      "en-fr",
+      "I'll call you when I arrive.",
+      "Je t'appellerai quand j'arriverai.",
+      [
+       "Je t'ai appelé quand je suis arrivé.",
+       "Je t'appelle à chaque fois que j'arrive.",
+       "Appelle-moi quand tu arrives."
+      ],
+      "Après when (pour le futur) : présent, comme après if."
+     ],
+     [
+      "fr-en",
+      "Ça te dirait de regarder un film ?",
+      "Would you like to watch a film?",
+      [
+       "Would you like watch a film?",
+       "Do you would like to watch a film?",
+       "Would you like to watching a film?"
+      ],
+      "Would you like to + verbe ?"
+     ]
+    ]
+   },
+   {
+    "titre": "Relier ses idées : so, because, when",
+    "regle": {
+     "texte": "**because** = parce que · **so** = donc, alors · **but** = mais · **when** = quand · **while** = pendant que · **during** = pendant (+ nom).\n**before / after + verbe-ING** : before leaving (avant de partir), after eating (après avoir mangé).\n**although** = bien que.",
+     "exemples": [
+      [
+       "I was tired, so I went to bed.",
+       "J'étais fatigué, donc je suis allé me coucher."
+      ],
+      [
+       "Wash your hands before eating.",
+       "Lave-toi les mains avant de manger."
+      ],
+      [
+       "She called while I was playing.",
+       "Elle a appelé pendant que je jouais."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "J'avais faim, donc j'ai mangé.",
+      "I was hungry, so I ate.",
+      [
+       "I was hungry, because I ate.",
+       "I had hungry, so I ate.",
+       "I was hungry, so I eat."
+      ],
+      "so = donc (conséquence), because = parce que (cause)."
+     ],
+     [
+      "fr-en",
+      "Je reste à la maison parce qu'il pleut.",
+      "I'm staying at home because it's raining.",
+      [
+       "I'm staying at home so it's raining.",
+       "I'm staying at home because of it's raining.",
+       "I'm staying at home why it's raining."
+      ],
+      "because + phrase. because of + nom (because of the rain)."
+     ],
+     [
+      "fr-en",
+      "Avant de partir, éteins la lumière.",
+      "Before leaving, turn off the light.",
+      [
+       "Before to leave, turn off the light.",
+       "Before leave, turn off the light.",
+       "Before you leaving, turn off the light."
+      ],
+      "before / after + verbe-ING."
+     ],
+     [
+      "en-fr",
+      "After eating, we played video games.",
+      "Après avoir mangé, nous avons joué aux jeux vidéo.",
+      [
+       "Avant de manger, nous avons joué aux jeux vidéo.",
+       "Pendant qu'on mangeait, on jouait.",
+       "Après le jeu, nous avons mangé."
+      ],
+      "after + -ing = après avoir…"
+     ],
+     [
+      "fr-en",
+      "Elle a appelé pendant que je jouais.",
+      "She called while I was playing.",
+      [
+       "She called during I was playing.",
+       "She called while I play now.",
+       "She was calling while I play."
+      ],
+      "while + phrase (pendant que). during + nom (during the game)."
+     ],
+     [
+      "en-fr",
+      "When I was young, I lived in Lyon.",
+      "Quand j'étais jeune, j'habitais à Lyon.",
+      [
+       "Quand je serai grand, j'habiterai à Lyon.",
+       "Depuis que je suis jeune, j'habite à Lyon.",
+       "Quand j'étais jeune, j'ai visité Lyon."
+      ],
+      "when = quand."
+     ],
+     [
+      "fr-en",
+      "C'est cher mais c'est génial.",
+      "It's expensive but it's great.",
+      [
+       "It's expensive so it's great.",
+       "It's expensive because it's great.",
+       "It's cheap but it's great."
+      ],
+      "but = mais. expensive = cher, cheap = pas cher."
+     ],
+     [
+      "fr-en",
+      "Pendant le match, il a marqué deux buts.",
+      "During the match, he scored two goals.",
+      [
+       "While the match, he scored two goals.",
+       "During the match, he score two goals.",
+       "For the match, he scored two goals."
+      ],
+      "during + nom."
+     ],
+     [
+      "en-fr",
+      "Although it was late, they kept playing.",
+      "Bien qu'il soit tard, ils ont continué à jouer.",
+      [
+       "Parce qu'il était tard, ils ont arrêté de jouer.",
+       "Il était tard, donc ils sont partis.",
+       "Même s'ils étaient fatigués, ils ont gagné."
+      ],
+      "although = bien que. keep + -ing = continuer à."
+     ],
+     [
+      "fr-en",
+      "Je t'enverrai un message quand j'aurai fini.",
+      "I'll send you a message when I've finished.",
+      [
+       "I'll send you a message when I will finish.",
+       "I send you a message when I finished.",
+       "I'll sent you a message when I've finished."
+      ],
+      "Après when (futur) : pas de will. when I've finished = quand j'aurai fini."
+     ]
+    ]
+   }
+  ],
+  "niveau": "A2"
+ },
+ {
+  "monde": "Monde 5 — Indépendant",
+  "niveau": "B1",
+  "niveaux": [
+   {
+    "titre": "Depuis quand ? for, since",
+    "regle": {
+     "texte": "Pour une action commencée dans le passé qui **continue encore** : **have / has been + verbe-ING** (ou have + participe pour les verbes d'état comme know, have, like).\n**for** + durée (for two hours) · **since** + point de départ (since 2020, since Monday).\n⚠ En français : « depuis » + présent. En anglais, jamais le présent : I **have been** waiting for an hour.",
+     "exemples": [
+      [
+       "I've been learning English for three months.",
+       "J'apprends l'anglais depuis trois mois."
+      ],
+      [
+       "She has lived here since 2019.",
+       "Elle habite ici depuis 2019."
+      ],
+      [
+       "How long have you been waiting?",
+       "Depuis combien de temps tu attends ?"
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "J'apprends l'anglais depuis trois mois.",
+      "I've been learning English for three months.",
+      [
+       "I learn English since three months.",
+       "I'm learning English since three months.",
+       "I've been learning English since three months."
+      ],
+      "Durée → for. Action qui continue → have been + -ing."
+     ],
+     [
+      "fr-en",
+      "Elle habite ici depuis 2019.",
+      "She has lived here since 2019.",
+      [
+       "She lives here since 2019.",
+       "She has lived here for 2019.",
+       "She is living here since 2019."
+      ],
+      "Point de départ (une date) → since."
+     ],
+     [
+      "fr-en",
+      "Depuis combien de temps attends-tu ?",
+      "How long have you been waiting?",
+      [
+       "Since when do you wait?",
+       "How long are you waiting?",
+       "How much time do you wait?"
+      ],
+      "Depuis combien de temps… ? = How long have you been + -ing ?"
+     ],
+     [
+      "en-fr",
+      "We've known each other since primary school.",
+      "On se connaît depuis l'école primaire.",
+      [
+       "On s'est connus après l'école primaire.",
+       "On se connaissait à l'école primaire.",
+       "On va se connaître à l'école primaire."
+      ],
+      "know est un verbe d'état : have known (pas have been knowing)."
+     ],
+     [
+      "fr-en",
+      "Il pleut depuis ce matin.",
+      "It's been raining since this morning.",
+      [
+       "It rains since this morning.",
+       "It's raining since this morning.",
+       "It's been raining for this morning."
+      ],
+      "since + moment de départ (this morning)."
+     ],
+     [
+      "fr-en",
+      "Je joue à ce jeu depuis des heures !",
+      "I've been playing this game for hours!",
+      [
+       "I play this game since hours!",
+       "I'm playing this game for hours!",
+       "I've played this game since hours!"
+      ],
+      "for + durée (hours, days, years)."
+     ],
+     [
+      "en-fr",
+      "She hasn't called me for weeks.",
+      "Elle ne m'a pas appelé depuis des semaines.",
+      [
+       "Elle m'appelle toutes les semaines.",
+       "Elle ne m'appellera pas avant des semaines.",
+       "Elle ne m'a pas appelé la semaine dernière."
+      ],
+      "Négation + for = « ne … pas depuis »."
+     ],
+     [
+      "fr-en",
+      "Ça fait une éternité que je ne t'ai pas vu !",
+      "I haven't seen you for ages!",
+      [
+       "I don't see you since a long time!",
+       "I didn't see you for ages!",
+       "It makes long time I don't see you!"
+      ],
+      "for ages = depuis une éternité (familier)."
+     ],
+     [
+      "fr-en",
+      "Tu es fatigué parce que tu travailles depuis 6 h.",
+      "You're tired because you've been working since 6 a.m.",
+      [
+       "You're tired because you work since 6 a.m.",
+       "You're tired because you've been working for 6 a.m.",
+       "You're tired because you were working since 6 a.m."
+      ],
+      "since 6 a.m. : un point de départ."
+     ],
+     [
+      "en-fr",
+      "How long have you had this phone?",
+      "Depuis combien de temps as-tu ce téléphone ?",
+      [
+       "Combien de temps as-tu eu ce téléphone ?",
+       "Quand as-tu acheté ce téléphone ?",
+       "Tu as ce téléphone pour combien de temps ?"
+      ],
+      "have (posséder) est un verbe d'état → How long have you had… ?"
+     ]
+    ]
+   },
+   {
+    "titre": "Raconter : was doing, used to",
+    "regle": {
+     "texte": "**was / were + -ING** = une action **en cours** dans le passé, souvent interrompue : I **was playing** when the phone **rang**.\n**used to + verbe** = une habitude passée qui n'existe plus : I **used to** live in Paris.\n**would** peut aussi décrire une habitude passée dans un récit : Every summer, we would go to the beach.\n⚠ **be used to + -ING** = être habitué à.",
+     "exemples": [
+      [
+       "I was sleeping when you called.",
+       "Je dormais quand tu as appelé."
+      ],
+      [
+       "I used to hate vegetables.",
+       "Avant, je détestais les légumes."
+      ],
+      [
+       "What were you doing at 8 p.m.?",
+       "Que faisais-tu à 20 h ?"
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "Je dormais quand tu as appelé.",
+      "I was sleeping when you called.",
+      [
+       "I slept when you were calling.",
+       "I was sleeping when you were call.",
+       "I am sleeping when you called."
+      ],
+      "Action en cours (was sleeping) interrompue par une action courte (called)."
+     ],
+     [
+      "fr-en",
+      "Que faisais-tu hier à 20 h ?",
+      "What were you doing at 8 p.m. yesterday?",
+      [
+       "What did you doing at 8 p.m. yesterday?",
+       "What you were doing at 8 p.m. yesterday?",
+       "What were you do at 8 p.m. yesterday?"
+      ],
+      "Question au passé continu : What were you doing… ?"
+     ],
+     [
+      "en-fr",
+      "I used to play football every weekend.",
+      "Avant, je jouais au foot tous les week-ends.",
+      [
+       "J'ai l'habitude de jouer au foot le week-end.",
+       "Je vais jouer au foot ce week-end.",
+       "J'ai joué au foot un week-end."
+      ],
+      "used to = habitude passée terminée."
+     ],
+     [
+      "fr-en",
+      "Avant, il ne fumait pas.",
+      "He didn't use to smoke.",
+      [
+       "He didn't used to smoke.",
+       "He used not smoke.",
+       "He wasn't use to smoke."
+      ],
+      "Négation : didn't use to (sans -d)."
+     ],
+     [
+      "fr-en",
+      "Pendant que je cuisinais, elle regardait la télé.",
+      "While I was cooking, she was watching TV.",
+      [
+       "While I cooked, she was watch TV.",
+       "During I was cooking, she watched TV.",
+       "While I am cooking, she was watching TV."
+      ],
+      "Deux actions en cours en même temps → was / were + -ing des deux côtés."
+     ],
+     [
+      "en-fr",
+      "We were driving home when we saw the accident.",
+      "On rentrait en voiture quand on a vu l'accident.",
+      [
+       "On est rentrés en voiture après l'accident.",
+       "On a vu l'accident en partant de la maison.",
+       "On conduisait quand on a eu un accident."
+      ],
+      "were driving = action en cours ; saw = action ponctuelle."
+     ],
+     [
+      "fr-en",
+      "Est-ce que tu habitais à Lyon avant ?",
+      "Did you use to live in Lyon?",
+      [
+       "Did you used to live in Lyon?",
+       "Were you use to live in Lyon?",
+       "Used you living in Lyon?"
+      ],
+      "Question : Did you use to… ?"
+     ],
+     [
+      "fr-en",
+      "Je suis habitué à me lever tôt.",
+      "I'm used to getting up early.",
+      [
+       "I used to get up early.",
+       "I'm used to get up early.",
+       "I use to getting up early."
+      ],
+      "be used to + -ING = être habitué à. Différent de used to + verbe."
+     ],
+     [
+      "en-fr",
+      "The sun was shining and the birds were singing.",
+      "Le soleil brillait et les oiseaux chantaient.",
+      [
+       "Le soleil a brillé et les oiseaux ont chanté.",
+       "Le soleil brille et les oiseaux chantent.",
+       "Le soleil va briller et les oiseaux vont chanter."
+      ],
+      "Le passé continu sert à décrire le décor d'une histoire (comme l'imparfait)."
+     ],
+     [
+      "fr-en",
+      "Quand j'étais petit, on allait chez ma grand-mère chaque été.",
+      "When I was little, we would go to my grandmother's every summer.",
+      [
+       "When I was little, we will go to my grandmother's every summer.",
+       "When I was little, we go to my grandmother's every summer.",
+       "When I was little, we would going to my grandmother's every summer."
+      ],
+      "would + verbe = habitude du passé (dans un récit)."
+     ]
+    ]
+   },
+   {
+    "titre": "La voix passive",
+    "regle": {
+     "texte": "Le **passif** = **be + participe passé**. On l'utilise quand l'action compte plus que celui qui la fait : The game **was made** in Japan.\nPrésent : is made · Passé : was made · Present perfect : has been made · Futur : will be made · En cours : is being made.\n« par » = **by** : written **by** J.K. Rowling.\n⚠ Le « on » français se traduit souvent par un passif : « On m'a volé mon vélo » = My bike **was stolen**.",
+     "exemples": [
+      [
+       "English is spoken all over the world.",
+       "L'anglais est parlé dans le monde entier."
+      ],
+      [
+       "My bike was stolen yesterday.",
+       "On m'a volé mon vélo hier."
+      ],
+      [
+       "The match has been cancelled.",
+       "Le match a été annulé."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "L'anglais est parlé dans le monde entier.",
+      "English is spoken all over the world.",
+      [
+       "English is speak all over the world.",
+       "English speaks all over the world.",
+       "English is spoke all over the world."
+      ],
+      "be + participe : speak → spoken."
+     ],
+     [
+      "fr-en",
+      "On m'a volé mon vélo.",
+      "My bike was stolen.",
+      [
+       "My bike was stole.",
+       "One stole my bike.",
+       "My bike has stealed."
+      ],
+      "« On » + action subie → passif. steal → stole → stolen."
+     ],
+     [
+      "fr-en",
+      "Ce jeu a été créé par une petite équipe.",
+      "This game was created by a small team.",
+      [
+       "This game was created from a small team.",
+       "This game created by a small team.",
+       "This game is creating by a small team."
+      ],
+      "par = by."
+     ],
+     [
+      "en-fr",
+      "The match has been cancelled because of the rain.",
+      "Le match a été annulé à cause de la pluie.",
+      [
+       "Le match a été joué sous la pluie.",
+       "Le match sera annulé s'il pleut.",
+       "Ils ont annulé la pluie à cause du match."
+      ],
+      "has been + participe = passif au present perfect."
+     ],
+     [
+      "fr-en",
+      "Les résultats seront annoncés demain.",
+      "The results will be announced tomorrow.",
+      [
+       "The results will announced tomorrow.",
+       "The results will be announce tomorrow.",
+       "The results are announcing tomorrow."
+      ],
+      "Futur passif : will be + participe."
+     ],
+     [
+      "fr-en",
+      "Où ce film a-t-il été tourné ?",
+      "Where was this film shot?",
+      [
+       "Where did this film shot?",
+       "Where was shot this film?",
+       "Where this film was shot?"
+      ],
+      "Question au passif : Where was… + participe ?"
+     ],
+     [
+      "en-fr",
+      "Breakfast is served from 7 to 10.",
+      "Le petit déjeuner est servi de 7 h à 10 h.",
+      [
+       "Le petit déjeuner a été servi à 7 h.",
+       "On sert le petit déjeuner jusqu'à 7 h.",
+       "Le petit déjeuner est prêt dans 10 minutes."
+      ],
+      "is served = présent passif."
+     ],
+     [
+      "fr-en",
+      "On m'a dit de revenir demain.",
+      "I was told to come back tomorrow.",
+      [
+       "I was said to come back tomorrow.",
+       "Someone told to me to come back tomorrow.",
+       "I was told come back tomorrow."
+      ],
+      "« On m'a dit » = I was told (pas « I was said »)."
+     ],
+     [
+      "fr-en",
+      "Le pont est en train d'être réparé.",
+      "The bridge is being repaired.",
+      [
+       "The bridge is repairing.",
+       "The bridge is be repaired.",
+       "The bridge is being repair."
+      ],
+      "En cours : is being + participe."
+     ],
+     [
+      "en-fr",
+      "Millions of copies have been sold.",
+      "Des millions d'exemplaires ont été vendus.",
+      [
+       "Des millions d'exemplaires seront vendus.",
+       "Ils ont acheté des millions d'exemplaires.",
+       "Il reste des millions d'exemplaires à vendre."
+      ],
+      "have been sold = ont été vendus."
+     ]
+    ]
+   },
+   {
+    "titre": "Qui, que, où : who, which, where",
+    "regle": {
+     "texte": "Pour relier deux idées : **who** (une personne) · **which** (une chose) · **that** (les deux, langage courant) · **where** (un lieu) · **when** (un moment) · **whose** (dont, à qui).\nThe man **who** lives next door is a pilot. · The game **that** I bought is great.\nQuand who / which / that est complément, on peut l'enlever : The game (that) I bought.\n« Ce que » en début de phrase = **What**.",
+     "exemples": [
+      [
+       "The girl who called you is my sister.",
+       "La fille qui t'a appelé est ma sœur."
+      ],
+      [
+       "This is the house where I grew up.",
+       "C'est la maison où j'ai grandi."
+      ],
+      [
+       "The man whose car was stolen called the police.",
+       "L'homme dont la voiture a été volée a appelé la police."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "La fille qui t'a appelé est ma sœur.",
+      "The girl who called you is my sister.",
+      [
+       "The girl which called you is my sister.",
+       "The girl who she called you is my sister.",
+       "The girl what called you is my sister."
+      ],
+      "Une personne → who."
+     ],
+     [
+      "fr-en",
+      "C'est le jeu que j'ai acheté hier.",
+      "This is the game that I bought yesterday.",
+      [
+       "This is the game what I bought yesterday.",
+       "This is the game who I bought yesterday.",
+       "This is the game that I bought it yesterday."
+      ],
+      "Une chose → that / which. Pas de « it » en plus."
+     ],
+     [
+      "fr-en",
+      "C'est la ville où je suis né.",
+      "This is the town where I was born.",
+      [
+       "This is the town which I was born.",
+       "This is the town where I born.",
+       "This is the town when I was born."
+      ],
+      "Un lieu → where."
+     ],
+     [
+      "en-fr",
+      "The man whose car was stolen called the police.",
+      "L'homme dont la voiture a été volée a appelé la police.",
+      [
+       "L'homme qui a volé la voiture a appelé la police.",
+       "L'homme a appelé la police pour voler une voiture.",
+       "La police a volé la voiture de l'homme."
+      ],
+      "whose = dont / à qui (possession)."
+     ],
+     [
+      "fr-en",
+      "Le livre dont je t'ai parlé est génial.",
+      "The book I told you about is great.",
+      [
+       "The book whose I told you is great.",
+       "The book about which I told you about is great.",
+       "The book that I told you is great."
+      ],
+      "On peut enlever that et mettre la préposition à la fin : the book (that) I told you about."
+     ],
+     [
+      "en-fr",
+      "Do you know anyone who speaks Spanish?",
+      "Tu connais quelqu'un qui parle espagnol ?",
+      [
+       "Tu connais l'espagnol ?",
+       "Tu sais qui parle espagnol ?",
+       "Quelqu'un te parle en espagnol ?"
+      ],
+      "anyone who = quelqu'un qui."
+     ],
+     [
+      "fr-en",
+      "Le joueur que tout le monde admire a pris sa retraite.",
+      "The player everyone admires has retired.",
+      [
+       "The player which everyone admires has retired.",
+       "The player who everyone admires him has retired.",
+       "The player everyone admire has retired."
+      ],
+      "Complément → on peut enlever who / that. everyone → admires."
+     ],
+     [
+      "fr-en",
+      "C'est le jour où on s'est rencontrés.",
+      "That's the day when we met.",
+      [
+       "That's the day where we met.",
+       "That's the day which we met.",
+       "That's the day when we meet."
+      ],
+      "Un moment → when (pas where)."
+     ],
+     [
+      "en-fr",
+      "Everything that he said was true.",
+      "Tout ce qu'il a dit était vrai.",
+      [
+       "Tout le monde a dit qu'il disait vrai.",
+       "Il a dit que tout était vrai.",
+       "Rien de ce qu'il a dit n'était vrai."
+      ],
+      "everything that = tout ce que."
+     ],
+     [
+      "fr-en",
+      "Ce que je veux, c'est dormir.",
+      "What I want is to sleep.",
+      [
+       "That I want is to sleep.",
+       "Which I want is to sleep.",
+       "What I want it is to sleep."
+      ],
+      "« Ce que » au début d'une phrase = What."
+     ]
+    ]
+   },
+   {
+    "titre": "Verbe + -ING ou + TO ?",
+    "regle": {
+     "texte": "Après certains verbes : **-ING** → enjoy, finish, stop, mind, avoid, keep, suggest : I enjoy **playing**.\nAprès d'autres : **to + verbe** → want, decide, hope, plan, learn, need, promise, forget : I want **to play**.\nAprès une préposition, toujours **-ING** : good **at drawing** · thanks **for coming** · look forward **to seeing**.\n⚠ stop + -ing = arrêter de faire · stop + to = s'arrêter pour faire.",
+     "exemples": [
+      [
+       "I enjoy playing video games.",
+       "J'aime jouer aux jeux vidéo."
+      ],
+      [
+       "I decided to learn English.",
+       "J'ai décidé d'apprendre l'anglais."
+      ],
+      [
+       "Thanks for helping me!",
+       "Merci de m'avoir aidé !"
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "J'aime jouer aux jeux vidéo.",
+      "I enjoy playing video games.",
+      [
+       "I enjoy to play video games.",
+       "I enjoy play video games.",
+       "I enjoy to playing video games."
+      ],
+      "enjoy + -ING."
+     ],
+     [
+      "fr-en",
+      "J'ai décidé d'apprendre l'anglais.",
+      "I decided to learn English.",
+      [
+       "I decided learning English.",
+       "I decided learn English.",
+       "I decided to learning English."
+      ],
+      "decide + to + verbe."
+     ],
+     [
+      "fr-en",
+      "Merci de m'avoir aidé !",
+      "Thanks for helping me!",
+      [
+       "Thanks for help me!",
+       "Thanks to help me!",
+       "Thanks for to help me!"
+      ],
+      "Après une préposition (for) → -ING."
+     ],
+     [
+      "en-fr",
+      "Would you mind closing the window?",
+      "Ça te dérangerait de fermer la fenêtre ?",
+      [
+       "Tu as pensé à fermer la fenêtre ?",
+       "Tu veux que j'ouvre la fenêtre ?",
+       "Tu te souviens d'avoir fermé la fenêtre ?"
+      ],
+      "Would you mind + -ING ? = Ça te dérangerait de… ?"
+     ],
+     [
+      "fr-en",
+      "Il a arrêté de fumer l'année dernière.",
+      "He stopped smoking last year.",
+      [
+       "He stopped to smoke last year.",
+       "He stopped smoke last year.",
+       "He stops smoking last year."
+      ],
+      "stop + -ING = arrêter de faire. (stop to smoke = s'arrêter pour fumer !)"
+     ],
+     [
+      "fr-en",
+      "Je suis nul en dessin.",
+      "I'm bad at drawing.",
+      [
+       "I'm bad to draw.",
+       "I'm bad at draw.",
+       "I'm bad for drawing."
+      ],
+      "good at / bad at + -ING."
+     ],
+     [
+      "en-fr",
+      "She promised to call me back.",
+      "Elle a promis de me rappeler.",
+      [
+       "Elle a promis qu'elle ne rappellerait plus.",
+       "Elle m'a demandé de la rappeler.",
+       "Elle a oublié de me rappeler."
+      ],
+      "promise + to + verbe."
+     ],
+     [
+      "fr-en",
+      "Évite de manger trop tard.",
+      "Avoid eating too late.",
+      [
+       "Avoid to eat too late.",
+       "Avoid eat too late.",
+       "Avoid of eating too late."
+      ],
+      "avoid + -ING."
+     ],
+     [
+      "fr-en",
+      "J'ai hâte de te voir !",
+      "I'm looking forward to seeing you!",
+      [
+       "I'm looking forward to see you!",
+       "I look forward see you!",
+       "I'm looking forward seeing you!"
+      ],
+      "look forward TO + -ING (to est ici une préposition)."
+     ],
+     [
+      "en-fr",
+      "I forgot to lock the door.",
+      "J'ai oublié de fermer la porte à clé.",
+      [
+       "J'ai oublié que j'avais fermé la porte à clé.",
+       "Je me souviens d'avoir fermé la porte à clé.",
+       "J'ai perdu la clé de la porte."
+      ],
+      "forget to = oublier de (faire). forget + -ing = oublier qu'on a fait."
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "monde": "Monde 6 — Avancé",
+  "niveau": "B2",
+  "niveaux": [
+   {
+    "titre": "Si j'avais su… : conditionnels 2 et 3",
+    "regle": {
+     "texte": "**If + prétérit, would + verbe** = situation imaginaire au présent : If I **had** time, I **would** travel.\n**If + had + participe, would have + participe** = regret sur le passé : If I **had known**, I **would have come**.\n**Conditionnel mixte** : If you had listened (passé), we wouldn't be lost (présent).\n⚠ Jamais de would après if. Forme soutenue : **Had I known** = If I had known.",
+     "exemples": [
+      [
+       "If I had known, I would have come.",
+       "Si j'avais su, je serais venu."
+      ],
+      [
+       "If I were rich, I would buy an island.",
+       "Si j'étais riche, j'achèterais une île."
+      ],
+      [
+       "She would have won if she hadn't fallen.",
+       "Elle aurait gagné si elle n'était pas tombée."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "Si j'avais su, je serais venu.",
+      "If I had known, I would have come.",
+      [
+       "If I would have known, I would have come.",
+       "If I knew, I would have came.",
+       "If I had knew, I would come."
+      ],
+      "Regret passé : if + had + participe, would have + participe."
+     ],
+     [
+      "fr-en",
+      "Si j'étais riche, j'achèterais une île.",
+      "If I were rich, I would buy an island.",
+      [
+       "If I am rich, I would buy an island.",
+       "If I would be rich, I would buy an island.",
+       "If I were rich, I will buy an island."
+      ],
+      "Imaginaire présent : if + prétérit (were), would + verbe."
+     ],
+     [
+      "en-fr",
+      "She would have won if she hadn't fallen.",
+      "Elle aurait gagné si elle n'était pas tombée.",
+      [
+       "Elle a gagné bien qu'elle soit tombée.",
+       "Elle gagnera si elle ne tombe pas.",
+       "Elle serait tombée si elle avait gagné."
+      ],
+      "would have won = aurait gagné. hadn't fallen = n'était pas tombée."
+     ],
+     [
+      "fr-en",
+      "Qu'est-ce que tu ferais si tu gagnais au loto ?",
+      "What would you do if you won the lottery?",
+      [
+       "What will you do if you won the lottery?",
+       "What would you do if you would win the lottery?",
+       "What would you do if you win the lottery?"
+      ],
+      "would + verbe / if + prétérit."
+     ],
+     [
+      "fr-en",
+      "Si tu m'avais écouté, on ne serait pas perdus.",
+      "If you had listened to me, we wouldn't be lost.",
+      [
+       "If you listened to me, we wouldn't have been lost now.",
+       "If you had listen to me, we wouldn't be lost.",
+       "If you would have listened to me, we wouldn't be lost."
+      ],
+      "Conditionnel mixte : passé (had listened) → conséquence présente (wouldn't be)."
+     ],
+     [
+      "en-fr",
+      "I wouldn't have called if it hadn't been urgent.",
+      "Je n'aurais pas appelé si ça n'avait pas été urgent.",
+      [
+       "Je n'appellerai pas si ce n'est pas urgent.",
+       "J'ai appelé parce que ce n'était pas urgent.",
+       "Je n'aurais pas appelé si c'était urgent."
+      ],
+      "3e conditionnel, à la forme négative."
+     ],
+     [
+      "fr-en",
+      "On aurait raté le train si on n'avait pas couru.",
+      "We would have missed the train if we hadn't run.",
+      [
+       "We would miss the train if we hadn't ran.",
+       "We would have missed the train if we didn't run.",
+       "We had missed the train if we wouldn't have run."
+      ],
+      "run → ran → run : hadn't run."
+     ],
+     [
+      "fr-en",
+      "S'il faisait beau, on irait à la plage.",
+      "If the weather were nice, we would go to the beach.",
+      [
+       "If the weather is nice, we would go to the beach.",
+       "If the weather would be nice, we would go to the beach.",
+       "If the weather were nice, we will go to the beach."
+      ],
+      "Imaginaire : prétérit + would."
+     ],
+     [
+      "en-fr",
+      "Had I known, I would have helped you.",
+      "Si j'avais su, je t'aurais aidé.",
+      [
+       "Je savais que je t'avais aidé.",
+       "Comme je savais, je t'ai aidé.",
+       "Si je sais, je t'aiderai."
+      ],
+      "Had I known = If I had known (forme soutenue, avec inversion)."
+     ],
+     [
+      "fr-en",
+      "Je t'aurais appelé si j'avais eu ton numéro.",
+      "I would have called you if I had had your number.",
+      [
+       "I would have called you if I would have had your number.",
+       "I would call you if I had your number before.",
+       "I had called you if I would have your number."
+      ],
+      "had had = plus-que-parfait de have. C'est normal !"
+     ]
+    ]
+   },
+   {
+    "titre": "Le discours indirect",
+    "regle": {
+     "texte": "Pour rapporter des paroles, on recule souvent d'un temps : « I **am** tired » → He said (that) he **was** tired.\nprésent → passé · passé / present perfect → past perfect · will → would · can → could.\n**say** (dire) / **tell someone** (dire à quelqu'un) : He **told me** that… / He **said** that…\nQuestions rapportées : ordre normal → He asked me **where I lived**. Oui / non → **if** / **whether**.\nOrdres : tell someone **to** do / **not to** do.",
+     "exemples": [
+      [
+       "He said he was tired.",
+       "Il a dit qu'il était fatigué."
+      ],
+      [
+       "She told me she would come.",
+       "Elle m'a dit qu'elle viendrait."
+      ],
+      [
+       "They asked me where I lived.",
+       "Ils m'ont demandé où j'habitais."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "Il a dit qu'il était fatigué.",
+      "He said he was tired.",
+      [
+       "He said me he was tired.",
+       "He told he was tired.",
+       "He said he is tire."
+      ],
+      "say (sans complément) / tell + quelqu'un."
+     ],
+     [
+      "fr-en",
+      "Elle m'a dit qu'elle viendrait.",
+      "She told me she would come.",
+      [
+       "She said me she would come.",
+       "She told me she will came.",
+       "She told to me she would come."
+      ],
+      "will → would dans le discours indirect."
+     ],
+     [
+      "fr-en",
+      "Ils m'ont demandé où j'habitais.",
+      "They asked me where I lived.",
+      [
+       "They asked me where did I live.",
+       "They asked me where do I live.",
+       "They asked to me where I lived."
+      ],
+      "Question rapportée : ordre normal sujet + verbe (where I lived)."
+     ],
+     [
+      "en-fr",
+      "He told me he had already seen the film.",
+      "Il m'a dit qu'il avait déjà vu le film.",
+      [
+       "Il m'a dit qu'il allait voir le film.",
+       "Il m'a demandé si j'avais vu le film.",
+       "Il m'a dit qu'il voyait le film."
+      ],
+      "had seen = avait vu (past perfect)."
+     ],
+     [
+      "fr-en",
+      "Elle m'a demandé si j'aimais le chocolat.",
+      "She asked me if I liked chocolate.",
+      [
+       "She asked me do I like chocolate.",
+       "She asked me that I liked chocolate.",
+       "She asked me if did I like chocolate."
+      ],
+      "Question oui / non rapportée → if / whether."
+     ],
+     [
+      "fr-en",
+      "Le prof nous a dit de nous taire.",
+      "The teacher told us to be quiet.",
+      [
+       "The teacher said us to be quiet.",
+       "The teacher told us that be quiet.",
+       "The teacher told to us being quiet."
+      ],
+      "Ordre rapporté : tell someone + to + verbe."
+     ],
+     [
+      "en-fr",
+      "She said she couldn't come to the party.",
+      "Elle a dit qu'elle ne pouvait pas venir à la fête.",
+      [
+       "Elle a dit qu'elle viendrait peut-être à la fête.",
+       "Elle a dit qu'elle n'aimait pas les fêtes.",
+       "Elle ne pourra pas venir à la fête."
+      ],
+      "can't → couldn't."
+     ],
+     [
+      "fr-en",
+      "Il m'a demandé de ne pas le dire à sa mère.",
+      "He asked me not to tell his mother.",
+      [
+       "He asked me to not telling his mother.",
+       "He asked me don't tell his mother.",
+       "He said me not to tell his mother."
+      ],
+      "Ordre négatif : not + to + verbe."
+     ],
+     [
+      "fr-en",
+      "Je me demande ce qu'il fait.",
+      "I wonder what he's doing.",
+      [
+       "I wonder what is he doing.",
+       "I ask me what he's doing.",
+       "I wonder what does he do."
+      ],
+      "wonder = se demander. Ordre normal après what."
+     ],
+     [
+      "en-fr",
+      "He promised that he would never lie again.",
+      "Il a promis qu'il ne mentirait plus jamais.",
+      [
+       "Il a promis qu'il n'avait jamais menti.",
+       "Il ment toujours, même après sa promesse.",
+       "Il a promis de ne jamais revenir."
+      ],
+      "would never = ne … plus jamais (futur dans le passé)."
+     ]
+    ]
+   },
+   {
+    "titre": "Deviner : must be, can't be, might have",
+    "regle": {
+     "texte": "Pour exprimer une déduction :\n**must** = sûrement (presque sûr) : He **must be** tired.\n**can't** = sûrement pas : That **can't be** true.\n**might / may / could** = peut-être : She **might be** at home.\nAu passé : modal + **have + participe** : He **must have forgotten** (il a dû oublier).\n**should have + participe** = reproche : You should have told me.",
+     "exemples": [
+      [
+       "She must be at work.",
+       "Elle doit être au travail."
+      ],
+      [
+       "That can't be true!",
+       "Ça ne peut pas être vrai !"
+      ],
+      [
+       "He might have missed the bus.",
+       "Il a peut-être raté le bus."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "Elle doit être au travail. (j'en suis presque sûr)",
+      "She must be at work.",
+      [
+       "She has to be at work.",
+       "She must to be at work.",
+       "She must being at work."
+      ],
+      "Déduction → must be. have to = obligation."
+     ],
+     [
+      "fr-en",
+      "Ça ne peut pas être vrai !",
+      "That can't be true!",
+      [
+       "That mustn't be true!",
+       "That can't to be true!",
+       "That doesn't can be true!"
+      ],
+      "Déduction négative → can't (pas mustn't, qui veut dire « interdit »)."
+     ],
+     [
+      "fr-en",
+      "Il a peut-être raté le bus.",
+      "He might have missed the bus.",
+      [
+       "He might missed the bus.",
+       "He might has missed the bus.",
+       "He maybe have missed the bus."
+      ],
+      "Peut-être + passé → might have + participe."
+     ],
+     [
+      "en-fr",
+      "You must have been really scared!",
+      "Tu as dû avoir vraiment peur !",
+      [
+       "Tu dois avoir vraiment peur !",
+       "Tu aurais dû avoir peur !",
+       "Tu ne dois pas avoir peur !"
+      ],
+      "must have been = a dû être (déduction sur le passé)."
+     ],
+     [
+      "fr-en",
+      "Il a dû oublier notre rendez-vous.",
+      "He must have forgotten our meeting.",
+      [
+       "He must forget our meeting.",
+       "He had to forget our meeting.",
+       "He must have forgot our meeting."
+      ],
+      "forget → forgot → forgotten."
+     ],
+     [
+      "fr-en",
+      "Elle est peut-être malade.",
+      "She may be ill.",
+      [
+       "She may is ill.",
+       "She can be ill maybe.",
+       "She mays be ill."
+      ],
+      "may / might + verbe simple = peut-être."
+     ],
+     [
+      "en-fr",
+      "They can't have finished already!",
+      "Ils ne peuvent pas avoir déjà fini !",
+      [
+       "Ils ne doivent pas finir maintenant !",
+       "Ils n'ont pas pu finir hier.",
+       "Ils pourraient avoir fini."
+      ],
+      "can't have + participe = impossible que ce soit arrivé."
+     ],
+     [
+      "fr-en",
+      "Tu aurais dû me le dire !",
+      "You should have told me!",
+      [
+       "You must have told me!",
+       "You should told me!",
+       "You should have tell me!"
+      ],
+      "should have + participe = reproche (aurait dû)."
+     ],
+     [
+      "fr-en",
+      "Il n'aurait pas pu le faire tout seul.",
+      "He couldn't have done it alone.",
+      [
+       "He can't do it alone.",
+       "He couldn't have did it alone.",
+       "He wouldn't could do it alone."
+      ],
+      "couldn't have + participe = n'aurait pas pu."
+     ],
+     [
+      "en-fr",
+      "The lights are off. They might be asleep.",
+      "Les lumières sont éteintes. Ils dorment peut-être.",
+      [
+       "Les lumières sont éteintes. Ils doivent partir.",
+       "Les lumières sont allumées. Ils sont réveillés.",
+       "Éteins les lumières, ils dorment."
+      ],
+      "might be = sont peut-être."
+     ]
+    ]
+   },
+   {
+    "titre": "Regrets et souhaits : I wish, if only",
+    "regle": {
+     "texte": "**I wish + prétérit** = regret sur le présent : I wish I **had** more time (j'aimerais avoir plus de temps).\n**I wish + had + participe** = regret sur le passé : I wish I **had studied** (j'aurais aimé étudier).\n**I wish + would** = agacement : I wish you **would** stop!\n**If only** = si seulement · **I'd rather + prétérit** = je préférerais que · **It's time + prétérit** = il est temps que.",
+     "exemples": [
+      [
+       "I wish I spoke English fluently.",
+       "J'aimerais parler anglais couramment."
+      ],
+      [
+       "I wish I hadn't said that.",
+       "Je regrette d'avoir dit ça."
+      ],
+      [
+       "If only I had more time!",
+       "Si seulement j'avais plus de temps !"
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "J'aimerais parler anglais couramment.",
+      "I wish I spoke English fluently.",
+      [
+       "I wish I speak English fluently.",
+       "I wish I would speak English fluently.",
+       "I want I spoke English fluently."
+      ],
+      "Regret présent : I wish + prétérit."
+     ],
+     [
+      "fr-en",
+      "Je regrette d'avoir dit ça.",
+      "I wish I hadn't said that.",
+      [
+       "I wish I didn't say that.",
+       "I regret to have said that.",
+       "I wish I haven't said that."
+      ],
+      "Regret passé : I wish + had + participe. (I regret saying that est aussi correct.)"
+     ],
+     [
+      "fr-en",
+      "Si seulement j'avais plus de temps !",
+      "If only I had more time!",
+      [
+       "If only I have more time!",
+       "Only if I had more time!",
+       "If only I would have more time!"
+      ],
+      "If only + prétérit = si seulement (présent)."
+     ],
+     [
+      "en-fr",
+      "I wish you would stop shouting.",
+      "J'aimerais que tu arrêtes de crier.",
+      [
+       "J'aimerais crier moins fort.",
+       "Tu as arrêté de crier, merci.",
+       "J'aimerais que tu cries plus fort."
+      ],
+      "wish + would = agacement : que l'autre change."
+     ],
+     [
+      "fr-en",
+      "J'aurais aimé être là.",
+      "I wish I had been there.",
+      [
+       "I wish I was there yesterday.",
+       "I would like to be there.",
+       "I wish I have been there."
+      ],
+      "Regret passé → had been."
+     ],
+     [
+      "fr-en",
+      "J'aimerais être plus grand.",
+      "I wish I were taller.",
+      [
+       "I wish I am taller.",
+       "I wish I would be taller.",
+       "I wish I'm more tall."
+      ],
+      "wish + were (style soigné) ou was (courant)."
+     ],
+     [
+      "en-fr",
+      "If only I hadn't lost my keys!",
+      "Si seulement je n'avais pas perdu mes clés !",
+      [
+       "Si seulement je retrouvais mes clés !",
+       "J'ai perdu mes clés, mais ce n'est pas grave.",
+       "Si je perds mes clés, je serai bloqué."
+      ],
+      "If only + had + participe = regret sur le passé."
+     ],
+     [
+      "fr-en",
+      "Je préférerais que tu ne fumes pas ici.",
+      "I'd rather you didn't smoke here.",
+      [
+       "I'd rather you don't smoke here.",
+       "I prefer you didn't smoke here.",
+       "I'd rather you wouldn't to smoke here."
+      ],
+      "I'd rather + quelqu'un + prétérit = je préférerais que…"
+     ],
+     [
+      "fr-en",
+      "Il est temps qu'on y aille.",
+      "It's time we went.",
+      [
+       "It's time we go.",
+       "It's time we will go.",
+       "It's time that we going."
+      ],
+      "It's time + sujet + prétérit = il est temps que…"
+     ],
+     [
+      "en-fr",
+      "She wishes she had studied harder at school.",
+      "Elle aurait aimé travailler plus à l'école.",
+      [
+       "Elle travaille dur à l'école.",
+       "Elle espère travailler plus à l'école.",
+       "Elle souhaite que tu travailles plus à l'école."
+      ],
+      "wishes she had studied = regret sur le passé."
+     ]
+    ]
+   },
+   {
+    "titre": "Les phrasal verbs essentiels",
+    "regle": {
+     "texte": "Un **phrasal verb** = verbe + petit mot (up, out, off, on…) qui change complètement le sens.\ngive **up** = abandonner · find **out** = découvrir · turn **down** = refuser · look **after** = s'occuper de · put **off** = reporter · get **over** = se remettre de · put **up with** = supporter · break **up** = se séparer · pick **up** = aller chercher.\nAstuce : apprends-les dans une phrase entière, comme des blocs.",
+     "exemples": [
+      [
+       "Don't give up!",
+       "N'abandonne pas !"
+      ],
+      [
+       "I found out the truth.",
+       "J'ai découvert la vérité."
+      ],
+      [
+       "They broke up last year.",
+       "Ils se sont séparés l'année dernière."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "en-fr",
+      "Don't give up, you're almost there!",
+      "N'abandonne pas, tu y es presque !",
+      [
+       "Ne donne rien, tu es presque arrivé !",
+       "Ne lève pas la main, tu y es presque !",
+       "Ne monte pas, tu es presque en haut !"
+      ],
+      "give up = abandonner."
+     ],
+     [
+      "fr-en",
+      "J'ai découvert la vérité hier.",
+      "I found out the truth yesterday.",
+      [
+       "I found up the truth yesterday.",
+       "I founded out the truth yesterday.",
+       "I find out the truth yesterday."
+      ],
+      "find out = découvrir (une information)."
+     ],
+     [
+      "en-fr",
+      "She turned down the job offer.",
+      "Elle a refusé l'offre d'emploi.",
+      [
+       "Elle a accepté l'offre d'emploi.",
+       "Elle a baissé le salaire.",
+       "Elle a cherché une offre d'emploi."
+      ],
+      "turn down = refuser (aussi : baisser le son)."
+     ],
+     [
+      "fr-en",
+      "Qui s'occupe de ton chat pendant les vacances ?",
+      "Who looks after your cat during the holidays?",
+      [
+       "Who looks for your cat during the holidays?",
+       "Who looks at your cat during the holidays?",
+       "Who looks up your cat during the holidays?"
+      ],
+      "look after = s'occuper de. look for = chercher. look up = chercher (une info)."
+     ],
+     [
+      "fr-en",
+      "On a dû reporter la réunion.",
+      "We had to put off the meeting.",
+      [
+       "We had to put on the meeting.",
+       "We had to put out the meeting.",
+       "We had to put up the meeting."
+      ],
+      "put off = reporter. put on = mettre (un vêtement)."
+     ],
+     [
+      "en-fr",
+      "It took her months to get over the breakup.",
+      "Il lui a fallu des mois pour se remettre de la rupture.",
+      [
+       "Elle a mis des mois à rompre.",
+       "Elle a passé des mois à préparer la rupture.",
+       "Il lui a fallu des mois pour trouver un copain."
+      ],
+      "get over = se remettre de."
+     ],
+     [
+      "fr-en",
+      "Je ne supporte plus ce bruit.",
+      "I can't put up with this noise anymore.",
+      [
+       "I can't put on with this noise anymore.",
+       "I can't stand up this noise anymore.",
+       "I can't put off this noise anymore."
+      ],
+      "put up with = supporter, tolérer."
+     ],
+     [
+      "fr-en",
+      "Le prix du pétrole a augmenté.",
+      "The price of oil has gone up.",
+      [
+       "The price of oil has gone on.",
+       "The price of oil has gone over.",
+       "The price of oil has gone out."
+      ],
+      "go up = augmenter. go down = baisser."
+     ],
+     [
+      "en-fr",
+      "Can you pick me up at the station?",
+      "Tu peux venir me chercher à la gare ?",
+      [
+       "Tu peux me déposer à la gare ?",
+       "Tu peux me prendre en photo à la gare ?",
+       "Tu peux me rappeler depuis la gare ?"
+      ],
+      "pick someone up = aller chercher quelqu'un."
+     ],
+     [
+      "fr-en",
+      "Ils se sont séparés l'année dernière.",
+      "They broke up last year.",
+      [
+       "They broke down last year.",
+       "They broke out last year.",
+       "They broke off last year."
+      ],
+      "break up = se séparer. break down = tomber en panne. break out = éclater (guerre, incendie)."
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "monde": "Monde 7 — Autonome",
+  "niveau": "C1",
+  "niveaux": [
+   {
+    "titre": "Insister : inversion et emphase",
+    "regle": {
+     "texte": "Pour insister, on place un mot négatif ou restrictif au début et on **inverse** le sujet et l'auxiliaire :\n**Never have I** seen… · **Not only did he** lie, but… · **Rarely do we** meet… · **No sooner had** I arrived **than**… · **Under no circumstances should you**…\nAutres structures d'emphase : **What I need is**… · **It was Tom who**… · I **do** like it (j'aime vraiment).",
+     "exemples": [
+      [
+       "Never have I seen such a beautiful place.",
+       "Je n'ai jamais vu un endroit aussi beau."
+      ],
+      [
+       "Not only did he lie, but he also stole.",
+       "Non seulement il a menti, mais en plus il a volé."
+      ],
+      [
+       "It was Tom who broke the window.",
+       "C'est Tom qui a cassé la fenêtre."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "Jamais je n'ai vu un endroit aussi beau.",
+      "Never have I seen such a beautiful place.",
+      [
+       "Never I have seen such a beautiful place.",
+       "Never have I saw such a beautiful place.",
+       "Never did I have seen such a beautiful place."
+      ],
+      "Never en tête → inversion : Never have I + participe."
+     ],
+     [
+      "fr-en",
+      "Non seulement il a menti, mais en plus il a volé.",
+      "Not only did he lie, but he also stole.",
+      [
+       "Not only he lied, but he also stole.",
+       "Not only did he lied, but he also stole.",
+       "Not only lied he, but he also stole."
+      ],
+      "Not only en tête → did + sujet + verbe simple."
+     ],
+     [
+      "fr-en",
+      "C'est Tom qui a cassé la fenêtre.",
+      "It was Tom who broke the window.",
+      [
+       "It is Tom which broke the window.",
+       "This was Tom who broke the window.",
+       "It was Tom who has broke the window."
+      ],
+      "It was + personne + who… = c'est … qui."
+     ],
+     [
+      "en-fr",
+      "No sooner had we arrived than it started to rain.",
+      "À peine étions-nous arrivés qu'il s'est mis à pleuvoir.",
+      [
+       "Nous sommes arrivés bien avant la pluie.",
+       "Il pleuvait déjà quand nous sommes arrivés.",
+       "Dès qu'il a plu, nous sommes partis."
+      ],
+      "No sooner … than = à peine … que."
+     ],
+     [
+      "fr-en",
+      "Ce dont j'ai besoin, c'est de vacances.",
+      "What I need is a holiday.",
+      [
+       "That I need is a holiday.",
+       "What I need it's a holiday.",
+       "Which I need is a holiday."
+      ],
+      "What I need is… = ce dont j'ai besoin, c'est…"
+     ],
+     [
+      "fr-en",
+      "On voit rarement un tel talent.",
+      "Rarely do we see such talent.",
+      [
+       "Rarely we see such talent.",
+       "Rarely do we see such a talent.",
+       "Rarely see we such talent."
+      ],
+      "Rarely en tête → do + sujet + verbe. talent est ici indénombrable."
+     ],
+     [
+      "en-fr",
+      "I do understand your point of view.",
+      "Je comprends vraiment ton point de vue.",
+      [
+       "Je fais semblant de comprendre ton point de vue.",
+       "Je ne comprends pas ton point de vue.",
+       "Je dois comprendre ton point de vue."
+      ],
+      "do + verbe dans une affirmation = insistance (vraiment)."
+     ],
+     [
+      "fr-en",
+      "En aucun cas tu ne dois ouvrir cette porte.",
+      "Under no circumstances should you open this door.",
+      [
+       "Under no circumstances you should open this door.",
+       "In no case you must open this door.",
+       "Under no circumstances should you to open this door."
+      ],
+      "Under no circumstances + inversion (should you)."
+     ],
+     [
+      "fr-en",
+      "Ce n'est qu'après son départ que j'ai compris.",
+      "Only after he left did I understand.",
+      [
+       "Only after he left I understood.",
+       "Only after he left did I understood.",
+       "Only after left he did I understand."
+      ],
+      "Only after… en tête → inversion dans la proposition principale."
+     ],
+     [
+      "en-fr",
+      "Little did she know that her life was about to change.",
+      "Elle était loin de se douter que sa vie allait changer.",
+      [
+       "Elle savait que sa vie allait un peu changer.",
+       "Elle ne voulait pas que sa vie change.",
+       "Sa vie a changé petit à petit."
+      ],
+      "Little did she know = elle était loin de se douter."
+     ]
+    ]
+   },
+   {
+    "titre": "Faire faire : have something done",
+    "regle": {
+     "texte": "**have / get + objet + participe passé** = faire faire quelque chose par quelqu'un d'autre : I **had my hair cut** (je me suis fait couper les cheveux).\nAussi pour une chose subie : She **had her bag stolen** (elle s'est fait voler son sac).\n**make someone do** = obliger · **let someone do** = laisser · **have someone do** = demander à quelqu'un de faire (sans « to »).",
+     "exemples": [
+      [
+       "I had my hair cut yesterday.",
+       "Je me suis fait couper les cheveux hier."
+      ],
+      [
+       "She had her phone stolen.",
+       "Elle s'est fait voler son téléphone."
+      ],
+      [
+       "My parents made me study.",
+       "Mes parents m'ont obligé à étudier."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "Je me suis fait couper les cheveux.",
+      "I had my hair cut.",
+      [
+       "I cut my hair by someone.",
+       "I had cut my hair.",
+       "I made my hair cut."
+      ],
+      "have + objet + participe = faire faire (par quelqu'un)."
+     ],
+     [
+      "fr-en",
+      "Elle s'est fait voler son téléphone.",
+      "She had her phone stolen.",
+      [
+       "She stole her phone.",
+       "She was stolen her phone.",
+       "She had stolen her phone."
+      ],
+      "Événement subi : have + objet + participe."
+     ],
+     [
+      "en-fr",
+      "We're having our kitchen redone.",
+      "On fait refaire notre cuisine.",
+      [
+       "On refait notre cuisine nous-mêmes.",
+       "On a fini notre cuisine.",
+       "On va acheter une nouvelle maison."
+      ],
+      "be having something done = être en train de faire faire."
+     ],
+     [
+      "fr-en",
+      "Mes parents m'ont obligé à ranger ma chambre.",
+      "My parents made me tidy my room.",
+      [
+       "My parents made me to tidy my room.",
+       "My parents obliged me tidy my room.",
+       "My parents made me tidying my room."
+      ],
+      "make + quelqu'un + verbe simple (sans to)."
+     ],
+     [
+      "fr-en",
+      "Laisse-moi t'aider.",
+      "Let me help you.",
+      [
+       "Let me to help you.",
+       "Let me helping you.",
+       "Leave me help you."
+      ],
+      "let + quelqu'un + verbe simple."
+     ],
+     [
+      "fr-en",
+      "Il faut que je fasse réparer ma voiture.",
+      "I need to get my car repaired.",
+      [
+       "I need to repair my car by someone.",
+       "I need to get repaired my car.",
+       "I need to make my car repair."
+      ],
+      "get + objet + participe (plus courant à l'oral)."
+     ],
+     [
+      "en-fr",
+      "I'll have the manager call you back.",
+      "Je vais demander au responsable de vous rappeler.",
+      [
+       "Le responsable m'a demandé de vous rappeler.",
+       "Je vais rappeler le responsable.",
+       "Le responsable ne vous rappellera pas."
+      ],
+      "have + quelqu'un + verbe simple = faire faire à quelqu'un."
+     ],
+     [
+      "fr-en",
+      "On s'est fait livrer des pizzas.",
+      "We had pizzas delivered.",
+      [
+       "We delivered pizzas.",
+       "We had delivered pizzas.",
+       "We made pizzas delivering."
+      ],
+      "Ordre des mots : had + objet + participe."
+     ],
+     [
+      "fr-en",
+      "Ils ne m'ont pas laissé entrer.",
+      "They didn't let me in.",
+      [
+       "They didn't let me to enter.",
+       "They didn't leave me enter.",
+       "They didn't let me entering."
+      ],
+      "let someone in = laisser entrer."
+     ],
+     [
+      "en-fr",
+      "You should get your eyes tested.",
+      "Tu devrais te faire contrôler la vue.",
+      [
+       "Tu devrais tester tes lunettes.",
+       "Tu as les yeux fatigués.",
+       "Tu devrais fermer les yeux."
+      ],
+      "get your eyes tested = te faire examiner les yeux."
+     ]
+    ]
+   },
+   {
+    "titre": "Argumenter : despite, whereas, unless",
+    "regle": {
+     "texte": "Pour argumenter avec précision :\n**although / even though** + phrase = bien que · **despite / in spite of** + nom ou -ING = malgré · **whereas** = alors que (contraste) · **however** = cependant · **therefore** = par conséquent · **unless** = à moins que · **provided that / as long as** = à condition que, tant que · **instead of + -ING** = au lieu de.",
+     "exemples": [
+      [
+       "Despite the rain, we went out.",
+       "Malgré la pluie, on est sortis."
+      ],
+      [
+       "Unless you hurry, you'll miss the train.",
+       "À moins de te dépêcher, tu vas rater le train."
+      ],
+      [
+       "I like tea, whereas my brother prefers coffee.",
+       "J'aime le thé, alors que mon frère préfère le café."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "Malgré la pluie, on est sortis.",
+      "Despite the rain, we went out.",
+      [
+       "Despite of the rain, we went out.",
+       "Although the rain, we went out.",
+       "In spite the rain, we went out."
+      ],
+      "despite + nom (sans of) · in spite OF + nom · although + phrase."
+     ],
+     [
+      "fr-en",
+      "À moins que tu te dépêches, tu vas rater le train.",
+      "Unless you hurry, you'll miss the train.",
+      [
+       "Unless you don't hurry, you'll miss the train.",
+       "Except you hurry, you'll miss the train.",
+       "Unless you will hurry, you'll miss the train."
+      ],
+      "unless = if … not. Pas de double négation, pas de will."
+     ],
+     [
+      "en-fr",
+      "I like tea, whereas my brother prefers coffee.",
+      "J'aime le thé, alors que mon frère préfère le café.",
+      [
+       "J'aime le thé parce que mon frère préfère le café.",
+       "J'aime le thé et le café, comme mon frère.",
+       "Mon frère et moi préférons le café au thé."
+      ],
+      "whereas = alors que (contraste)."
+     ],
+     [
+      "fr-en",
+      "Bien qu'il soit fatigué, il a continué à jouer.",
+      "Even though he was tired, he kept playing.",
+      [
+       "Despite he was tired, he kept playing.",
+       "Even he was tired, he kept playing.",
+       "Although being tired he kept to play."
+      ],
+      "even though + phrase complète."
+     ],
+     [
+      "fr-en",
+      "Il n'a pas étudié ; par conséquent, il a échoué.",
+      "He didn't study; therefore, he failed.",
+      [
+       "He didn't study; however, he failed.",
+       "He didn't study; although, he failed.",
+       "He didn't study; despite, he failed."
+      ],
+      "therefore = par conséquent. however = cependant."
+     ],
+     [
+      "en-fr",
+      "You can borrow my car, provided that you drive carefully.",
+      "Tu peux emprunter ma voiture, à condition de conduire prudemment.",
+      [
+       "Tu peux emprunter ma voiture, même si tu conduis mal.",
+       "Tu ne peux pas emprunter ma voiture, tu conduis trop vite.",
+       "Tu peux m'emprunter de l'argent pour une voiture."
+      ],
+      "provided that = à condition que."
+     ],
+     [
+      "fr-en",
+      "Bien qu'ils aient perdu, ils étaient contents.",
+      "Despite losing, they were happy.",
+      [
+       "Despite they lost, they were happy.",
+       "Despite of losing, they were happy.",
+       "Despite to lose, they were happy."
+      ],
+      "despite + -ING."
+     ],
+     [
+      "fr-en",
+      "Le jeu est court. Cependant, il est très beau.",
+      "The game is short. However, it is very beautiful.",
+      [
+       "The game is short. Whereas, it is very beautiful.",
+       "The game is short. Despite, it is very beautiful.",
+       "The game is short. Therefore, it is very beautiful."
+      ],
+      "However en début de phrase, suivi d'une virgule."
+     ],
+     [
+      "en-fr",
+      "As long as you're honest, I'll forgive you.",
+      "Tant que tu es honnête, je te pardonnerai.",
+      [
+       "Depuis que tu es honnête, je te pardonne.",
+       "Même si tu mens, je te pardonnerai.",
+       "Tu as été honnête longtemps, je te pardonne."
+      ],
+      "as long as = tant que, du moment que."
+     ],
+     [
+      "fr-en",
+      "Au lieu de te plaindre, aide-moi !",
+      "Instead of complaining, help me!",
+      [
+       "Instead to complain, help me!",
+       "Instead of complain, help me!",
+       "In place to complaining, help me!"
+      ],
+      "instead of + -ING = au lieu de."
+     ]
+    ]
+   },
+   {
+    "titre": "Expressions idiomatiques",
+    "regle": {
+     "texte": "Les natifs utilisent beaucoup d'expressions imagées qu'on ne peut pas traduire mot à mot : il faut les apprendre comme des blocs.\na piece of cake = du gâteau · cost an arm and a leg = coûter les yeux de la tête · under the weather = patraque · call it a day = s'arrêter là · let the cat out of the bag = vendre la mèche · hit the nail on the head = mettre dans le mille.",
+     "exemples": [
+      [
+       "This exam was a piece of cake.",
+       "Cet examen, c'était du gâteau."
+      ],
+      [
+       "That phone cost an arm and a leg.",
+       "Ce téléphone a coûté les yeux de la tête."
+      ],
+      [
+       "Let's call it a day.",
+       "On s'arrête là pour aujourd'hui."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "en-fr",
+      "This exam was a piece of cake.",
+      "Cet examen était super facile.",
+      [
+       "Cet examen était un morceau de gâteau.",
+       "Cet examen était très difficile.",
+       "On a mangé du gâteau après l'examen."
+      ],
+      "a piece of cake = très facile (c'est du gâteau)."
+     ],
+     [
+      "en-fr",
+      "That phone cost an arm and a leg.",
+      "Ce téléphone a coûté une fortune.",
+      [
+       "Ce téléphone m'a coûté un bras.",
+       "Ce téléphone était bon marché.",
+       "Ce téléphone s'est cassé en tombant."
+      ],
+      "cost an arm and a leg = coûter les yeux de la tête."
+     ],
+     [
+      "en-fr",
+      "I'm feeling a bit under the weather today.",
+      "Je ne me sens pas très bien aujourd'hui.",
+      [
+       "Je n'aime pas la météo aujourd'hui.",
+       "Je suis sous la pluie aujourd'hui.",
+       "Je me sens en pleine forme aujourd'hui."
+      ],
+      "under the weather = patraque, un peu malade."
+     ],
+     [
+      "en-fr",
+      "Let's call it a day.",
+      "On s'arrête là pour aujourd'hui.",
+      [
+       "Appelons-le demain.",
+       "C'est une belle journée.",
+       "On commence la journée."
+      ],
+      "call it a day = s'arrêter de travailler pour la journée."
+     ],
+     [
+      "fr-en",
+      "Il a vendu la mèche.",
+      "He let the cat out of the bag.",
+      [
+       "He sold the candle.",
+       "He let the dog out of the house.",
+       "He opened the bag of cats."
+      ],
+      "let the cat out of the bag = révéler un secret."
+     ],
+     [
+      "en-fr",
+      "She hit the nail on the head.",
+      "Elle a mis dans le mille.",
+      [
+       "Elle s'est cogné la tête.",
+       "Elle a planté un clou.",
+       "Elle s'est trompée complètement."
+      ],
+      "hit the nail on the head = dire exactement ce qu'il fallait."
+     ],
+     [
+      "en-fr",
+      "Break a leg tonight!",
+      "Bonne chance pour ce soir !",
+      [
+       "Casse-toi une jambe ce soir !",
+       "Fais attention à tes jambes ce soir !",
+       "Repose-toi bien ce soir !"
+      ],
+      "Break a leg! = Bonne chance ! (avant un spectacle, comme « merde ! »)"
+     ],
+     [
+      "fr-en",
+      "Il pleut des cordes.",
+      "It's raining cats and dogs.",
+      [
+       "It's raining ropes.",
+       "It's raining dogs and birds.",
+       "It's raining very hardly."
+      ],
+      "raining cats and dogs = pleuvoir des cordes."
+     ],
+     [
+      "en-fr",
+      "I'll take it with a pinch of salt.",
+      "Je vais prendre ça avec des pincettes.",
+      [
+       "Je vais ajouter une pincée de sel.",
+       "Je vais le prendre très au sérieux.",
+       "Je vais le manger avec du sel."
+      ],
+      "with a pinch of salt = avec prudence, sans tout croire."
+     ],
+     [
+      "en-fr",
+      "We're all in the same boat.",
+      "On est tous dans la même galère.",
+      [
+       "On est tous sur le même bateau de pêche.",
+       "On part tous en croisière.",
+       "On n'a pas du tout les mêmes problèmes."
+      ],
+      "in the same boat = dans la même situation (difficile)."
+     ]
+    ]
+   },
+   {
+    "titre": "Nuancer son opinion",
+    "regle": {
+     "texte": "Pour nuancer comme un natif :\n**I tend to** = j'ai tendance à · **It seems that** = il semble que · **be likely to** = il est probable que · **arguably** = sans doute, on peut dire que · **to some extent** = dans une certaine mesure · **As far as I'm concerned** = en ce qui me concerne · **had better** = ferais mieux de · **would rather** = préférerais.\n⚠ avoir raison = **to be right** (jamais « have reason »).",
+     "exemples": [
+      [
+       "As far as I'm concerned, it's a great idea.",
+       "En ce qui me concerne, c'est une super idée."
+      ],
+      [
+       "You'd better leave now.",
+       "Tu ferais mieux de partir maintenant."
+      ],
+      [
+       "Prices are likely to rise.",
+       "Les prix vont probablement augmenter."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "En ce qui me concerne, c'est une super idée.",
+      "As far as I'm concerned, it's a great idea.",
+      [
+       "As far as I concern, it's a great idea.",
+       "As long as I'm concerned, it's a great idea.",
+       "For my concern, it's a great idea."
+      ],
+      "As far as I'm concerned = en ce qui me concerne."
+     ],
+     [
+      "fr-en",
+      "Tu ferais mieux de partir maintenant.",
+      "You'd better leave now.",
+      [
+       "You'd better to leave now.",
+       "You'd better leaving now.",
+       "You had better left now."
+      ],
+      "had better + verbe simple."
+     ],
+     [
+      "fr-en",
+      "Je préférerais rester à la maison.",
+      "I'd rather stay at home.",
+      [
+       "I'd rather to stay at home.",
+       "I'd prefer stay at home.",
+       "I'd rather staying at home."
+      ],
+      "would rather + verbe simple (sans to). would prefer + to."
+     ],
+     [
+      "en-fr",
+      "Prices are likely to rise next year.",
+      "Les prix vont probablement augmenter l'année prochaine.",
+      [
+       "Les prix ont augmenté l'an dernier.",
+       "Les prix vont sûrement baisser l'année prochaine.",
+       "On aime voir les prix augmenter."
+      ],
+      "be likely to = il est probable que."
+     ],
+     [
+      "en-fr",
+      "I tend to agree with you.",
+      "J'ai tendance à être d'accord avec toi.",
+      [
+       "Je refuse d'être d'accord avec toi.",
+       "J'essaie d'être d'accord avec toi.",
+       "Je ne suis jamais d'accord avec toi."
+      ],
+      "tend to = avoir tendance à (nuance)."
+     ],
+     [
+      "fr-en",
+      "Dans une certaine mesure, tu as raison.",
+      "To some extent, you're right.",
+      [
+       "In some measure, you have right.",
+       "To some extend, you're right.",
+       "At a certain measure, you're right."
+      ],
+      "to some extent = dans une certaine mesure. (extent, pas extend !)"
+     ],
+     [
+      "en-fr",
+      "It's arguably the best game of the decade.",
+      "C'est sans doute le meilleur jeu de la décennie.",
+      [
+       "C'est un jeu dont on se dispute beaucoup.",
+       "C'est le pire jeu de la décennie.",
+       "On se dispute à cause de ce jeu."
+      ],
+      "arguably = on peut dire que, sans doute."
+     ],
+     [
+      "fr-en",
+      "Il semblerait qu'il ait raison.",
+      "It seems that he's right.",
+      [
+       "It seems that he has reason.",
+       "He seems that he's right.",
+       "It seems he have right."
+      ],
+      "avoir raison = to be right."
+     ],
+     [
+      "fr-en",
+      "On ferait mieux de ne pas lui dire.",
+      "We'd better not tell him.",
+      [
+       "We'd better don't tell him.",
+       "We'd not better tell him.",
+       "We'd better not to tell him."
+      ],
+      "Négation : had better not + verbe."
+     ],
+     [
+      "en-fr",
+      "I'd rather you didn't tell anyone.",
+      "Je préférerais que tu ne le dises à personne.",
+      [
+       "Je préfère le dire à tout le monde.",
+       "Tu préférerais ne rien dire.",
+       "J'aimerais que tu le dises à quelqu'un."
+      ],
+      "I'd rather + quelqu'un + prétérit = je préférerais que…"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "monde": "Monde 8 — Maîtrise",
+  "niveau": "C2",
+  "niveaux": [
+   {
+    "titre": "Style soutenu : subjonctif et formules",
+    "regle": {
+     "texte": "Dans un anglais très soigné :\n**Subjonctif** après insist, suggest, demand, essential… : It is essential that he **be** informed · I suggest that she **take** a break (sans -s !).\n**Should you need** = si jamais vous aviez besoin · **Were it not for** = sans · **Had it not been for** = si ce n'avait pas été pour · **However + adjectif + may be** = aussi … que ce soit.",
+     "exemples": [
+      [
+       "It is essential that he be informed.",
+       "Il est essentiel qu'il soit informé."
+      ],
+      [
+       "Should you need help, call me.",
+       "Si jamais tu as besoin d'aide, appelle-moi."
+      ],
+      [
+       "Were it not for you, I would have given up.",
+       "Sans toi, j'aurais abandonné."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "Il est essentiel qu'il soit informé.",
+      "It is essential that he be informed.",
+      [
+       "It is essential that he is inform.",
+       "It is essential that he will be informed.",
+       "It is essential he to be informed."
+      ],
+      "Subjonctif : be (forme de base), même avec he."
+     ],
+     [
+      "fr-en",
+      "Je suggère qu'elle prenne une pause.",
+      "I suggest that she take a break.",
+      [
+       "I suggest that she takes a break to.",
+       "I suggest her to take a break.",
+       "I suggest that she would takes a break."
+      ],
+      "suggest that + sujet + verbe de base (take, sans -s)."
+     ],
+     [
+      "fr-en",
+      "Si jamais vous avez besoin d'aide, appelez-moi.",
+      "Should you need any help, call me.",
+      [
+       "Should you needed any help, call me.",
+       "If ever you would need help, call me.",
+       "Should you to need any help, call me."
+      ],
+      "Should you + verbe = si jamais (soutenu)."
+     ],
+     [
+      "en-fr",
+      "Were it not for you, I would have given up.",
+      "Sans toi, j'aurais abandonné.",
+      [
+       "Ce n'était pas toi, donc j'ai abandonné.",
+       "Si tu n'étais pas là, je n'abandonnerais jamais.",
+       "Grâce à toi, j'ai tout donné."
+      ],
+      "Were it not for = sans (soutenu)."
+     ],
+     [
+      "fr-en",
+      "Ils ont exigé qu'il démissionne.",
+      "They demanded that he resign.",
+      [
+       "They demanded that he resigns.",
+       "They demanded him to resign himself.",
+       "They demanded that he would resign to."
+      ],
+      "demand that + verbe de base."
+     ],
+     [
+      "en-fr",
+      "Had it not been for the rain, we would have won.",
+      "S'il n'avait pas plu, nous aurions gagné.",
+      [
+       "Bien qu'il ait plu, nous avons gagné.",
+       "Nous avons gagné sous la pluie.",
+       "S'il pleut, nous ne gagnerons pas."
+      ],
+      "Had it not been for = si ce n'avait pas été pour…"
+     ],
+     [
+      "fr-en",
+      "Quoi qu'il arrive, ne panique pas.",
+      "Whatever happens, don't panic.",
+      [
+       "Whatever it happens, don't panic.",
+       "What happens, don't panic.",
+       "Whatever will happen, don't panic."
+      ],
+      "whatever = quoi que. Pas de « it » ni de will."
+     ],
+     [
+      "fr-en",
+      "Aussi difficile que ce soit, il faut essayer.",
+      "However difficult it may be, we must try.",
+      [
+       "How difficult it may be, we must try.",
+       "However it may be difficult, we must try.",
+       "As difficult as it may be it, we must try."
+      ],
+      "However + adjectif + sujet + may be = aussi … que ce soit."
+     ],
+     [
+      "en-fr",
+      "So be it.",
+      "Qu'il en soit ainsi.",
+      [
+       "C'est comme ça qu'il est.",
+       "Sois-le donc.",
+       "Comme ça, ce sera fait."
+      ],
+      "So be it = qu'il en soit ainsi (subjonctif figé)."
+     ],
+     [
+      "fr-en",
+      "Il est grand temps que tu prennes une décision.",
+      "It's high time you made a decision.",
+      [
+       "It's high time you make a decision.",
+       "It's high time you will make a decision.",
+       "It's big time you made a decision."
+      ],
+      "It's high time + prétérit = il est grand temps que."
+     ]
+    ]
+   },
+   {
+    "titre": "Structures avancées : participiales",
+    "regle": {
+     "texte": "Les **propositions participiales** rendent le style plus fluide :\n**Having finished** his work, he left (après avoir fini…) · **Not knowing** what to do, she called me (ne sachant pas…) · **Built** in 1890, the tower… (construite en 1890…).\nExpressions figées : **Given** (étant donné) · **Judging by** (à en juger par) · **All things considered** (tout bien considéré).\n⚠ Le sujet doit être le même dans les deux parties de la phrase !",
+     "exemples": [
+      [
+       "Having finished his work, he went home.",
+       "Après avoir fini son travail, il est rentré."
+      ],
+      [
+       "Not knowing what to say, she smiled.",
+       "Ne sachant pas quoi dire, elle a souri."
+      ],
+      [
+       "Built in 1890, the bridge is still in use.",
+       "Construit en 1890, le pont est toujours utilisé."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "fr-en",
+      "Après avoir fini son travail, il est rentré chez lui.",
+      "Having finished his work, he went home.",
+      [
+       "Having finish his work, he went home.",
+       "After finished his work, he went home.",
+       "Having finished his work, his home went."
+      ],
+      "Having + participe = après avoir…"
+     ],
+     [
+      "fr-en",
+      "Ne sachant pas quoi dire, elle a souri.",
+      "Not knowing what to say, she smiled.",
+      [
+       "Don't knowing what to say, she smiled.",
+       "Not know what to say, she smiled.",
+       "Knowing not what to say, smiled she."
+      ],
+      "Not + -ING = ne … pas (cause)."
+     ],
+     [
+      "fr-en",
+      "Construit en 1890, le pont est toujours utilisé.",
+      "Built in 1890, the bridge is still in use.",
+      [
+       "Building in 1890, the bridge is still in use.",
+       "Was built in 1890, the bridge is still in use.",
+       "Built in 1890, people still use the bridge for it."
+      ],
+      "Participe passé en tête = sens passif."
+     ],
+     [
+      "en-fr",
+      "Feeling tired, I went to bed early.",
+      "Comme j'étais fatigué, je me suis couché tôt.",
+      [
+       "En me couchant tôt, je me sens fatigué.",
+       "Je me suis couché tard car je n'étais pas fatigué.",
+       "Je suis fatigué de me coucher tôt."
+      ],
+      "Feeling tired = comme je me sentais fatigué."
+     ],
+     [
+      "fr-en",
+      "Une fois arrivés, nous avons appelé nos parents.",
+      "Having arrived, we called our parents.",
+      [
+       "Having arrive, we called our parents.",
+       "Arrived, we called our parents.",
+       "Once arriving, our parents called us."
+      ],
+      "Having arrived = une fois arrivés."
+     ],
+     [
+      "en-fr",
+      "Given the circumstances, we did our best.",
+      "Étant donné les circonstances, nous avons fait de notre mieux.",
+      [
+       "Malgré les circonstances, nous avons échoué.",
+       "Nous avons donné les circonstances au mieux.",
+       "Les circonstances nous ont été données."
+      ],
+      "given = étant donné."
+     ],
+     [
+      "fr-en",
+      "Le film, sorti l'an dernier, a eu un énorme succès.",
+      "The film, released last year, was a huge success.",
+      [
+       "The film, releasing last year, was a huge success.",
+       "The film, which released last year, was a huge success.",
+       "The film, released last year, it was a huge success."
+      ],
+      "released = qui est sorti (participe passé, sens passif)."
+     ],
+     [
+      "fr-en",
+      "Tout bien considéré, c'était une bonne journée.",
+      "All things considered, it was a good day.",
+      [
+       "All things considering, it was a good day.",
+       "All considered things, it was a good day.",
+       "Considering all, it were a good day."
+      ],
+      "All things considered = tout bien considéré (expression figée)."
+     ],
+     [
+      "en-fr",
+      "Judging by his face, the news wasn't good.",
+      "À en juger par son visage, la nouvelle n'était pas bonne.",
+      [
+       "Il a jugé la nouvelle sur son visage.",
+       "Son visage a jugé que la nouvelle était mauvaise.",
+       "La nouvelle était bonne, malgré son visage."
+      ],
+      "Judging by = à en juger par."
+     ],
+     [
+      "fr-en",
+      "N'ayant pas reçu de réponse, il a rappelé.",
+      "Not having received an answer, he called again.",
+      [
+       "Having not received an answer, he call again.",
+       "Not receiving an answer yesterday, he called again before.",
+       "No having received an answer, he called again."
+      ],
+      "Not having + participe = n'ayant pas…"
+     ]
+    ]
+   },
+   {
+    "titre": "Idiomes et proverbes avancés",
+    "regle": {
+     "texte": "Au niveau C2, on comprend les expressions imagées et les proverbes, et on sait les placer au bon moment.\nThe ball is in your court · to beat around the bush · to bite off more than you can chew · Every cloud has a silver lining · When in Rome, do as the Romans do · the last straw · to sit on the fence.",
+     "exemples": [
+      [
+       "The ball is in your court.",
+       "La balle est dans ton camp."
+      ],
+      [
+       "Stop beating around the bush!",
+       "Arrête de tourner autour du pot !"
+      ],
+      [
+       "Every cloud has a silver lining.",
+       "À quelque chose malheur est bon."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "en-fr",
+      "Stop beating around the bush!",
+      "Arrête de tourner autour du pot !",
+      [
+       "Arrête de taper dans les buissons !",
+       "Arrête de te cacher dans le jardin !",
+       "Arrête de courir partout !"
+      ],
+      "beat around the bush = tourner autour du pot."
+     ],
+     [
+      "en-fr",
+      "The ball is in your court now.",
+      "La balle est dans ton camp maintenant.",
+      [
+       "C'est à toi de servir au tennis.",
+       "Tu as perdu la balle.",
+       "Le match est terminé maintenant."
+      ],
+      "the ball is in your court = c'est à toi de décider."
+     ],
+     [
+      "en-fr",
+      "I think I've bitten off more than I can chew.",
+      "Je crois que j'ai eu les yeux plus gros que le ventre.",
+      [
+       "Je crois que j'ai trop mangé.",
+       "Je crois que je me suis mordu la langue.",
+       "Je n'ai plus faim du tout."
+      ],
+      "bite off more than you can chew = vouloir en faire trop."
+     ],
+     [
+      "fr-en",
+      "À quelque chose malheur est bon.",
+      "Every cloud has a silver lining.",
+      [
+       "Every rain brings a rainbow lining.",
+       "Bad things are good for something.",
+       "After the rain comes good weather always."
+      ],
+      "Mot à mot : chaque nuage a une doublure d'argent."
+     ],
+     [
+      "en-fr",
+      "When in Rome, do as the Romans do.",
+      "À Rome, fais comme les Romains.",
+      [
+       "Quand tu vas à Rome, visite tout.",
+       "Tous les chemins mènent à Rome.",
+       "Rome ne s'est pas faite en un jour."
+      ],
+      "S'adapter aux coutumes locales."
+     ],
+     [
+      "en-fr",
+      "Rome wasn't built in a day.",
+      "Paris ne s'est pas fait en un jour.",
+      [
+       "Rome a été construite très vite.",
+       "À Rome, fais comme les Romains.",
+       "Il faut une journée pour visiter Rome."
+      ],
+      "Il faut du temps pour les grandes choses. (En français, on dit Paris !)"
+     ],
+     [
+      "en-fr",
+      "He's barking up the wrong tree.",
+      "Il fait fausse route.",
+      [
+       "Il aboie contre un arbre.",
+       "Il a grimpé au mauvais arbre.",
+       "Il a raison sur toute la ligne."
+      ],
+      "bark up the wrong tree = se tromper de cible."
+     ],
+     [
+      "fr-en",
+      "Il ne faut pas vendre la peau de l'ours avant de l'avoir tué.",
+      "Don't count your chickens before they hatch.",
+      [
+       "Don't sell the bear's skin before you kill it.",
+       "Don't count your eggs in one basket.",
+       "Don't kill the chickens before they're born."
+      ],
+      "Mot à mot : ne compte pas tes poussins avant qu'ils soient éclos."
+     ],
+     [
+      "en-fr",
+      "That's the last straw!",
+      "C'est la goutte d'eau qui fait déborder le vase !",
+      [
+       "C'est la dernière paille !",
+       "C'est la dernière fois que je bois !",
+       "C'est le dernier moment !"
+      ],
+      "the last straw = la goutte d'eau de trop."
+     ],
+     [
+      "en-fr",
+      "She's sitting on the fence.",
+      "Elle ne prend pas position.",
+      [
+       "Elle est assise sur la barrière.",
+       "Elle a pris une décision ferme.",
+       "Elle se repose dans le jardin."
+      ],
+      "sit on the fence = rester neutre, ne pas choisir."
+     ]
+    ]
+   },
+   {
+    "titre": "Registres : formel ou familier ?",
+    "regle": {
+     "texte": "Un locuteur C2 adapte son langage à la situation.\nFormel → courant : **purchase** → buy · **obtain** → get · **commence** → start · **inquire** → ask · **require** → need · **assist** → help · **at your earliest convenience** → as soon as possible.\nFamilier : **gonna** (going to) · **wanna** (want to) · **kinda** (kind of) · **cheers** (merci, UK) · **mate** (pote, UK) · **no big deal** (pas grave) · **hang out** (traîner ensemble).",
+     "exemples": [
+      [
+       "We regret to inform you that…",
+       "Nous avons le regret de vous informer que…"
+      ],
+      [
+       "I'm gonna grab a bite.",
+       "Je vais manger un morceau."
+      ],
+      [
+       "Cheers, mate!",
+       "Merci, mon pote !"
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "en-fr",
+      "We regret to inform you that your application has been unsuccessful.",
+      "Nous avons le regret de vous informer que votre candidature n'a pas été retenue.",
+      [
+       "Nous regrettons que vous ayez postulé.",
+       "Votre candidature a été acceptée, félicitations.",
+       "Nous vous informons que vous devez postuler à nouveau."
+      ],
+      "Formule formelle d'une lettre de refus."
+     ],
+     [
+      "en-fr",
+      "I'm gonna grab a bite.",
+      "Je vais manger un morceau.",
+      [
+       "Je vais mordre quelqu'un.",
+       "Je vais attraper une morsure.",
+       "J'ai déjà mangé."
+      ],
+      "gonna = going to · grab a bite = manger un morceau (familier)."
+     ],
+     [
+      "en-fr",
+      "Cheers, mate!",
+      "Merci, mon pote !",
+      [
+       "Santé, monsieur !",
+       "Salut, ma copine !",
+       "Au revoir, monsieur !"
+      ],
+      "Au Royaume-Uni, cheers = merci (ou santé en trinquant) ; mate = pote."
+     ],
+     [
+      "fr-en",
+      "Je vous serais reconnaissant de bien vouloir me répondre dans les meilleurs délais.",
+      "I would be grateful if you could reply at your earliest convenience.",
+      [
+       "Thanks to answer me fast, please.",
+       "I'm grateful you reply me quick.",
+       "Answer me quickly, I'll be thankful."
+      ],
+      "at your earliest convenience = dans les meilleurs délais (très formel)."
+     ],
+     [
+      "en-fr",
+      "What's up? Wanna hang out later?",
+      "Quoi de neuf ? Tu veux qu'on se voie plus tard ?",
+      [
+       "Qu'est-ce qui est en haut ? Tu veux suspendre ça plus tard ?",
+       "Ça va ? Tu veux sortir les poubelles ?",
+       "Qu'y a-t-il ? Tu veux partir maintenant ?"
+      ],
+      "hang out = traîner ensemble, se voir (familier)."
+     ],
+     [
+      "en-fr",
+      "Please do not hesitate to contact us should you require further information.",
+      "N'hésitez pas à nous contacter si vous avez besoin de plus d'informations.",
+      [
+       "Veuillez ne pas nous contacter pour plus d'informations.",
+       "Nous ne savons pas si nous aurons d'autres informations.",
+       "Contactez-nous immédiatement, c'est urgent."
+      ],
+      "require = need (formel). should you = si (formel)."
+     ],
+     [
+      "fr-en",
+      "Le cours commencera à 9 h. (style formel)",
+      "The course will commence at 9 a.m.",
+      [
+       "The course will commences at 9 a.m.",
+       "The course gonna commence at 9 a.m.",
+       "The course will be commence at 9 a.m."
+      ],
+      "commence = start (formel)."
+     ],
+     [
+      "en-fr",
+      "That movie was kinda boring, to be honest.",
+      "Ce film était un peu ennuyeux, pour être honnête.",
+      [
+       "Ce film était vraiment génial, honnêtement.",
+       "Ce film était ennuyeux à mourir, c'est sûr.",
+       "Je n'ai pas vu ce film, pour être honnête."
+      ],
+      "kinda = kind of = un peu, plutôt (familier)."
+     ],
+     [
+      "fr-en",
+      "Je souhaiterais me renseigner sur vos tarifs. (style formel)",
+      "I would like to inquire about your rates.",
+      [
+       "I wanna ask about your prices.",
+       "I would like to inquire your rates about.",
+       "I want to inform me on your rates."
+      ],
+      "inquire about = se renseigner sur (formel)."
+     ],
+     [
+      "en-fr",
+      "No worries, it's no big deal.",
+      "T'inquiète, c'est pas grave.",
+      [
+       "Ne t'inquiète pas, c'est un gros problème.",
+       "Pas de souci, c'est une grosse affaire.",
+       "Je ne m'inquiète jamais des grandes affaires."
+      ],
+      "no worries / no big deal = pas de souci, pas grave (familier)."
+     ]
+    ]
+   },
+   {
+    "titre": "Faux amis et pièges subtils",
+    "regle": {
+     "texte": "Les faux amis trompent même les très bons niveaux :\n**actually** = en fait · **eventually** = finalement · **sensible** = raisonnable · **sympathetic** = compatissant · **library** = bibliothèque · **to attend** = assister à · **to pretend** = faire semblant · **deception** = tromperie · **rude** = impoli · **chance / opportunity** = occasion.",
+     "exemples": [
+      [
+       "Actually, I don't agree.",
+       "En fait, je ne suis pas d'accord."
+      ],
+      [
+       "She's very sensible.",
+       "Elle est très raisonnable."
+      ],
+      [
+       "He pretended to be ill.",
+       "Il a fait semblant d'être malade."
+      ]
+     ]
+    },
+    "phrases": [
+     [
+      "en-fr",
+      "Actually, I've never been to London.",
+      "En fait, je ne suis jamais allé à Londres.",
+      [
+       "Actuellement, je ne suis jamais allé à Londres.",
+       "Je ne vais jamais à Londres actuellement.",
+       "En ce moment, je suis à Londres."
+      ],
+      "actually = en fait. Actuellement = currently."
+     ],
+     [
+      "en-fr",
+      "She's a very sensible person.",
+      "C'est une personne très raisonnable.",
+      [
+       "C'est une personne très sensible.",
+       "C'est une personne très sensuelle.",
+       "C'est une personne très sympathique."
+      ],
+      "sensible = raisonnable. Sensible = sensitive."
+     ],
+     [
+      "en-fr",
+      "He pretended to be asleep.",
+      "Il a fait semblant de dormir.",
+      [
+       "Il a prétendu qu'il dormait bien.",
+       "Il avait l'intention de dormir.",
+       "Il s'est endormi tout de suite."
+      ],
+      "pretend = faire semblant. Prétendre = to claim."
+     ],
+     [
+      "en-fr",
+      "Eventually, they found the solution.",
+      "Finalement, ils ont trouvé la solution.",
+      [
+       "Éventuellement, ils trouveront la solution.",
+       "Ils ont peut-être trouvé la solution.",
+       "Évidemment, ils ont trouvé la solution."
+      ],
+      "eventually = finalement. Éventuellement = possibly."
+     ],
+     [
+      "en-fr",
+      "I attended the meeting yesterday.",
+      "J'ai assisté à la réunion hier.",
+      [
+       "J'ai attendu la réunion hier.",
+       "J'ai organisé la réunion hier.",
+       "J'ai raté la réunion hier."
+      ],
+      "attend = assister à. Attendre = to wait."
+     ],
+     [
+      "en-fr",
+      "Don't be rude to your grandmother.",
+      "Ne sois pas impoli avec ta grand-mère.",
+      [
+       "Ne sois pas rude avec ta grand-mère.",
+       "Ne sois pas triste pour ta grand-mère.",
+       "Ne sois pas en retard chez ta grand-mère."
+      ],
+      "rude = impoli, grossier."
+     ],
+     [
+      "en-fr",
+      "She was very sympathetic when I lost my job.",
+      "Elle a été très compréhensive quand j'ai perdu mon travail.",
+      [
+       "Elle a été très sympa de m'offrir un travail.",
+       "Elle était contente que je perde mon travail.",
+       "Elle a été très gentille de me trouver un travail."
+      ],
+      "sympathetic = compatissant. Sympathique = nice, friendly."
+     ],
+     [
+      "fr-en",
+      "Je vais à la bibliothèque.",
+      "I'm going to the library.",
+      [
+       "I'm going to the bookshop.",
+       "I'm going to the librairy.",
+       "I'm going to the bookcase."
+      ],
+      "library = bibliothèque. Librairie = bookshop."
+     ],
+     [
+      "en-fr",
+      "It was a huge deception.",
+      "C'était une énorme tromperie.",
+      [
+       "C'était une énorme déception.",
+       "C'était une énorme surprise.",
+       "C'était une énorme erreur."
+      ],
+      "deception = tromperie. Déception = disappointment."
+     ],
+     [
+      "fr-en",
+      "Je n'ai pas eu l'occasion de lui parler.",
+      "I didn't get the chance to talk to him.",
+      [
+       "I didn't have the occasion to talk him.",
+       "I didn't get the luck to talk to him.",
+       "I hadn't the opportunity of talk to him."
+      ],
+      "occasion (moment favorable) = chance / opportunity."
+     ]
+    ]
+   }
+  ]
+ }
+]

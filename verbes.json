@@ -1,0 +1,52 @@
+[
+ {"pack": "Les incontournables", "icone": "👑", "verbes": [
+  ["be", "was/were", "been", "être"], ["have", "had", "had", "avoir"], ["do", "did", "done", "faire (une action)"],
+  ["go", "went", "gone", "aller"], ["say", "said", "said", "dire"], ["get", "got", "got/gotten", "obtenir"],
+  ["make", "made", "made", "fabriquer"], ["know", "knew", "known", "savoir"], ["think", "thought", "thought", "penser"],
+  ["take", "took", "taken", "prendre"]]},
+ {"pack": "Tous les jours", "icone": "☀️", "verbes": [
+  ["see", "saw", "seen", "voir"], ["come", "came", "come", "venir"], ["give", "gave", "given", "donner"],
+  ["find", "found", "found", "trouver"], ["tell", "told", "told", "raconter, dire à"], ["become", "became", "become", "devenir"],
+  ["leave", "left", "left", "partir, quitter"], ["feel", "felt", "felt", "ressentir"], ["put", "put", "put", "mettre"],
+  ["bring", "brought", "brought", "apporter"]]},
+ {"pack": "Parler et penser", "icone": "💬", "verbes": [
+  ["begin", "began", "begun", "commencer"], ["keep", "kept", "kept", "garder"], ["hold", "held", "held", "tenir"],
+  ["write", "wrote", "written", "écrire"], ["stand", "stood", "stood", "être debout"], ["hear", "heard", "heard", "entendre"],
+  ["let", "let", "let", "laisser"], ["mean", "meant", "meant", "signifier"], ["set", "set", "set", "régler, poser"],
+  ["meet", "met", "met", "rencontrer"]]},
+ {"pack": "Bouger", "icone": "🏃", "verbes": [
+  ["run", "ran", "run", "courir"], ["pay", "paid", "paid", "payer"], ["sit", "sat", "sat", "s'asseoir"],
+  ["speak", "spoke", "spoken", "parler"], ["lead", "led", "led", "mener"], ["read", "read", "read", "lire"],
+  ["grow", "grew", "grown", "grandir"], ["lose", "lost", "lost", "perdre"], ["fall", "fell", "fallen", "tomber"],
+  ["send", "sent", "sent", "envoyer"]]},
+ {"pack": "Acheter et construire", "icone": "🛒", "verbes": [
+  ["build", "built", "built", "construire"], ["understand", "understood", "understood", "comprendre"], ["draw", "drew", "drawn", "dessiner"],
+  ["break", "broke", "broken", "casser"], ["spend", "spent", "spent", "dépenser"], ["cut", "cut", "cut", "couper"],
+  ["rise", "rose", "risen", "se lever, monter"], ["drive", "drove", "driven", "conduire"], ["buy", "bought", "bought", "acheter"],
+  ["wear", "wore", "worn", "porter (un vêtement)"]]},
+ {"pack": "Manger, dormir, gagner", "icone": "🏆", "verbes": [
+  ["choose", "chose", "chosen", "choisir"], ["eat", "ate", "eaten", "manger"], ["drink", "drank", "drunk", "boire"],
+  ["sleep", "slept", "slept", "dormir"], ["win", "won", "won", "gagner"], ["teach", "taught", "taught", "enseigner"],
+  ["catch", "caught", "caught", "attraper"], ["fight", "fought", "fought", "se battre"], ["forget", "forgot", "forgotten", "oublier"],
+  ["sell", "sold", "sold", "vendre"]]},
+ {"pack": "Action !", "icone": "⚔️", "verbes": [
+  ["swim", "swam", "swum", "nager"], ["sing", "sang", "sung", "chanter"], ["fly", "flew", "flown", "voler (dans les airs)"],
+  ["throw", "threw", "thrown", "lancer"], ["ride", "rode", "ridden", "monter (à vélo, à cheval)"], ["hide", "hid", "hidden", "cacher"],
+  ["shoot", "shot", "shot", "tirer"], ["feed", "fed", "fed", "nourrir"], ["hit", "hit", "hit", "frapper"],
+  ["hurt", "hurt", "hurt", "blesser"]]},
+ {"pack": "Aventure", "icone": "🗺️", "verbes": [
+  ["wake", "woke", "woken", "se réveiller"], ["steal", "stole", "stolen", "voler (dérober)"], ["forgive", "forgave", "forgiven", "pardonner"],
+  ["freeze", "froze", "frozen", "geler"], ["blow", "blew", "blown", "souffler"], ["bite", "bit", "bitten", "mordre"],
+  ["shake", "shook", "shaken", "secouer"], ["dig", "dug", "dug", "creuser"], ["hang", "hung", "hung", "accrocher"],
+  ["light", "lit", "lit", "allumer"]]},
+ {"pack": "À la maison", "icone": "🏠", "verbes": [
+  ["ring", "rang", "rung", "sonner"], ["shine", "shone", "shone", "briller"], ["shut", "shut", "shut", "fermer"],
+  ["spread", "spread", "spread", "étaler, répandre"], ["sink", "sank", "sunk", "couler"], ["tear", "tore", "torn", "déchirer"],
+  ["lend", "lent", "lent", "prêter"], ["bend", "bent", "bent", "plier"], ["seek", "sought", "sought", "chercher"],
+  ["sweep", "swept", "swept", "balayer"]]},
+ {"pack": "Pour aller plus loin", "icone": "🚀", "verbes": [
+  ["cost", "cost", "cost", "coûter"], ["quit", "quit", "quit", "arrêter, quitter"], ["bet", "bet", "bet", "parier"],
+  ["beat", "beat", "beaten", "battre"], ["burn", "burnt/burned", "burnt/burned", "brûler"], ["learn", "learnt/learned", "learnt/learned", "apprendre"],
+  ["dream", "dreamt/dreamed", "dreamt/dreamed", "rêver"], ["smell", "smelt/smelled", "smelt/smelled", "sentir (une odeur)"], ["deal", "dealt", "dealt", "gérer, distribuer"],
+  ["stick", "stuck", "stuck", "coller"]]}
+]
