@@ -170,6 +170,7 @@ async function synchroniser(rafraichir = false, keepalive = false) {
       await appelCloud("/rest/v1/progression", { method: "POST", keepalive,
         headers: { Prefer: "resolution=merge-duplicates,return=minimal" },
         body: { user_id: COMPTE.user_id, data: PROG, updated_at: new Date().toISOString() } });
+      try { await publierClassement(keepalive); } catch (e) { /* classement pas encore activé ou hors ligne : sans gravité */ }
       if (JSON.stringify(PROG) !== avant) {
         if (API) API.sauver(PROG); else try { localStorage.setItem("englishquest", JSON.stringify(PROG)); } catch (e) { /* rien */ }
         if (rafraichir && $(".hero")) accueil();
@@ -187,6 +188,39 @@ async function synchroniser(rafraichir = false, keepalive = false) {
   })();
   return syncEnCours;
 }
+// ------------------------------------------------------------------ classement par groupe privé
+// Table « classement » : une ligne publique par joueur (pseudo, avatar, scores), visible seulement par son groupe.
+const AVATARS = ["🦊", "🐼", "🦁", "🐯", "🐸", "🐧", "🦉", "🐙", "🦄", "🐲", "🐢", "🐝", "🚀", "⚽", "🎮", "🎸", "🌸", "🌻", "👑", "🧙"];
+function lundiDeLaSemaine(t = Date.now()) { const d = new Date(t); d.setDate(d.getDate() - (d.getDay() + 6) % 7); return dateStr(d); }
+function xpSemaine() { const l = lundiDeLaSemaine(); return Object.entries(PROG.jours).filter(([j]) => j >= l).reduce((t, [, x]) => t + x, 0); }
+function nouveauCodeGroupe() {
+  const lettres = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";   // sans 0/O ni 1/I, pour éviter les confusions
+  return "EQ-" + Array.from(crypto.getRandomValues(new Uint8Array(6)), b => lettres[b % lettres.length]).join("");
+}
+function ligneClassement() {
+  const vise = prochainNiveau();
+  return { user_id: COMPTE.user_id, groupe: PROG.profil.groupe, pseudo: PROG.profil.pseudo, avatar: PROG.profil.avatar,
+    niveau: niveauActuel() || "Pré-A1", avancement: vise ? Math.round(100 * avancement(vise)) : 100, xp: PROG.xp,
+    xp_semaine: xpSemaine(), semaine: lundiDeLaSemaine(), serie: serieActuelle(), mots: VOCAB.filter(v => motAcquis(v.id)).length,
+    connus: Object.values(PROG.items).filter(s => s.s >= 3).length, lecons: nbLeconsFaites(), updated_at: new Date().toISOString() };
+}
+async function publierClassement(keepalive = false) {
+  if (!COMPTE || !PROG.profil?.groupe) return;
+  await appelCloud("/rest/v1/classement", { method: "POST", keepalive,
+    headers: { Prefer: "resolution=merge-duplicates,return=minimal" }, body: ligneClassement() });
+}
+async function lireClassement() {
+  await jetonValide();
+  const lignes = await appelCloud("/rest/v1/classement?select=*");
+  const semaine = lundiDeLaSemaine();
+  return (lignes || []).map(l => ({ ...l, xp_semaine: l.semaine === semaine ? l.xp_semaine : 0 }));   // semaine terminée = remise à zéro
+}
+async function quitterGroupe() {
+  try { await jetonValide(); await appelCloud(`/rest/v1/classement?user_id=eq.${COMPTE.user_id}`, { method: "DELETE" }); } catch (e) { /* rien */ }
+  delete PROG.profil.groupe;
+  sauver();
+}
+
 function majIndicateurSync() {
   const el = $("#indic-sync");
   if (!el) return;
@@ -634,7 +668,7 @@ function afficher(html, retour = true) {
   majIndicateurSync();
 }
 function brancherCommun() {
-  $$("[data-go]").forEach(b => b.onclick = () => ({ accueil, carte, vocabulaire: () => vocabulaire(), verbes, histoires, cine, mesMots: () => mesMots(), niveau: () => niveau(), progres, science }[b.dataset.go])());
+  $$("[data-go]").forEach(b => b.onclick = () => ({ accueil, carte, vocabulaire: () => vocabulaire(), verbes, histoires, cine, mesMots: () => mesMots(), niveau: () => niveau(), classement: () => classement(), progres, science }[b.dataset.go])());
   const s = $("[data-son]");
   if (s) s.onclick = () => { PROG.son = !PROG.son; s.textContent = PROG.son ? "🔊" : "🔇"; sauver(); son("clic"); };
 }
@@ -729,6 +763,8 @@ function accueil() {
         <div class="barre"><div style="width:${100 * Object.keys(PROG.scenes).length / Math.max(1, CINE.length)}%"></div></div></div>
       <div class="tuile tuile-niveau" data-go="niveau"><span class="ic">🎓</span><h3>Mon niveau : ${niveauActuel() || "Pré-A1"}</h3><p>${prochainNiveau() ? `${Math.round(100 * avancement(prochainNiveau()))} % vers ${prochainNiveau()} · encore ${Math.max(0, seuilMots(prochainNiveau()) - VOCAB.filter(v => motAcquis(v.id)).length)} mots` : "Niveau maximum atteint 👑"}</p>
         <div class="barre"><div style="width:${prochainNiveau() ? 100 * avancement(prochainNiveau()) : 100}%"></div></div></div>
+      <div class="tuile tuile-classement" data-go="classement"><span class="ic">🏆</span><h3>Classement</h3><p>${PROG.profil?.groupe ? `Groupe ${esc(PROG.profil.groupe)} · ${xpSemaine()} XP cette semaine` : "Compare ta progression avec ta famille ou tes amis"}</p>
+        <div class="barre"><div style="width:${PROG.profil?.groupe ? 100 : 0}%"></div></div></div>
       <div class="tuile" data-go="mesMots"><span class="ic">📊</span><h3>Mes mots</h3><p>${Object.values(PROG.items).filter(s => s.s >= 3).length} bien connus · ${Object.values(PROG.items).filter(s => s.n).length} appris au total</p>
         <div class="barre verte"><div style="width:${100 * Object.values(PROG.items).filter(s => s.n).length / Math.max(1, VOCAB.length + VERBES.length + LECONS.length * 10 + CINE.length * 6)}%"></div></div></div>
       <div class="tuile" data-go="progres"><span class="ic">🏅</span><h3>Progrès et badges</h3><p>${PROG.badges.length} / ${BADGES.length} badges · meilleure série ${PROG.meilleureSerie} j</p>
@@ -875,6 +911,104 @@ function vocabulaire(onglet = niveauVise()) {
     }).join("")}</div>`);
   $$("[data-niv]").forEach(b => b.onclick = () => vocabulaire(b.dataset.niv));
   $$("[data-pack]").forEach(t => t.onclick = () => lancerPack(+t.dataset.pack));
+}
+
+// ------------------------------------------------------------------ classement
+const ONGLETS_CLASSEMENT = {
+  semaine: { nom: "📅 Cette semaine", valeur: l => l.xp_semaine, unite: "XP", tri: (a, b) => b.xp_semaine - a.xp_semaine },
+  total: { nom: "⚡ XP total", valeur: l => l.xp, unite: "XP", tri: (a, b) => b.xp - a.xp },
+  niveau: { nom: "🎓 Niveau", valeur: l => `${l.niveau} · ${l.avancement} %`, unite: "", tri: (a, b) => (NIVEAUX.indexOf(b.niveau) - NIVEAUX.indexOf(a.niveau)) || b.avancement - a.avancement },
+  serie: { nom: "🔥 Série", valeur: l => l.serie, unite: "jours", tri: (a, b) => b.serie - a.serie },
+  mots: { nom: "📚 Mots acquis", valeur: l => l.mots, unite: "mots", tri: (a, b) => b.mots - a.mots },
+};
+function ilYa(iso) {
+  const min = Math.round((Date.now() - new Date(iso)) / 60000);
+  return min < 2 ? "à l'instant" : min < 60 ? `il y a ${min} min` : min < 1440 ? `il y a ${Math.round(min / 60)} h` : `il y a ${Math.round(min / 1440)} j`;
+}
+function formulaireProfil(modification) {
+  const p = PROG.profil || {};
+  return `<div class="carte-vise formulaire-profil">
+      <h2 style="margin-top:0">${modification ? "Modifier mon profil" : "Crée ton profil de joueur"}</h2>
+      <p class="sous">Ton pseudo et ton avatar seront visibles par les membres de ton groupe, et uniquement par eux.</p>
+      <input class="saisie" id="pseudo" maxlength="20" placeholder="Ton pseudo (ex. : Tom, Maman…)" value="${esc(p.pseudo || "")}">
+      <div class="grille-avatars">${AVATARS.map(a => `<button class="avatar-choix ${a === (p.avatar || AVATARS[0]) ? "on" : ""}" data-avatar="${a}">${a}</button>`).join("")}</div>
+      ${modification ? `<div class="ligne-reglage"><button class="btn vert" id="profil-ok">Enregistrer</button><button class="btn gris" id="profil-annuler">Annuler</button><button class="btn rouge" id="quitter-groupe">Quitter le groupe</button></div>`
+        : `<div class="choix-groupe">
+            <div><b>Tu crées le groupe</b><small>Tu recevras un code à donner aux autres.</small><button class="btn vert" id="creer-groupe">✨ Créer un groupe</button></div>
+            <div><b>On t'a donné un code</b><small>Entre-le pour rejoindre le groupe.</small><input class="saisie" id="code-groupe" placeholder="EQ-XXXXXX" maxlength="20"><button class="btn" id="rejoindre-groupe">Rejoindre</button></div>
+          </div>`}
+      <small id="profil-msg" class="sous"></small>
+    </div>`;
+}
+async function classement(onglet = "semaine", edition = false) {
+  if (!cloudConfigure() || !COMPTE) {
+    afficher(`<h1>🏆 Classement</h1><div class="carte-vise"><h2 style="margin-top:0">Connecte-toi d'abord</h2>
+      <p class="sous">Le classement utilise ton compte de synchronisation. Connecte-toi (ou crée ton compte) dans Progrès → Synchronisation.</p>
+      <button class="btn vert" id="aller-sync">☁️ Me connecter</button></div>`);
+    $("#aller-sync").onclick = () => { progres(); setTimeout(() => $("#sync")?.scrollIntoView({ behavior: "smooth" }), 80); };
+    return;
+  }
+  if (!PROG.profil?.groupe || edition) {
+    afficher(`<h1>🏆 Classement</h1>${formulaireProfil(edition)}`);
+    let avatar = PROG.profil?.avatar || AVATARS[0];
+    $$("[data-avatar]").forEach(b => b.onclick = () => { avatar = b.dataset.avatar; $$(".avatar-choix").forEach(x => x.classList.toggle("on", x === b)); son("clic"); });
+    const valider = async groupe => {
+      const pseudo = $("#pseudo").value.trim();
+      if (!pseudo) { $("#profil-msg").textContent = "⚠️ Choisis un pseudo."; return; }
+      if (!/^[A-Z0-9-]{4,20}$/.test(groupe)) { $("#profil-msg").textContent = "⚠️ Code de groupe invalide."; return; }
+      PROG.profil = { ...(PROG.profil || {}), pseudo, avatar, groupe };
+      $("#profil-msg").textContent = "⏳ Enregistrement…";
+      try { await jetonValide(); await publierClassement(); sauver(); classement(onglet); }
+      catch (e) {
+        $("#profil-msg").textContent = /classement|relation|does not exist|404/i.test(e.message + e.statut)
+          ? "⚠️ Le classement n'est pas encore activé dans Supabase (script classement_setup.sql à exécuter)." : "⚠️ " + traduireErreur(e.message);
+      }
+    };
+    if ($("#creer-groupe")) $("#creer-groupe").onclick = () => valider(nouveauCodeGroupe());
+    if ($("#rejoindre-groupe")) $("#rejoindre-groupe").onclick = () => valider($("#code-groupe").value.trim().toUpperCase());
+    if ($("#profil-ok")) $("#profil-ok").onclick = () => valider(PROG.profil.groupe);
+    if ($("#profil-annuler")) $("#profil-annuler").onclick = () => classement(onglet);
+    if ($("#quitter-groupe")) $("#quitter-groupe").onclick = async () => {
+      if (!confirm("Quitter le groupe ? Tu disparaîtras du classement (ta progression, elle, est conservée).")) return;
+      await quitterGroupe(); classement();
+    };
+    return;
+  }
+  afficher(`<h1>🏆 Classement</h1><p class="sous">⏳ Chargement du classement…</p>`);
+  let lignes;
+  try { await publierClassement(); lignes = await lireClassement(); }
+  catch (e) { $(".contenu .sous").textContent = "⚠️ Impossible de charger le classement : " + traduireErreur(e.message); return; }
+  const O = ONGLETS_CLASSEMENT[onglet];
+  lignes.sort(O.tri);
+  const moi = lignes.findIndex(l => l.user_id === COMPTE.user_id);
+  const medaille = i => ["🥇", "🥈", "🥉"][i] || `${i + 1}`;
+  let duel = "";
+  if (lignes.length > 1 && onglet !== "niveau") {
+    const v = l => +O.valeur(l) || 0;
+    duel = moi === 0 ? `👑 Tu es en tête${v(lignes[0]) > v(lignes[1]) ? ` avec ${v(lignes[0]) - v(lignes[1])} ${O.unite} d'avance sur ${esc(lignes[1].pseudo)}` : ""} !`
+      : `💪 Encore ${v(lignes[moi - 1]) - v(lignes[moi]) + 1} ${O.unite} pour dépasser ${esc(lignes[moi - 1].pseudo)} !`;
+  }
+  afficher(`<h1>🏆 Classement</h1>
+    <div class="code-groupe-carte"><div><small>Code de ton groupe</small><strong>${esc(PROG.profil.groupe)}</strong>
+      <span>Donne-le aux personnes que tu veux affronter : elles l'entrent dans « Rejoindre ».</span></div>
+      <div class="ligne-reglage"><button class="btn gris" id="copier-code">📋 Copier</button><button class="btn gris" id="modifier-profil">${PROG.profil.avatar} Mon profil</button></div></div>
+    <div class="onglets">${Object.entries(ONGLETS_CLASSEMENT).map(([k, o]) => `<button class="onglet ${k === onglet ? "on" : ""}" data-onglet-c="${k}">${o.nom}</button>`).join("")}</div>
+    ${duel ? `<p class="duel">${duel}</p>` : ""}
+    <div class="liste-classement">${lignes.map((l, i) => `<div class="joueur ${l.user_id === COMPTE.user_id ? "moi" : ""} ${i < 3 ? "podium-" + (i + 1) : ""}">
+        <span class="rang-c">${medaille(i)}</span><span class="avatar-c">${esc(l.avatar)}</span>
+        <div class="infos-c"><b>${esc(l.pseudo)}${l.user_id === COMPTE.user_id ? " <em>(toi)</em>" : ""}</b>
+          <small>🎓 ${esc(l.niveau)} · 🔥 ${l.serie} j · 📚 ${l.mots} mots · 📘 ${l.lecons} leçons · actif ${ilYa(l.updated_at)}</small></div>
+        <div class="valeur-c"><strong>${esc(String(O.valeur(l)))}</strong><small>${O.unite}</small></div></div>`).join("")}</div>
+    ${lignes.length < 2 ? `<p class="sous" style="margin-top:14px">Tu es seul pour l'instant : partage le code <b>${esc(PROG.profil.groupe)}</b> pour que les autres te rejoignent.</p>` : ""}
+    <p class="sous" style="margin-top:14px">Le classement « Cette semaine » repart de zéro chaque lundi. Les scores se mettent à jour à chaque synchronisation.
+      <button class="lien" id="rafraichir-c">🔄 Actualiser</button></p>`);
+  $$("[data-onglet-c]").forEach(b => b.onclick = () => classement(b.dataset.ongletC));
+  $("#modifier-profil").onclick = () => classement(onglet, true);
+  $("#rafraichir-c").onclick = () => classement(onglet);
+  $("#copier-code").onclick = async () => {
+    try { await navigator.clipboard.writeText(PROG.profil.groupe); toast("📋", "Code copié", PROG.profil.groupe); }
+    catch (e) { toast("📋", "Code du groupe", PROG.profil.groupe); }
+  };
 }
 
 // ------------------------------------------------------------------ mon niveau

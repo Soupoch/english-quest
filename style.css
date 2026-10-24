@@ -659,3 +659,52 @@ input[type="time"] { padding: 10px 12px; border-radius: 12px; border: 2px solid 
   .onglets { gap: 6px; }
   .onglet { padding: 8px 12px; font-size: 14px; }
 }
+
+/* ---------- classement ---------- */
+.tuile-classement { border-color: rgba(255, 200, 61, .35); }
+.formulaire-profil .saisie { margin: 4px 0 14px; }
+.grille-avatars { display: grid; grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); gap: 8px; margin-bottom: 18px; }
+.avatar-choix { font-size: 28px; padding: 8px 0; border-radius: 14px; background: #10142b; border: 2px solid var(--bord); transition: transform .1s; }
+.avatar-choix:hover { transform: scale(1.08); }
+.avatar-choix.on { border-color: var(--or); background: rgba(255, 200, 61, .15); }
+.choix-groupe { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.choix-groupe > div { display: grid; gap: 8px; align-content: start; padding: 16px; border-radius: 16px; background: #10142b; border: 1px solid var(--bord); }
+.choix-groupe small { color: var(--doux); }
+.choix-groupe .saisie { font-size: 17px; padding: 12px 14px; text-transform: uppercase; }
+.code-groupe-carte { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding: 18px 22px; border-radius: 20px; margin-bottom: 16px;
+  background: linear-gradient(135deg, rgba(255, 200, 61, .18), rgba(124, 92, 255, .12)); border: 1px solid rgba(255, 200, 61, .4); }
+.code-groupe-carte small { display: block; color: var(--doux); text-transform: uppercase; letter-spacing: 1px; font-size: 12px; font-weight: 800; }
+.code-groupe-carte strong { display: block; font-size: 30px; font-weight: 900; letter-spacing: 3px; color: var(--or); margin: 2px 0; }
+.code-groupe-carte span { color: #dfe2ff; font-size: 14px; }
+.duel { padding: 12px 16px; border-radius: 14px; background: rgba(124, 92, 255, .15); border: 1px solid rgba(124, 92, 255, .4); font-weight: 700; margin-bottom: 12px; }
+.liste-classement { display: grid; gap: 10px; }
+.joueur { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border-radius: 18px; background: var(--carte); border: 1px solid var(--bord); animation: entree .35s both; }
+.joueur.moi { border: 2px solid var(--violet); background: linear-gradient(90deg, rgba(124, 92, 255, .2), var(--carte)); }
+.joueur.podium-1 { box-shadow: 0 0 0 1px rgba(255, 200, 61, .5), 0 8px 24px rgba(255, 200, 61, .15); }
+.rang-c { width: 40px; text-align: center; font-size: 26px; font-weight: 900; color: var(--doux); }
+.avatar-c { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; font-size: 30px; background: #10142b; border: 2px solid var(--bord); flex: none; }
+.podium-1 .avatar-c { border-color: var(--or); }
+.infos-c { flex: 1; min-width: 0; }
+.infos-c b { font-size: 17px; }
+.infos-c em { color: var(--violet); font-style: normal; font-size: 13px; }
+.infos-c small { display: block; color: var(--doux); font-size: 13px; margin-top: 3px; }
+.valeur-c { text-align: right; }
+.valeur-c strong { display: block; font-size: 24px; font-weight: 900; color: var(--or); white-space: nowrap; }
+.valeur-c small { color: var(--doux); font-size: 12px; }
+@media (max-width: 720px) {
+  .choix-groupe { grid-template-columns: 1fr; }
+  .code-groupe-carte strong { font-size: 24px; }
+  .joueur { padding: 12px; gap: 10px; }
+  .rang-c { width: 28px; font-size: 20px; }
+  .avatar-c { width: 42px; height: 42px; font-size: 24px; }
+  .infos-c small { font-size: 12px; }
+  .valeur-c strong { font-size: 19px; }
+}
+
+/* barre du haut : jamais sur deux lignes */
+.pastille, .retour { white-space: nowrap; }
+@media (max-width: 720px) {
+  .retour { font-size: 0; padding: 6px; }
+  .retour::before { content: "←"; font-size: 20px; }
+  .topbar .espace { min-width: 0; }
+}
