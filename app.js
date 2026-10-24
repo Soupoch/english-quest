@@ -91,13 +91,24 @@ async function connexion(email, motDePasse, creer) {
     { method: "POST", body: { email, password: motDePasse }, sansJeton: true });
   if (!s.access_token) return { confirmer: true };   // confirmation par e-mail activée côté Supabase
   await enregistrerSession(s);
+  // Appareil partagé : si la progression locale appartient à un AUTRE compte, on ne la mélange surtout pas.
+  // (Une progression sans propriétaire, jamais synchronisée, est en revanche envoyée sur le compte qui se connecte.)
+  if (PROG.proprietaire && PROG.proprietaire !== COMPTE.user_id) PROG = progressionVide();
   await synchroniser(true);
   return { ok: true };
 }
+function progressionVide() {   // repart de zéro en gardant les réglages propres à l'appareil
+  return Object.assign(progDefaut(), { son: PROG.son, voixNaturelle: PROG.voixNaturelle, objectif: PROG.objectif, rappel: PROG.rappel, version: 3 });
+}
 async function deconnexion() {
+  // la progression est d'abord mise à l'abri en ligne ; en cas d'échec, on ne déconnecte pas pour ne rien perdre
+  if (COMPTE && !(await synchroniser())) return false;
   try { if (COMPTE) await appelCloud("/auth/v1/logout", { method: "POST" }); } catch (e) { /* tant pis */ }
   await ecrireCompte(null);
   etatSync = { statut: "off", derniere: null, message: "" };
+  PROG = progressionVide();   // l'appareil est libéré pour un autre compte
+  if (API) API.sauver(PROG); else try { localStorage.setItem("englishquest", JSON.stringify(PROG)); } catch (e) { /* rien */ }
+  return true;
 }
 
 // Fusion de deux progressions : on garde toujours le meilleur des deux, rien ne se perd.
@@ -155,6 +166,7 @@ async function synchroniser(rafraichir = false, keepalive = false) {
       const distant = lignes?.[0]?.data || null;
       const avant = JSON.stringify(PROG);
       PROG = fusionner(PROG, distant);
+      PROG.proprietaire = COMPTE.user_id;   // cette progression appartient désormais à ce compte
       await appelCloud("/rest/v1/progression", { method: "POST", keepalive,
         headers: { Prefer: "resolution=merge-duplicates,return=minimal" },
         body: { user_id: COMPTE.user_id, data: PROG, updated_at: new Date().toISOString() } });
@@ -1109,7 +1121,8 @@ function blocSync() {
   if (COMPTE) {
     const quand = etatSync.derniere ? new Date(etatSync.derniere).toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" }) : "—";
     return `<div class="reglage"><div><b>✅ Connecté : ${esc(COMPTE.email || "")}</b>
-        <small>Ta progression est enregistrée en ligne et partagée entre tous tes appareils. Dernière synchronisation : ${quand}${etatSync.statut === "erreur" ? ` · ⚠️ ${esc(etatSync.message)}` : ""}</small></div>
+        <small>Ta progression est enregistrée en ligne et partagée entre tous tes appareils. Dernière synchronisation : ${quand}${etatSync.statut === "erreur" ? ` · ⚠️ ${esc(etatSync.message)}` : ""}</small>
+        <small>👨‍👩‍👦 Appareil partagé ? Déconnecte-toi avant qu'une autre personne se connecte : ta progression reste en sécurité en ligne.</small></div>
       <div class="ligne-reglage"><button class="btn vert" id="sync-maint">🔄 Synchroniser</button><button class="btn gris" id="sync-deco">Se déconnecter</button></div></div>`;
   }
   return `<div class="reglage formulaire-sync"><div><b>Connecte-toi pour retrouver ta progression partout</b>
@@ -1122,7 +1135,12 @@ function blocSync() {
 }
 function brancherSync() {
   if ($("#sync-maint")) $("#sync-maint").onclick = async () => { $("#sync-maint").textContent = "⏳…"; await synchroniser(); progres(); toast("☁️", etatSync.statut === "ok" ? "Synchronisé !" : "Échec de la synchronisation", etatSync.message || ""); };
-  if ($("#sync-deco")) $("#sync-deco").onclick = async () => { await deconnexion(); progres(); };
+  if ($("#sync-deco")) $("#sync-deco").onclick = async () => {
+    if (!confirm("Se déconnecter ?\n\nTa progression est enregistrée en ligne, puis retirée de cet appareil. Tu la retrouveras en te reconnectant.")) return;
+    $("#sync-deco").textContent = "⏳…";
+    if (await deconnexion()) { toast("👋", "Déconnecté", "Ta progression est en sécurité en ligne."); accueil(); }
+    else { toast("⚠️", "Déconnexion annulée", "Synchronisation impossible (pas d'Internet ?) : rien n'a été effacé."); progres(); }
+  };
   const agir = async creer => {
     const email = $("#sync-email").value.trim(), mdp = $("#sync-mdp").value, msg = $("#sync-msg");
     if (!email || !mdp) { msg.textContent = "Indique ton e-mail et ton mot de passe."; return; }

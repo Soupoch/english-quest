@@ -1,6 +1,6 @@
 // Service worker : garde l'appli et son contenu en cache pour qu'elle marche même sans réseau.
 // Stratégie : on répond tout de suite avec le cache, et on le met à jour en arrière-plan.
-const VERSION = "20261019-145438";
+const VERSION = "20261024-112421";
 const CACHE = "english-quest-" + VERSION;
 const FICHIERS = ["./", "index.html", "style.css", "app.js", "config.js", "manifest.webmanifest",
   "icone-180.png", "icone-192.png", "icone-512.png",
