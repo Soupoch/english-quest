@@ -132,6 +132,7 @@ function fusionner(a, b) {
   m.recordChrono = Math.max(a.recordChrono || 0, b.recordChrono || 0);
   m.faiblesCorriges = Math.max(a.faiblesCorriges || 0, b.faiblesCorriges || 0);
   m.sessionJour = [a.sessionJour, b.sessionJour].filter(Boolean).sort().pop() || null;
+  m.sessionEnCours = (a.sessionEnCours?.maj || 0) >= (b.sessionEnCours?.maj || 0) ? a.sessionEnCours : b.sessionEnCours;   // la plus récente
   m.badges = [...new Set([...(a.badges || []), ...(b.badges || [])])];
   m.lecons = { ...b.lecons };
   for (const [i, l] of Object.entries(a.lecons || {})) {
@@ -821,7 +822,15 @@ function accueil() {
   const message = fait ? "Session du jour terminée ✅" : xpJour >= obj ? "Objectif atteint 🎉" : xpJour ? "Continue comme ça !" : "Prêt pour ta session du jour ?";
   const tip = pick(SCIENCE);
   const lancer = () => nbEx ? demarrer("jour", plan.file, { titre: "Session du jour", partie: plan.partie }) : accueil();
+  const enCours = sessionReprenable();
   afficher(`
+    ${enCours ? `<div class="carte-reprise">
+      <span class="ic-reprise">⏸</span>
+      <div class="txt-reprise"><small>Session en cours</small><b>${esc(enCours.titre || "Session")}</b>
+        <div class="barre"><div style="width:${100 * enCours.faits / Math.max(1, enCours.total)}%"></div></div>
+        <small>${enCours.faits} / ${enCours.total} exercices · ${enCours.vies !== null && enCours.vies !== undefined ? "❤️".repeat(Math.max(0, enCours.vies)) + " · " : ""}+${enCours.xp} XP · ${ilYa(new Date(enCours.maj).toISOString())}</small></div>
+      <div class="actions-reprise"><button class="btn vert" id="reprendre">▶ Reprendre</button><button class="btn gris" id="abandonner" title="Abandonner cette session">✕</button></div>
+    </div>` : ""}
     <section class="hero">
       <div class="anneau">
         <svg width="190" height="190" viewBox="0 0 190 190"><circle cx="95" cy="95" r="80" stroke="rgba(255,255,255,.15)" stroke-width="16" fill="none"/>
@@ -868,7 +877,17 @@ function accueil() {
       <p><b>${esc(tip.titre)}.</b> ${esc(tip.p)} <i>(${esc(tip.etude)})</i></p>
       <button class="lien" data-go="science">Pourquoi ça marche ? →</button></div>
   `, false);
-  $("#go").onclick = lancer;
+  $("#go").onclick = () => {
+    if (enCours && !confirm("Tu as une session en cours. La remplacer par une nouvelle ?\n\n(Ce que tu as déjà appris reste enregistré.)")) return;
+    lancer();
+  };
+  if (enCours) {
+    $("#reprendre").onclick = reprendreSession;
+    $("#abandonner").onclick = () => {
+      if (!confirm("Abandonner cette session ?\n\nCe que tu as déjà appris reste enregistré, seule ta position dans la session est perdue.")) return;
+      abandonnerSession(); accueil();
+    };
+  }
   if ($("#go-faibles")) $("#go-faibles").onclick = lancerFaibles;
   if ($("#go-rev")) $("#go-rev").onclick = () => lancerRevision();
   if ($("#go-sync")) $("#go-sync").onclick = () => { progres(); setTimeout(() => $("#sync")?.scrollIntoView({ behavior: "smooth" }), 80); };
@@ -880,7 +899,7 @@ function accueil() {
     b.onclick = () => { progres(); setTimeout(() => $("#admin")?.scrollIntoView({ behavior: "smooth" }), 80); };
     $(".largeur").prepend(b);
   });
-  gestionTouches = e => { if (e.key === "Enter") lancer(); };
+  gestionTouches = e => { if (e.key === "Enter") enCours ? reprendreSession() : lancer(); };
 }
 
 // ------------------------------------------------------------------ carte des leçons
@@ -1599,7 +1618,11 @@ function demarrer(type, file, opts) {
   SESSION = { type, file, ...opts, total: file.filter(estExercice).length, faits: 0,
     vies: type === "lecon" ? 3 : null, erreurs: 0, erreursPartie: 0, scores: {}, combo: 0, meilleurCombo: 0, xp: 0, bonnes: 0, debut: Date.now(),
     scenesVues: file.filter(e => "scene" in e).map(e => e.scene) };
-  // prépare les sons de la session en arrière-plan pour qu'ils soient instantanés
+  prechaufferFile(file);
+  suivant();
+}
+// prépare les sons de la session en arrière-plan pour qu'ils soient instantanés
+function prechaufferFile(file) {
   if (API && PROG.voixNaturelle !== false) {
     const textes = [];
     file.forEach(e => {
@@ -1611,13 +1634,14 @@ function demarrer(type, file, opts) {
     const vus = new Set();
     API.prechauffer(textes.filter(t => { const k = JSON.stringify(t); return t && !vus.has(k) && vus.add(k); }));
   }
-  suivant();
 }
 function suivant() {
   couperVoix();
   if (SESSION.vies !== null && SESSION.vies <= 0) return finSession(false);
   const e = SESSION.file.shift();
   if (!e) return finSession(true);
+  SESSION.courant = e; SESSION.repondu = false;
+  memoriserSession();
   if (e.regle) ecranRegle(e.i, e.k);
   else if (e.intro) ecranIntro(e.id);
   else if (e.fiche) ecranFiche(e.id);
@@ -1625,6 +1649,31 @@ function suivant() {
   else if ("scene" in e) ecranScene(e.scene);
   else if (e.question) ecranExercice(exerciceQuestion(...e.question));
   else ecranExercice(exercice(e.id, e.mode));
+}
+// ------------------------------------------------------------------ reprendre une session interrompue
+// La session est enregistrée dans la progression à chaque étape : elle se reprend même sur un autre appareil.
+function memoriserSession() {
+  if (!SESSION) return;
+  const { ex, courant, file, ...reste } = SESSION;
+  const restant = SESSION.repondu || !courant ? file : [courant, ...file];   // l'étape affichée mais pas encore faite est rejouée
+  PROG.sessionEnCours = { ...JSON.parse(JSON.stringify(reste)), file: JSON.parse(JSON.stringify(restant)), maj: Date.now() };
+  sauver();
+}
+function sessionReprenable() {
+  const s = PROG.sessionEnCours;
+  return s && !s.fini && s.file?.length && Date.now() - s.maj < 3 * JOUR ? s : null;   // gardée 3 jours
+}
+function reprendreSession() {
+  const s = sessionReprenable();
+  if (!s) return accueil();
+  SESSION = { ...JSON.parse(JSON.stringify(s)), courant: null, repondu: false };
+  delete SESSION.maj;
+  prechaufferFile(SESSION.file);
+  suivant();
+}
+function abandonnerSession() {
+  PROG.sessionEnCours = { fini: true, maj: Date.now() };
+  sauver();
 }
 function exerciceQuestion(s, q) {
   const [question, bonne, pieges] = HISTOIRES[s].questions[q];
@@ -1957,7 +2006,7 @@ function repondre(juste, presque) {
     if (!ex.pasDeRelance) S.file.splice(Math.min(3, S.file.length), 0, { id: ex.id, mode: ex.modeCle || (ex.mode === "qcm" && ex.id[0] === "v" && ex.question === VBYID[ex.id]?.fr ? "qcm-inv" : ex.mode) });
     son("faux");
   }
-  sauver();
+  memoriserSession();   // enregistre aussi la progression (sauver)
   if (ex.verbe) setTimeout(() => direVerbe(ex.verbe), juste ? 350 : 150);
   else if (ex.audioReponse) setTimeout(() => parler(ex.audioReponse), juste ? 350 : 150);
   else if (ex.perso && ex.modeCle !== "trad") setTimeout(() => parler(ex.audioQuestion, false, ex.voix), juste ? 350 : 150);
@@ -1988,6 +2037,7 @@ function repondre(juste, presque) {
 // ------------------------------------------------------------------ fin de session
 function finSession(gagne) {
   const S = SESSION;
+  PROG.sessionEnCours = { fini: true, maj: Date.now() };   // marqueur de fin (pour que la synchro ne la « ressuscite » pas)
   let nbEtoiles = 0;
   const lignes = [];   // ce qui a été accompli, affiché sur l'écran de fin
   const etoilesTxt = n => "★".repeat(n) + "☆".repeat(3 - n);

@@ -721,3 +721,21 @@ input[type="time"] { padding: 10px 12px; border-radius: 12px; border: 2px solid 
 .membre small { display: block; color: var(--doux); }
 .membre.attente { border-color: rgba(255, 200, 61, .6); }
 .membre .btn { padding: 9px 16px; font-size: 14px; }
+
+/* ---------- reprendre une session ---------- */
+.carte-reprise { display: flex; align-items: center; gap: 16px; padding: 16px 20px; margin-bottom: 16px; border-radius: 20px; animation: entree .35s both;
+  background: linear-gradient(90deg, rgba(34, 211, 166, .2), rgba(76, 201, 255, .1)); border: 2px solid rgba(34, 211, 166, .55); }
+.ic-reprise { font-size: 34px; }
+.txt-reprise { flex: 1; min-width: 0; }
+.txt-reprise small { display: block; color: var(--doux); font-size: 13px; }
+.txt-reprise small:first-child { text-transform: uppercase; letter-spacing: 1px; font-weight: 800; color: var(--vert); font-size: 12px; }
+.txt-reprise b { display: block; font-size: 18px; margin: 2px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.txt-reprise .barre { height: 8px; margin: 6px 0 4px; }
+.txt-reprise .barre > div { background: linear-gradient(90deg, var(--vert), #7af0c8); }
+.actions-reprise { display: flex; gap: 8px; }
+@media (max-width: 720px) {
+  .carte-reprise { flex-wrap: wrap; padding: 14px; gap: 10px; }
+  .ic-reprise { font-size: 26px; }
+  .actions-reprise { width: 100%; }
+  .actions-reprise .btn:first-child { flex: 1; }
+}
