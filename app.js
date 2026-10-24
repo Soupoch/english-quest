@@ -86,7 +86,7 @@ const traduireErreur = m => /invalid login|invalid credentials/i.test(m) ? "E-ma
   : /email not confirmed/i.test(m) ? "Confirme d'abord ton adresse e-mail (lien reçu par e-mail)."
   : /failed to fetch|networkerror|load failed/i.test(m) ? "Pas de connexion Internet."
   : m;
-async function connexion(email, motDePasse, creer) {
+async function connexion(email, motDePasse, creer, avecSync = true) {
   const s = await appelCloud(creer ? "/auth/v1/signup" : "/auth/v1/token?grant_type=password",
     { method: "POST", body: { email, password: motDePasse }, sansJeton: true });
   if (!s.access_token) return { confirmer: true };   // confirmation par e-mail activée côté Supabase
@@ -94,7 +94,7 @@ async function connexion(email, motDePasse, creer) {
   // Appareil partagé : si la progression locale appartient à un AUTRE compte, on ne la mélange surtout pas.
   // (Une progression sans propriétaire, jamais synchronisée, est en revanche envoyée sur le compte qui se connecte.)
   if (PROG.proprietaire && PROG.proprietaire !== COMPTE.user_id) PROG = progressionVide();
-  await synchroniser(true);
+  if (avecSync) { await verifierAcces(); await synchroniser(true); }
   return { ok: true };
 }
 function progressionVide() {   // repart de zéro en gardant les réglages propres à l'appareil
@@ -188,24 +188,21 @@ async function synchroniser(rafraichir = false, keepalive = false) {
   })();
   return syncEnCours;
 }
-// ------------------------------------------------------------------ classement par groupe privé
-// Table « classement » : une ligne publique par joueur (pseudo, avatar, scores), visible seulement par son groupe.
+// ------------------------------------------------------------------ classement commun
+// Table « classement » : une ligne par joueur (pseudo, avatar, scores), visible par tous les joueurs connectés.
 const AVATARS = ["🦊", "🐼", "🦁", "🐯", "🐸", "🐧", "🦉", "🐙", "🦄", "🐲", "🐢", "🐝", "🚀", "⚽", "🎮", "🎸", "🌸", "🌻", "👑", "🧙"];
 function lundiDeLaSemaine(t = Date.now()) { const d = new Date(t); d.setDate(d.getDate() - (d.getDay() + 6) % 7); return dateStr(d); }
 function xpSemaine() { const l = lundiDeLaSemaine(); return Object.entries(PROG.jours).filter(([j]) => j >= l).reduce((t, [, x]) => t + x, 0); }
-function nouveauCodeGroupe() {
-  const lettres = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";   // sans 0/O ni 1/I, pour éviter les confusions
-  return "EQ-" + Array.from(crypto.getRandomValues(new Uint8Array(6)), b => lettres[b % lettres.length]).join("");
-}
+const dansClassement = () => !!PROG.profil?.pseudo;
 function ligneClassement() {
   const vise = prochainNiveau();
-  return { user_id: COMPTE.user_id, groupe: PROG.profil.groupe, pseudo: PROG.profil.pseudo, avatar: PROG.profil.avatar,
+  return { user_id: COMPTE.user_id, pseudo: PROG.profil.pseudo, avatar: PROG.profil.avatar,
     niveau: niveauActuel() || "Pré-A1", avancement: vise ? Math.round(100 * avancement(vise)) : 100, xp: PROG.xp,
     xp_semaine: xpSemaine(), semaine: lundiDeLaSemaine(), serie: serieActuelle(), mots: VOCAB.filter(v => motAcquis(v.id)).length,
     connus: Object.values(PROG.items).filter(s => s.s >= 3).length, lecons: nbLeconsFaites(), updated_at: new Date().toISOString() };
 }
 async function publierClassement(keepalive = false) {
-  if (!COMPTE || !PROG.profil?.groupe) return;
+  if (!COMPTE || !dansClassement()) return;
   await appelCloud("/rest/v1/classement", { method: "POST", keepalive,
     headers: { Prefer: "resolution=merge-duplicates,return=minimal" }, body: ligneClassement() });
 }
@@ -215,10 +212,104 @@ async function lireClassement() {
   const semaine = lundiDeLaSemaine();
   return (lignes || []).map(l => ({ ...l, xp_semaine: l.semaine === semaine ? l.xp_semaine : 0 }));   // semaine terminée = remise à zéro
 }
-async function quitterGroupe() {
+async function quitterClassement() {
   try { await jetonValide(); await appelCloud(`/rest/v1/classement?user_id=eq.${COMPTE.user_id}`, { method: "DELETE" }); } catch (e) { /* rien */ }
-  delete PROG.profil.groupe;
+  delete PROG.profil;
   sauver();
+}
+
+// ------------------------------------------------------------------ accès réservé aux membres acceptés
+// Statuts : admin (le premier compte du projet) · accepte · attente · refuse · libre (contrôle pas encore installé).
+async function verifierAcces() {
+  if (!COMPTE) return null;
+  let acces;
+  try {
+    await jetonValide();
+    if (await appelCloud("/rest/v1/rpc/est_admin", { method: "POST", body: {} }) === true) acces = "admin";
+    else {
+      let l = await appelCloud(`/rest/v1/membres?select=statut&user_id=eq.${COMPTE.user_id}`);
+      if (!l?.length) {   // première connexion : la demande d'accès est envoyée à l'administrateur
+        await appelCloud("/rest/v1/membres", { method: "POST", headers: { Prefer: "return=minimal" }, body: { user_id: COMPTE.user_id, email: COMPTE.email } });
+        l = [{ statut: "attente" }];
+      }
+      acces = l[0].statut;
+    }
+  } catch (e) {
+    // fonction ou table absente → le contrôle d'accès n'est pas encore installé dans Supabase
+    if (e.statut === 404 || /est_admin|membres|does not exist|schema cache/i.test(e.message)) acces = "libre";
+    else acces = COMPTE.acces || "accepte";   // hors ligne : on garde le dernier état connu
+  }
+  if (COMPTE) await ecrireCompte({ ...COMPTE, acces });
+  return acces;
+}
+// (statut encore inconnu = réseau trop lent au démarrage : on laisse passer, les données restent protégées par Supabase)
+const accesAutorise = () => !cloudConfigure() || (!!COMPTE && ["admin", "accepte", "libre", undefined].includes(COMPTE.acces));
+const estAdmin = () => COMPTE?.acces === "admin";
+
+function ecranAcces() {
+  gestionTouches = null;
+  couperVoix();
+  const attente = COMPTE && COMPTE.acces === "attente", refuse = COMPTE && COMPTE.acces === "refuse";
+  $("#app").innerHTML = `<div class="contenu" style="display:flex"><div class="carte-centrale ecran-acces screen">
+    <div class="logo-big" style="animation:none">EQ</div>
+    <h1>English Quest</h1>
+    ${attente ? `<p class="sous">⏳ <b>Ta demande d'accès a bien été envoyée.</b><br>Tu pourras jouer dès que l'administrateur l'aura acceptée.</p>
+        <p class="sous">Compte : ${esc(COMPTE.email || "")}</p>
+        <div class="actions-acces"><button class="btn vert" id="acces-verifier">🔄 Vérifier à nouveau</button><button class="btn gris" id="acces-deco">Se déconnecter</button></div>`
+      : refuse ? `<p class="sous">❌ Ta demande d'accès n'a pas été acceptée.</p>
+        <div class="actions-acces"><button class="btn gris" id="acces-deco">Se déconnecter</button></div>`
+      : `<p class="sous">Cette appli est réservée aux membres. Connecte-toi, ou crée un compte : l'administrateur validera ta demande.</p>
+        <div class="champs-sync">
+          <input type="email" id="acces-email" placeholder="Adresse e-mail" autocomplete="email">
+          <input type="password" id="acces-mdp" placeholder="Mot de passe (6 caractères minimum)" autocomplete="current-password">
+          <div class="actions-acces"><button class="btn vert" id="acces-connexion">Se connecter</button><button class="btn gris" id="acces-creer">Créer un compte</button></div>
+          <small id="acces-msg"></small></div>`}
+  </div></div>`;
+  const apresConnexion = async () => {
+    await verifierAcces();
+    if (accesAutorise()) { accueil(); synchroniser(true); } else ecranAcces();
+  };
+  if ($("#acces-verifier")) $("#acces-verifier").onclick = async () => { $("#acces-verifier").textContent = "⏳…"; await apresConnexion(); };
+  if ($("#acces-deco")) $("#acces-deco").onclick = async () => { await ecrireCompte(null); PROG = progressionVide(); sauver(); ecranAcces(); };
+  const agir = async creer => {
+    const email = $("#acces-email").value.trim(), mdp = $("#acces-mdp").value, msg = $("#acces-msg");
+    if (!email || !mdp) { msg.textContent = "Indique ton e-mail et ton mot de passe."; return; }
+    msg.textContent = "⏳ Connexion…";
+    try {
+      const r = await connexion(email, mdp, creer, false);
+      if (r.confirmer) { msg.textContent = "📧 Compte créé : clique sur le lien reçu par e-mail, puis connecte-toi."; return; }
+      await apresConnexion();
+    } catch (e) { msg.textContent = "⚠️ " + traduireErreur(e.message); }
+  };
+  if ($("#acces-connexion")) { $("#acces-connexion").onclick = () => agir(false); $("#acces-creer").onclick = () => agir(true);
+    gestionTouches = e => { if (e.key === "Enter") agir(false); }; }
+}
+
+// panneau de l'administrateur : valider les demandes d'accès
+async function panneauAdmin() {
+  const zone = $("#admin-liste");
+  if (!zone) return;
+  try {
+    await jetonValide();
+    const membres = await appelCloud("/rest/v1/membres?select=*&order=created_at.desc");
+    const libelle = { attente: "⏳ En attente", accepte: "✅ Accepté", refuse: "❌ Refusé" };
+    zone.innerHTML = membres.length ? membres.map(m => `<div class="membre ${m.statut}">
+        <div><b>${esc(m.email || "(sans e-mail)")}</b><small>${libelle[m.statut]} · demandé le ${new Date(m.created_at).toLocaleDateString("fr-FR")}</small></div>
+        <div class="ligne-reglage">${m.statut !== "accepte" ? `<button class="btn vert" data-membre="${m.user_id}" data-statut="accepte">Accepter</button>` : ""}
+          ${m.statut === "attente" ? `<button class="btn rouge" data-membre="${m.user_id}" data-statut="refuse">Refuser</button>` : ""}
+          ${m.statut === "accepte" ? `<button class="btn gris" data-membre="${m.user_id}" data-statut="refuse">Retirer l'accès</button>` : ""}</div></div>`).join("")
+      : `<p class="sous">Aucune demande pour l'instant.</p>`;
+    $$("[data-membre]").forEach(b => b.onclick = async () => {
+      b.textContent = "⏳";
+      await appelCloud(`/rest/v1/membres?user_id=eq.${b.dataset.membre}`, { method: "PATCH", headers: { Prefer: "return=minimal" }, body: { statut: b.dataset.statut } });
+      if (b.dataset.statut === "refuse") try { await appelCloud(`/rest/v1/classement?user_id=eq.${b.dataset.membre}`, { method: "DELETE" }); } catch (e) { /* rien */ }
+      toast("👑", b.dataset.statut === "accepte" ? "Accès accepté" : "Accès refusé", "");
+      panneauAdmin();
+    });
+  } catch (e) { zone.innerHTML = `<p class="sous">⚠️ ${esc(traduireErreur(e.message))}</p>`; }
+}
+async function demandesEnAttente() {
+  try { await jetonValide(); return (await appelCloud("/rest/v1/membres?select=user_id&statut=eq.attente")).length; } catch (e) { return 0; }
 }
 
 function majIndicateurSync() {
@@ -629,6 +720,8 @@ async function init(data) {
   }
   PROG.paliers = PROG.paliers || {};
   COMPTE = cloudConfigure() ? await lireCompte() : null;
+  if (COMPTE) await Promise.race([verifierAcces(), new Promise(r => setTimeout(r, 4000))]);   // réseau lent : on n'attend pas plus de 4 s
+  if (!accesAutorise()) return ecranAcces();   // appli réservée aux membres acceptés
   accueil();
   if (celebrerNouveauxPaliers().length) { noterSuivi(); sauver(); }
   if (COMPTE) synchroniser(true);   // récupère ce qui a été fait sur l'autre appareil
@@ -763,8 +856,8 @@ function accueil() {
         <div class="barre"><div style="width:${100 * Object.keys(PROG.scenes).length / Math.max(1, CINE.length)}%"></div></div></div>
       <div class="tuile tuile-niveau" data-go="niveau"><span class="ic">🎓</span><h3>Mon niveau : ${niveauActuel() || "Pré-A1"}</h3><p>${prochainNiveau() ? `${Math.round(100 * avancement(prochainNiveau()))} % vers ${prochainNiveau()} · encore ${Math.max(0, seuilMots(prochainNiveau()) - VOCAB.filter(v => motAcquis(v.id)).length)} mots` : "Niveau maximum atteint 👑"}</p>
         <div class="barre"><div style="width:${prochainNiveau() ? 100 * avancement(prochainNiveau()) : 100}%"></div></div></div>
-      <div class="tuile tuile-classement" data-go="classement"><span class="ic">🏆</span><h3>Classement</h3><p>${PROG.profil?.groupe ? `Groupe ${esc(PROG.profil.groupe)} · ${xpSemaine()} XP cette semaine` : "Compare ta progression avec ta famille ou tes amis"}</p>
-        <div class="barre"><div style="width:${PROG.profil?.groupe ? 100 : 0}%"></div></div></div>
+      <div class="tuile tuile-classement" data-go="classement"><span class="ic">🏆</span><h3>Classement</h3><p>${dansClassement() ? `${esc(PROG.profil.avatar)} ${esc(PROG.profil.pseudo)} · ${xpSemaine()} XP cette semaine` : "Compare ta progression avec les autres joueurs"}</p>
+        <div class="barre"><div style="width:${dansClassement() ? 100 : 0}%"></div></div></div>
       <div class="tuile" data-go="mesMots"><span class="ic">📊</span><h3>Mes mots</h3><p>${Object.values(PROG.items).filter(s => s.s >= 3).length} bien connus · ${Object.values(PROG.items).filter(s => s.n).length} appris au total</p>
         <div class="barre verte"><div style="width:${100 * Object.values(PROG.items).filter(s => s.n).length / Math.max(1, VOCAB.length + VERBES.length + LECONS.length * 10 + CINE.length * 6)}%"></div></div></div>
       <div class="tuile" data-go="progres"><span class="ic">🏅</span><h3>Progrès et badges</h3><p>${PROG.badges.length} / ${BADGES.length} badges · meilleure série ${PROG.meilleureSerie} j</p>
@@ -779,6 +872,14 @@ function accueil() {
   if ($("#go-faibles")) $("#go-faibles").onclick = lancerFaibles;
   if ($("#go-rev")) $("#go-rev").onclick = () => lancerRevision();
   if ($("#go-sync")) $("#go-sync").onclick = () => { progres(); setTimeout(() => $("#sync")?.scrollIntoView({ behavior: "smooth" }), 80); };
+  if (estAdmin()) demandesEnAttente().then(n => {   // l'administrateur est prévenu des nouvelles demandes
+    if (!n || !$(".hero")) return;
+    const b = document.createElement("button");
+    b.className = "bandeau-sync bandeau-admin";
+    b.innerHTML = `👑 <span><b>${n} demande${n > 1 ? "s" : ""} d'accès en attente</b><small>Une personne a créé un compte et attend ta validation.</small></span> →`;
+    b.onclick = () => { progres(); setTimeout(() => $("#admin")?.scrollIntoView({ behavior: "smooth" }), 80); };
+    $(".largeur").prepend(b);
+  });
   gestionTouches = e => { if (e.key === "Enter") lancer(); };
 }
 
@@ -929,14 +1030,12 @@ function formulaireProfil(modification) {
   const p = PROG.profil || {};
   return `<div class="carte-vise formulaire-profil">
       <h2 style="margin-top:0">${modification ? "Modifier mon profil" : "Crée ton profil de joueur"}</h2>
-      <p class="sous">Ton pseudo et ton avatar seront visibles par les membres de ton groupe, et uniquement par eux.</p>
+      <p class="sous">Ton pseudo, ton avatar et tes scores seront visibles par les autres joueurs connectés. Ta progression détaillée, elle, reste privée.</p>
       <input class="saisie" id="pseudo" maxlength="20" placeholder="Ton pseudo (ex. : Tom, Maman…)" value="${esc(p.pseudo || "")}">
       <div class="grille-avatars">${AVATARS.map(a => `<button class="avatar-choix ${a === (p.avatar || AVATARS[0]) ? "on" : ""}" data-avatar="${a}">${a}</button>`).join("")}</div>
-      ${modification ? `<div class="ligne-reglage"><button class="btn vert" id="profil-ok">Enregistrer</button><button class="btn gris" id="profil-annuler">Annuler</button><button class="btn rouge" id="quitter-groupe">Quitter le groupe</button></div>`
-        : `<div class="choix-groupe">
-            <div><b>Tu crées le groupe</b><small>Tu recevras un code à donner aux autres.</small><button class="btn vert" id="creer-groupe">✨ Créer un groupe</button></div>
-            <div><b>On t'a donné un code</b><small>Entre-le pour rejoindre le groupe.</small><input class="saisie" id="code-groupe" placeholder="EQ-XXXXXX" maxlength="20"><button class="btn" id="rejoindre-groupe">Rejoindre</button></div>
-          </div>`}
+      <div class="ligne-reglage">${modification
+        ? `<button class="btn vert" id="profil-ok">Enregistrer</button><button class="btn gris" id="profil-annuler">Annuler</button><button class="btn rouge" id="quitter-classement">Quitter le classement</button>`
+        : `<button class="btn vert grand" id="profil-ok">🏆 Rejoindre le classement</button>`}</div>
       <small id="profil-msg" class="sous"></small>
     </div>`;
 }
@@ -948,15 +1047,14 @@ async function classement(onglet = "semaine", edition = false) {
     $("#aller-sync").onclick = () => { progres(); setTimeout(() => $("#sync")?.scrollIntoView({ behavior: "smooth" }), 80); };
     return;
   }
-  if (!PROG.profil?.groupe || edition) {
+  if (!dansClassement() || edition) {
     afficher(`<h1>🏆 Classement</h1>${formulaireProfil(edition)}`);
     let avatar = PROG.profil?.avatar || AVATARS[0];
     $$("[data-avatar]").forEach(b => b.onclick = () => { avatar = b.dataset.avatar; $$(".avatar-choix").forEach(x => x.classList.toggle("on", x === b)); son("clic"); });
-    const valider = async groupe => {
+    const valider = async () => {
       const pseudo = $("#pseudo").value.trim();
       if (!pseudo) { $("#profil-msg").textContent = "⚠️ Choisis un pseudo."; return; }
-      if (!/^[A-Z0-9-]{4,20}$/.test(groupe)) { $("#profil-msg").textContent = "⚠️ Code de groupe invalide."; return; }
-      PROG.profil = { ...(PROG.profil || {}), pseudo, avatar, groupe };
+      PROG.profil = { pseudo, avatar };
       $("#profil-msg").textContent = "⏳ Enregistrement…";
       try { await jetonValide(); await publierClassement(); sauver(); classement(onglet); }
       catch (e) {
@@ -964,13 +1062,11 @@ async function classement(onglet = "semaine", edition = false) {
           ? "⚠️ Le classement n'est pas encore activé dans Supabase (script classement_setup.sql à exécuter)." : "⚠️ " + traduireErreur(e.message);
       }
     };
-    if ($("#creer-groupe")) $("#creer-groupe").onclick = () => valider(nouveauCodeGroupe());
-    if ($("#rejoindre-groupe")) $("#rejoindre-groupe").onclick = () => valider($("#code-groupe").value.trim().toUpperCase());
-    if ($("#profil-ok")) $("#profil-ok").onclick = () => valider(PROG.profil.groupe);
+    $("#profil-ok").onclick = valider;
     if ($("#profil-annuler")) $("#profil-annuler").onclick = () => classement(onglet);
-    if ($("#quitter-groupe")) $("#quitter-groupe").onclick = async () => {
-      if (!confirm("Quitter le groupe ? Tu disparaîtras du classement (ta progression, elle, est conservée).")) return;
-      await quitterGroupe(); classement();
+    if ($("#quitter-classement")) $("#quitter-classement").onclick = async () => {
+      if (!confirm("Quitter le classement ? Tu n'y apparaîtras plus (ta progression, elle, est conservée).")) return;
+      await quitterClassement(); classement();
     };
     return;
   }
@@ -981,6 +1077,7 @@ async function classement(onglet = "semaine", edition = false) {
   const O = ONGLETS_CLASSEMENT[onglet];
   lignes.sort(O.tri);
   const moi = lignes.findIndex(l => l.user_id === COMPTE.user_id);
+  const rangSemaine = [...lignes].sort(ONGLETS_CLASSEMENT.semaine.tri).findIndex(l => l.user_id === COMPTE.user_id) + 1;
   const medaille = i => ["🥇", "🥈", "🥉"][i] || `${i + 1}`;
   let duel = "";
   if (lignes.length > 1 && onglet !== "niveau") {
@@ -989,9 +1086,9 @@ async function classement(onglet = "semaine", edition = false) {
       : `💪 Encore ${v(lignes[moi - 1]) - v(lignes[moi]) + 1} ${O.unite} pour dépasser ${esc(lignes[moi - 1].pseudo)} !`;
   }
   afficher(`<h1>🏆 Classement</h1>
-    <div class="code-groupe-carte"><div><small>Code de ton groupe</small><strong>${esc(PROG.profil.groupe)}</strong>
-      <span>Donne-le aux personnes que tu veux affronter : elles l'entrent dans « Rejoindre ».</span></div>
-      <div class="ligne-reglage"><button class="btn gris" id="copier-code">📋 Copier</button><button class="btn gris" id="modifier-profil">${PROG.profil.avatar} Mon profil</button></div></div>
+    <div class="code-groupe-carte"><div><small>Ton profil</small><strong>${esc(PROG.profil.avatar)} ${esc(PROG.profil.pseudo)}</strong>
+      <span>${lignes.length} joueur${lignes.length > 1 ? "s" : ""} dans le classement · ${rangSemaine}${rangSemaine === 1 ? "er" : "e"} cette semaine</span></div>
+      <div class="ligne-reglage"><button class="btn gris" id="modifier-profil">✏️ Modifier</button></div></div>
     <div class="onglets">${Object.entries(ONGLETS_CLASSEMENT).map(([k, o]) => `<button class="onglet ${k === onglet ? "on" : ""}" data-onglet-c="${k}">${o.nom}</button>`).join("")}</div>
     ${duel ? `<p class="duel">${duel}</p>` : ""}
     <div class="liste-classement">${lignes.map((l, i) => `<div class="joueur ${l.user_id === COMPTE.user_id ? "moi" : ""} ${i < 3 ? "podium-" + (i + 1) : ""}">
@@ -999,16 +1096,12 @@ async function classement(onglet = "semaine", edition = false) {
         <div class="infos-c"><b>${esc(l.pseudo)}${l.user_id === COMPTE.user_id ? " <em>(toi)</em>" : ""}</b>
           <small>🎓 ${esc(l.niveau)} · 🔥 ${l.serie} j · 📚 ${l.mots} mots · 📘 ${l.lecons} leçons · actif ${ilYa(l.updated_at)}</small></div>
         <div class="valeur-c"><strong>${esc(String(O.valeur(l)))}</strong><small>${O.unite}</small></div></div>`).join("")}</div>
-    ${lignes.length < 2 ? `<p class="sous" style="margin-top:14px">Tu es seul pour l'instant : partage le code <b>${esc(PROG.profil.groupe)}</b> pour que les autres te rejoignent.</p>` : ""}
+    ${lignes.length < 2 ? `<p class="sous" style="margin-top:14px">Tu es seul pour l'instant : les autres joueurs apparaîtront ici dès qu'ils auront rejoint le classement.</p>` : ""}
     <p class="sous" style="margin-top:14px">Le classement « Cette semaine » repart de zéro chaque lundi. Les scores se mettent à jour à chaque synchronisation.
       <button class="lien" id="rafraichir-c">🔄 Actualiser</button></p>`);
   $$("[data-onglet-c]").forEach(b => b.onclick = () => classement(b.dataset.ongletC));
   $("#modifier-profil").onclick = () => classement(onglet, true);
   $("#rafraichir-c").onclick = () => classement(onglet);
-  $("#copier-code").onclick = async () => {
-    try { await navigator.clipboard.writeText(PROG.profil.groupe); toast("📋", "Code copié", PROG.profil.groupe); }
-    catch (e) { toast("📋", "Code du groupe", PROG.profil.groupe); }
-  };
 }
 
 // ------------------------------------------------------------------ mon niveau
@@ -1224,6 +1317,8 @@ function progres() {
       : `<p class="sous">Aucun point faible pour l'instant 💪 Ceux que tu rates au moins 2 fois apparaîtront ici.</p>`}
     <h2>Badges</h2>
     <div class="grille-badges">${BADGES.map(b => `<div class="badge ${PROG.badges.includes(b.id) ? "" : "non"}"><span class="ic">${b.ic}</span><h4>${esc(b.nom)}</h4><p>${esc(b.desc)}</p></div>`).join("")}</div>
+    ${estAdmin() ? `<h2 id="admin">👑 Demandes d'accès <small style="color:var(--doux);font-size:14px">(tu es l'administrateur)</small></h2>
+      <div id="admin-liste" class="liste-membres"><p class="sous">⏳ Chargement…</p></div>` : ""}
     <h2 id="sync">☁️ Synchronisation PC ↔ iPhone</h2>
     <div class="reglages">${blocSync()}</div>
     <h2>⚙️ Réglages</h2>
@@ -1240,6 +1335,7 @@ function progres() {
   $$("[data-obj]").forEach(b => b.onclick = () => { PROG.objectif = +b.dataset.obj; sauver(); progres(); });
   if ($("#faibles")) $("#faibles").onclick = lancerFaibles;
   brancherSync();
+  if (estAdmin()) panneauAdmin();
   $("#voix").onclick = () => { PROG.voixNaturelle = PROG.voixNaturelle === false; sauver(); progres(); parler("Hello! This is my voice."); };
   const regler = async heure => {
     if (!API) { $("#rappel-etat").textContent = "Disponible uniquement dans l'appli (pas dans l'aperçu)."; return; }
@@ -1272,7 +1368,7 @@ function brancherSync() {
   if ($("#sync-deco")) $("#sync-deco").onclick = async () => {
     if (!confirm("Se déconnecter ?\n\nTa progression est enregistrée en ligne, puis retirée de cet appareil. Tu la retrouveras en te reconnectant.")) return;
     $("#sync-deco").textContent = "⏳…";
-    if (await deconnexion()) { toast("👋", "Déconnecté", "Ta progression est en sécurité en ligne."); accueil(); }
+    if (await deconnexion()) { toast("👋", "Déconnecté", "Ta progression est en sécurité en ligne."); accesAutorise() ? accueil() : ecranAcces(); }
     else { toast("⚠️", "Déconnexion annulée", "Synchronisation impossible (pas d'Internet ?) : rien n'a été effacé."); progres(); }
   };
   const agir = async creer => {
